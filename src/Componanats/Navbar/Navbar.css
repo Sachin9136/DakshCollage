@@ -1,5 +1,7 @@
+
 @media only screen and (max-width: 1025px) {
-    .banner {
-      display: none !important;
+
+    .main-navbar{
+      display: none;
     }
   }
