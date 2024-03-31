@@ -325,14 +325,14 @@ const Navbar = () => {
                     </div>
                   </div>
                   <div className="col-8 col-sm-9 text-right">
-                    <Link to="#" className="butn1 butn-light">
+                    {/* <Link to="#" className="butn1 butn-light">
                       Free Consulting
-                    </Link>
+                    </Link> */}
                     {/*  */}
-                    <Link to="#" className="cart-icon">
+                    {/* <Link to="#" className="cart-icon">
                       <i className="fa fa-shopping-cart" />
                       <span>0</span>
-                    </Link>
+                    </Link> */}
                     <span className="resp-btn">
                       <i />
                       <i />
@@ -350,9 +350,9 @@ const Navbar = () => {
               </span>
               <ul>
               <li className="menu-item-has-children">
-                            <Link to="/" title="">
-                              Home
-                            </Link>
+                    <Link to="/" title="">
+                        Home
+                    </Link>
                 </li>
                 <li className="menu-item-has-children">
                 <Link to="#" title="">
@@ -518,23 +518,6 @@ const Navbar = () => {
                     </li>
                 </ul>
                 </li>
-                {/* <li>
-                    <Link to="#" title="">
-                        Contact
-                    </Link>
-                    <ul>
-                        <li>
-                        <Link to="contact" title="">
-                            Contact Us
-                        </Link>
-                        </li>
-                        <li>
-                        <Link to="quick_payment" title="">
-                            Quick Payment
-                        </Link>
-                        </li>
-                    </ul>
-                </li> */}
                 <li className="menu-item-has-children">
                 <Link to="#" title="">
                     Facilities
@@ -654,7 +637,7 @@ const Navbar = () => {
                 </ul>
                 </li>
               </ul>
-              <div className="side-meta topbar style2">
+              {/* <div className="side-meta topbar style2">
                 <ul className="topbar-contact">
                   <li>
                     <Link to="https://html.webinane.com/cdn-cgi/l/email-protection#02777a6c6373746b42656f636b6e2c616d6f">
@@ -695,7 +678,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </>
