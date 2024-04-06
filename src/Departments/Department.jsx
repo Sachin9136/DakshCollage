@@ -26,11 +26,6 @@ const About = () => {
           )}
           {status === "succeeded" && (
             <>
-              <div className="col-sm-12">
-                <div
-                  dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.title :"not found" }}
-                ></div>
-              </div>
               <div className="row m-0 p-0">
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
                 <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.title :"not found" }}></div>

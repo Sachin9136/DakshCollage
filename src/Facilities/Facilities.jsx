@@ -30,7 +30,7 @@ const Facilities = () => {
           {status === "succeeded" && (
             <>
 
-            <div className="row m-0 p-0 py-5">
+            <div className="row m-0 p-0">
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
                 <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: singleFacility.data ? singleFacility.data.title :"not found" }}></div>
               </div>

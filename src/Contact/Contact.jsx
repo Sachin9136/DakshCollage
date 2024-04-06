@@ -2,28 +2,8 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div>
+    <div> 
         <main role="main">
-            {/* <section>
-                <div className="sub-head">
-                <div
-                    className="bg-image"
-                    style={{ backgroundImage: "url(assets/images/slide1-1.jpg)" }}
-                />
-                <div className="sub-meta">
-                    <h1>Contact Us</h1>
-                    <ul className="pager">
-                    <li>
-                        <a href="#" title="">
-                        Home
-                        </a>
-                    </li>
-                    <li>Contact Us</li>
-                    </ul>
-                </div>
-                </div>
-            </section> */}
-            {/* Banner */}
             <section>
                 <div className="block no-bottom">
                 <div className="container">
