@@ -20,7 +20,7 @@ const Blog = () => {
                         <BlogApi />
                         <div className="col-sm-12">
                             <div className="post-container">
-                                {/* <div className="row align-items-center contnt-left">
+                                <div className="row align-items-center contnt-left">
                                     <div className="col-md-6">
                                     <div className="pattern-bg">
                                         <figure className="post-img">
@@ -58,44 +58,6 @@ const Blog = () => {
                                     </div>
                                     </div>
                                 </div>
-                                <div className="row align-items-center contnt-right">
-                                    <div className="col-md-6">
-                                    <div className="post-data">
-                                        <ul className="post-meta">
-                                        <li className="posted-date">
-                                            <a href="#">
-                                            <i className="fa fa-calendar-alt" />
-                                            February 26, 2018
-                                            </a>
-                                        </li>
-                                        <li className="post-cat">
-                                            -<a href="#">Personal life</a>
-                                        </li>
-                                        </ul>
-                                        <h2>
-                                        <a href="blog-detail.html">
-                                            Amazing Red’ PS4 Pro for Spider-Man’s launch
-                                        </a>
-                                        </h2>
-                                        <p>
-                                        Pellentesque ultrices orci id justo vehicula, non aliquam
-                                        erat lacinia. Mauris rhoncus venenatis tempor. Proin
-                                        egestas euismod felis a ullamcorper. Nullam lacus nisi,
-                                        blandit eget lacus ac, lobortis finibus augue.
-                                        </p>
-                                        <a href="blog-detail.html" className="butn1 butn-light">
-                                        Read More
-                                        </a>
-                                    </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                    <div className="pattern-bg">
-                                        <figure className="post-img">
-                                        <img src="assets/images/post-img2.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                    </div>
-                                </div> */}
                         </div>
                     </div>
                     </div>
