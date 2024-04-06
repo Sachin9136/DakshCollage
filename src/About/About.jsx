@@ -37,20 +37,18 @@ const About = () => {
                     <div className="container">
                       <div className="success-story">
                         <div className="row align-items-center ">
-                          <div className="col-sm-12 col-md-6 col-lg-6">
+                          <div className="col-sm-12 col-md-4 col-lg-4">
                             <figure className="d-flex justify-content-center">
                               {aboutussingle.data && aboutussingle.data.AboutImage ? (
-                                <img src={aboutussingle.data.AboutImage} alt="" width="70%" />
+                                <img src={aboutussingle.data.AboutImage} alt="" />
                               ) : (
                                 <p>No image found</p>
                               )}
                             </figure>
                           </div>
-                          <div className="col-sm-12 col-md-6 col-lg-6">
-                            <div className="success-meta genrl-block">
+                          <div className="col-sm-12 col-md-8 col-lg-8">
                             <h1 dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.title :"not found" }}></h1>
                             <p dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.description :"not found" }}></p>
-                            </div>
                           </div>
                         </div>
                       </div>
