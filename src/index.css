@@ -66,7 +66,8 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto";
+	font-family: "Poppins", sans-serif;
+
 }
 
 h1,
@@ -75,19 +76,19 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 700;
 	color: #333333;
 }
 p {
-	font-family: "Roboto";
+	font-family: "Poppins", sans-serif;
 	font-size: 17px;
 	color: #666666;
 	line-height: 28px;
 }
 ul li,
 ol li {
-	font-family: "Roboto";
+	font-family: "Poppins", sans-serif;
 	list-style: none;
 }
 ul,
@@ -398,7 +399,7 @@ section {
 	content: none;
 }
 .topbar-contact > li a {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 15px;
 	line-height: 17px;
 	color: #ddd;
@@ -437,7 +438,7 @@ section {
 .log-in-out {
 	position: relative;
 	display: inline-block;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	text-transform: capitalize;
 	font-size: 15px;
 	width: auto;
@@ -478,7 +479,7 @@ section {
 	letter-spacing: 0;
 }
 .main-menu li a {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 }
 .main-menu.fixed{position: fixed;}
 .main-menu > ul,
@@ -602,8 +603,8 @@ section {
 .main-menu > div > ul > li ul li.menu-item-has-children::after {
 	color: #c4c4c4;
 	content: "\f105";
-	font-family: fontawesome;
-	font-size: 13px;
+	font-family: "Poppins", sans-serif;
+		font-size: 13px;
 	position: absolute;
 	right: 15px;
 	top: 50%;
@@ -754,7 +755,7 @@ section {
 .side-menu > ul li {
 	color: #fff;
 	float: left;
-	font-family: Roboto;
+	font-family: "Poppins", sans-serif;;
 	font-size: 17px;
 	font-weight: 400;
 	position: relative;
@@ -982,7 +983,7 @@ header.header2 .main-menu {
 	padding-right: 16px;
 }
 .step i {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-style: inherit;
 	font-size: 180px;
 	font-weight: 700;
@@ -1031,7 +1032,7 @@ header.header2 .main-menu {
 /*--- theme butn ---*/
 a.butn {
 	position: relative;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	display: inline-block;
 	font-size: 14px;
 	text-transform: capitalize;
@@ -1057,7 +1058,7 @@ a.butn:hover {
 	color: #ffffff;
 }
 .butn2 {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -1070,7 +1071,7 @@ a.butn:hover {
 
 .butn1 {
 	position: relative;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	display: inline-block;
 	font-size: 14px;
 	text-transform: capitalize;
@@ -1164,7 +1165,7 @@ a.butn-light,
 .about-tab li .butn {
 	background-color: #ffffff;
 	color: #333;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 14px;
 	min-width: 141px;
 	padding: 13px 0px;
@@ -1385,7 +1386,7 @@ a.butn-light,
 }
 .funfact strong {
 	font-size: 70px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-weight: 700;
 	display: inline-block;
 	width: 100%;
@@ -1437,7 +1438,7 @@ a.butn-light,
 #options li a {
 	position: relative;
 	display: inline-block;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 14px;
 	font-weight: 500;
 	color: #a0a0a0;
@@ -1494,7 +1495,7 @@ a.butn-light,
 	bottom: 11px;
 	padding: 2px 22px;
 	color: #fff;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 17px;
 	font-weight: 600;
 	display: inline-block;
@@ -1529,7 +1530,7 @@ a.butn-light,
 .course-meta > a {
 	font-size: 14px;
 	margin-right: 5px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-weight: 500;
 	width: 45px;
 	height: 45px;
@@ -1653,7 +1654,7 @@ a.butn-light,
 	padding-left: 37px;
 }
 .quote-content p {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 20px;
 	margin-bottom: 23px;
 	font-style: italic;
@@ -1664,7 +1665,7 @@ a.butn-light,
 	font-weight: 600;
 }
 .quote-content span {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 18px;
 }
 .quote-img {
@@ -1899,7 +1900,7 @@ a.stu-youtube {
 }
 .post-meta li {
 	display: inline-block;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 16px;
 	font-weight: 500;
 	color: #999;
@@ -1977,7 +1978,7 @@ a.stu-youtube {
 	margin-bottom: 0;
 }
 .quick-link-bar strong {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -2055,7 +2056,7 @@ a.stu-youtube {
 .social-icn {
 	color: #eeeeee;
 	font-size: 18px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-weight: 600;
 	padding-left: 45px;
 	position: relative;
@@ -2185,7 +2186,7 @@ a.stu-youtube {
 	cursor: pointer;
 }
 .recent-posts li > a {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	color: #999999;
 }
 .recent-posts li > a i {
@@ -2198,7 +2199,7 @@ a.stu-youtube {
 	text-align: center;
 }
 .bottom-bar p {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	margin: 0;
 	color: #999999;
 }
@@ -2465,7 +2466,7 @@ a.stu-youtube {
 	border: 2px solid #f1f1f1;
 }
 .table-meta .prz {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-weight: 700;
 	font-size: 47px;
 	display: block;
@@ -2523,7 +2524,7 @@ a.stu-youtube {
 	font-weight: 700;
 	display: inline-block;
 	width: 100%;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	line-height: 83px;
 }
 .funfact2-meta span {
@@ -2587,7 +2588,7 @@ a.stu-youtube {
 	margin-bottom: 10px;
 }
 .event li {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	display: inline-block;
 	color: #bababa;
 	font-size: 18px;
@@ -2618,7 +2619,7 @@ a.stu-youtube {
 	display: table-cell;
 	vertical-align: top;
 	padding-left: 11px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 }
 .event.right {
 	padding-left: 0;
@@ -2693,7 +2694,7 @@ a.stu-youtube {
 }
 .registr-form button {
 	position: relative;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
@@ -2736,7 +2737,7 @@ a.stu-youtube {
 	padding: 9px 21px;
 	font-size: 14px;
 	font-weight: 500;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 }
 .course-thumb a.cat:hover {
 	color: #ffffff;
@@ -3029,14 +3030,14 @@ a.stu-youtube {
 .helpful-link li a {
 	font-size: 17px;
 	font-weight: 500;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	padding-left: 16px;
 	position: relative;
 	border-bottom: 2px solid transparent;
 }
 .helpful-link li a::before {
 	content: "\f0da";
-	font-family: 'Font Awesome 5 Free';
+	font-family: "Poppins", sans-serif;;
 	font-weight: 900;
 	position: absolute;
 	font-size: 13px;
@@ -3074,7 +3075,7 @@ a.stu-youtube {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 23px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 }
 .date-circle span {
 	display: table-cell;
@@ -3100,7 +3101,7 @@ a.stu-youtube {
 	display: block;
 	width: 100%;
 	font-size: 15px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	margin-top: 11px;
 	margin-bottom: 16px;
 }
@@ -3491,7 +3492,7 @@ a.stu-youtube {
 	vertical-align: middle;
 }
 .comment-text .meta strong {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 22px;
 	color: #333333;
 }
@@ -3550,7 +3551,7 @@ a.stu-youtube {
 	font-size: 21px;
 }
 .comment-reply-title {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 26px;
 	line-height: 30px;
 	font-weight: 700;
@@ -3729,7 +3730,7 @@ a.stu-youtube {
 	margin-top: 30px;
 }
 .tagz strong {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 18px;
 	margin-right: 14px;
 }
@@ -4129,7 +4130,7 @@ a.stu-youtube {
 	text-align: center;
 }
 .error-page > span {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Poppins", sans-serif;;
 	font-size: 180px;
 	line-height: 129px;
 	font-weight: 700;
@@ -4167,7 +4168,7 @@ a.stu-youtube {
 	width: 100%;
 	padding: 0 54px 0 31px;
 	color: #979797;
-	font-family: "Roboto";
+	font-family: "Poppins", sans-serif;
 }
 .submit-search {
 	position: absolute;
