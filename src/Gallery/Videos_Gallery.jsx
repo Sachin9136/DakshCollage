@@ -16,44 +16,6 @@ const Videos_Gallery = () => {
                 <div className="container">
                     <div className="row">
                     <Videos_GalleryApi />
-                    {/* <ul className="paginationz">
-                        <li className="prev">
-                        <a href="#" title="">
-                            <i className="fa fa fa-caret-left" />
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" title="">
-                            1
-                        </a>
-                        </li>
-                        <li>
-                        <a className="active" href="#" title="">
-                            2
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" title="">
-                            3
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" title="">
-                            4
-                        </a>
-                        </li>
-                        <li className="space">.......</li>
-                        <li>
-                        <a href="#" title="">
-                            13
-                        </a>
-                        </li>
-                        <li className="next">
-                        <a href="#" title="">
-                            <i className="fa fa fa-caret-right" />
-                        </a>
-                        </li>
-                    </ul> */}
                     </div>
                 </div>
                 </div>

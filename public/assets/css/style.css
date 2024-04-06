@@ -4482,7 +4482,7 @@ header.header2,
 	-o-transition: all 0.2s linear 0s;
 	transition: all 0.2s linear 0s;
 }
-.model-close,
+/* .model-close,
 .avatar-img img,
 .sponsor-meta i img,
 .author-avatar figure img,
@@ -4511,12 +4511,12 @@ header.header2,
 .step-img,
 .cart-icon span,
 .socials li a {
-	/* -webkit-border-radius: 50%; */
-	/* -moz-border-radius: 50%; */
-	/* -ms-border-radius: 50%; */
-	/* -o-border-radius: 50%; */
-	/* border-radius: 50%; */
-}
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+} */
 .featr-thumb figure img,
 .sidebar .widget,
 .paginationz > li a,

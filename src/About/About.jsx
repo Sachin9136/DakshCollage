@@ -55,49 +55,6 @@ const About = () => {
                     </div>
                   </div>
                 </section>
-                {/* success story */}
-                <section>
-                  <div className="block no-top">
-                    <div className="container">
-                      <div className="row justify-content-center align-items-center">
-                        <div className="col-lg-10">
-                          <div className="row">
-                            <div className="col-6 col-sm-3">
-                              <div className="funfact">
-                                <strong className="counter">300</strong>
-                                <span>Online Courses</span>
-                              </div>
-                            </div>
-                            <div className="col-6 col-sm-3">
-                              <div className="funfact">
-                                <strong>
-                                  <span className="counter">90</span>+
-                                </strong>
-                                <span> National Awards</span>
-                              </div>
-                            </div>
-                            <div className="col-6 col-sm-3">
-                              <div className="funfact">
-                                <strong>
-                                  <span className="counter">48</span>k
-                                </strong>
-                                <span>Online Courses</span>
-                              </div>
-                            </div>
-                            <div className="col-6 col-sm-3">
-                              <div className="funfact">
-                                <strong>
-                                  <span className="counter">1078</span>+
-                                </strong>
-                                <span> Students Enrolled</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
             </>

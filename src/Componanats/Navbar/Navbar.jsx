@@ -84,7 +84,7 @@ const Navbar = () => {
                                   <div key={index}>
                                     <li>
                                       <Link
-                                        to={`/academic/${academicdata._id}`}
+                                        to={index === 0 ? `/academic/${academicdata._id}`  : ""}
                                         title=""
                                       >
                                         {academicdata.title}
