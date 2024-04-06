@@ -13,7 +13,6 @@ const Index = () => {
         data-source="gallery"
         style={{ backgroundColor: "#ebeff2", padding: 0 }}
       >
-        {/* START REVOLUTION SLIDER 5.4.1 fullscreen mode */}
         <div
           id="rev_slider_1050_1"
           className="rev_slider fullscreenbanner"

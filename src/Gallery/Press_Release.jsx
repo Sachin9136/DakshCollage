@@ -4,9 +4,9 @@ import Press_ReleaseApi from "./Press_ReleaseApi";
 const Press_Release = () => {
   return (
     <div>
-        <main role="main">
+        {/* <main role="main"> */}
         <section>
-                <div className="page-header banner-img d-flex justify-content-center align-items-center">
+                <div className="banner-img d-flex justify-content-center align-items-center">
                         <h1 className='text-light'>Press Release</h1>
                 </div>
             </section>
@@ -21,7 +21,7 @@ const Press_Release = () => {
                 </div>
             </section>
             {/* gallery */}
-        </main>
+        {/* </main> */}
     </div>
   )
 }

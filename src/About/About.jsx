@@ -40,7 +40,7 @@ const About = () => {
                           <div className="col-sm-12 col-md-4 col-lg-4">
                             <figure className="d-flex justify-content-center">
                               {aboutussingle.data && aboutussingle.data.AboutImage ? (
-                                <img src={aboutussingle.data.AboutImage} alt="" />
+                                <img src={aboutussingle.data.AboutImage} alt="" className="rounded" />
                               ) : (
                                 <p>No image found</p>
                               )}
