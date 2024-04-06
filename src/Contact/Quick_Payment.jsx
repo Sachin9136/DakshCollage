@@ -2,7 +2,7 @@ import React from 'react'
 
 const Quick_Payment = () => {
   return (
-    <div className='py-5 '>
+    <div className='page-header'>
       <h1 className='text-center'>Quick Payment</h1>
     </div>
   )

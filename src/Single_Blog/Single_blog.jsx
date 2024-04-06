@@ -1,29 +1,37 @@
-import React from 'react'
-
+import React,{useState,useEffect} from "react";
+import { getSingleBlog } from "../Componanats/api/api_base";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 const Single_blog = () => {
+  const { id } = useParams();
+  const [singleblogs, setsingleBlogs] = useState([]);
+
+  const getBlogApi = async () => {
+    try {
+      const response = await axios.get(`${getSingleBlog}${id}`);
+      setsingleBlogs(response.data.data);
+    } catch (error) {
+      console.log(error); 
+    } 
+  };
+
+  useEffect(() => {
+    getBlogApi();
+  }, []);
+
   return (
+    <>
     <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 py-5 mt-5">
+          <div dangerouslySetInnerHTML={{ __html: singleblogs.content }}></div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* <div>
         <main role="main">
-            <section>
-                <div className="sub-head">
-                <div
-                    className="bg-image"
-                    style={{ backgroundImage: "url(assets/images/slide1-1.jpg)" }}
-                />
-                <div className="sub-meta">
-                    <h1>Blog Details</h1>
-                    <ul className="pager">
-                    <li>
-                        <a href="#" title="">
-                        Home
-                        </a>
-                    </li>
-                    <li>Blog Details</li>
-                    </ul>
-                </div>
-                </div>
-            </section>
-            {/* Banner */}
             <section>
                 <div className="block inner-pages">
                 <div className="container">
@@ -520,9 +528,9 @@ const Single_blog = () => {
                 </div>
                 </div>
             </section>
-            {/* feature */}
         </main>
-    </div>
+    </div> */}
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Admission_Process = () => {
-  return (
+  return ( 
     <div>
         <div className="container">
             <div className="row justify-content-center py-5">
