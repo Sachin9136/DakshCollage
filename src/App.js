@@ -52,6 +52,8 @@ import Department from "../src/Departments/Department";
 // import Psychatric_Nursing from "../src/Departments/Psychatric_Nursing";
 // import Community_Health_Nursing from "../src/Departments/Community_Health_Nursing";
 
+import ComplainAndFeedback from "../src/Complain_Feedback/Complain_Feedback";
+
 
 
 
@@ -115,6 +117,8 @@ function App() {
           <Route path="/obs_gyne_nursing" element={<Obs_Gyne_Nursing />} />
           <Route path="/psychatric_nursing" element={<Psychatric_Nursing />} />
           <Route path="/community_health_nursing" element={<Community_Health_Nursing />} /> */}
+
+          <Route path="/complain_feedback" element={<ComplainAndFeedback />} /> 
         </Routes>
       <Footer />
     </div>

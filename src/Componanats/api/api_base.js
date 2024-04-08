@@ -16,3 +16,8 @@ export const getMedicalFacility = `${base_url + '/api/v1/medicalficilities/getal
 export const getSingleMedicalFacility = `${base_url + '/api/v1/medicalficilities/getSinglemedicalFicilities'}`;
 export const getDepartments = `${base_url + '/api/v1/department/getdepartment/'}`;
 export const getSingleDepartment = `${base_url + '/api/v1/department/getsingledepartment'}`;
+export const createContact = `${base_url}/api/v1/contact/uploadcontact`;
+export const complainForm = `${base_url}/api/v1/complaint/uploadcomplaint`;
+export const studentFeedbackForm = `${base_url}/api/v1/studentFeedback/uploadstudentFeedback/`;
+
+// post

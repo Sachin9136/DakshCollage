@@ -36,8 +36,8 @@ const About = () => {
                   <div className="block no-bottom">
                     <div className="container">
                       <div className="success-story">
-                        <div className="row align-items-center ">
-                          <div className="col-sm-12 col-md-4 col-lg-4">
+                        <div className="row">
+                          <div className="col-sm-12 col-md-5 col-lg-4">
                             <figure className="d-flex justify-content-center">
                               {aboutussingle.data && aboutussingle.data.AboutImage ? (
                                 <img src={aboutussingle.data.AboutImage} alt="" className="rounded" />
@@ -46,7 +46,7 @@ const About = () => {
                               )}
                             </figure>
                           </div>
-                          <div className="col-sm-12 col-md-8 col-lg-8">
+                          <div className="col-sm-12 col-md-5 col-lg-8">
                             <h1 dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.title :"not found" }}></h1>
                             <p dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.description :"not found" }}></p>
                           </div>

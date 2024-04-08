@@ -17,18 +17,20 @@ const Blog = () => {
                 <div className="block inner-pages">
                 <div className="container">
                     <div className="row justify-content-center">
+                        <div className="col-sm-12 col-md-12 col-lg-10">
                         <BlogApi />
-                        <div className="col-sm-12">
+                        </div>
+                        {/* <div className="col-sm-12">
                             <div className="post-container">
                                 <div className="row align-items-center contnt-left">
-                                    <div className="col-md-6">
+                                    <div className="col-sm-12 col-md-4 col-lg-4">
                                     <div className="pattern-bg">
                                         <figure className="post-img">
                                         <img src="assets/images/post-img1.jpg" alt="" />
                                         </figure>
                                     </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-sm-12 col-md-8 col-lg-8">
                                     <div className="post-data">
                                         <ul className="post-meta">
                                         <li className="posted-date">
@@ -59,9 +61,9 @@ const Blog = () => {
                                     </div>
                                 </div>
                         </div>
+                    </div> */}
                     </div>
-                    </div>
-                    <ul className="paginationz top-margin-70">
+                    {/* <ul className="paginationz top-margin-70">
                         <li className="prev">
                             <a href="#" title="">
                             <i className="fa fa fa-caret-left" />
@@ -98,7 +100,7 @@ const Blog = () => {
                             <i className="fa fa fa-caret-right" />
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
                 </div>
             </section>

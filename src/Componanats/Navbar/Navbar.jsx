@@ -94,6 +94,10 @@ const CustomNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
+            <Nav.Link as={Link} to="/complain_feedback" activeClassName="" exact>
+              Complain / Feedback
+            </Nav.Link>
+
             {/* Add more NavDropdown items for other sections */}
           </Nav>
           <Form className="d-flex">
