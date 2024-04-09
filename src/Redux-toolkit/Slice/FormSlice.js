@@ -3,7 +3,10 @@ import axios from "axios";
 import {createContact } from "../../Componanats/api/api_base";
 import { complainForm } from "../../Componanats/api/api_base";
 import {studentFeedbackForm} from "../../Componanats/api/api_base";
-// export const token = sessionStorage.getItem("accessToken");
+import {alumniFeedbackForm} from "../../Componanats/api/api_base";
+import {teacherFeedbackForm} from "../../Componanats/api/api_base";
+import {parentsFeedbackForm} from "../../Componanats/api/api_base";
+export const token = sessionStorage.getItem("accessToken");
 
 // const headers = {
 //     Authorization: `Bearer ${token}`,
@@ -30,6 +33,33 @@ export const complainApi = createAsyncThunk('complainApi/form', async (data, { r
 export const studentFeedbackFormApi = createAsyncThunk('studentFeedbackFormApi/form', async (data, { rejectWithValue }) => {
     try {
         const response = await axios.post(studentFeedbackForm, data)
+        return response.data.message;
+    } catch (error) {
+        return rejectWithValue(error.response.data.message);
+    }
+})
+
+export const alumniFeedbackFormApi = createAsyncThunk('alumniFeedbackFormApi/form', async (data, { rejectWithValue }) => {
+    try {
+        const response = await axios.post(alumniFeedbackForm, data)
+        return response.data.message;
+    } catch (error) {
+        return rejectWithValue(error.response.data.message);
+    }
+})
+
+export const teacherFeedbackFormApi = createAsyncThunk('teacherFeedbackFormApi/form', async (data, { rejectWithValue }) => {
+    try {
+        const response = await axios.post(teacherFeedbackForm, data)
+        return response.data.message;
+    } catch (error) {
+        return rejectWithValue(error.response.data.message);
+    }
+})
+
+export const parentsFeedbackFormApi = createAsyncThunk('parentsFeedbackFormApi/form', async (data, { rejectWithValue }) => {
+    try {
+        const response = await axios.post(parentsFeedbackForm, data)
         return response.data.message;
     } catch (error) {
         return rejectWithValue(error.response.data.message);
@@ -110,6 +140,65 @@ const formSlice = createSlice({
                 }
             })
 
+            //Alumni feedback form
+            .addCase(alumniFeedbackFormApi.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(alumniFeedbackFormApi.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                state.message = action.payload;
+                if (state.status === 'succeeded') {
+                    alert(state.message)
+                }
+                state.status = 'idle';
+            })
+            .addCase(alumniFeedbackFormApi.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.payload;
+                if (state.status === 'failed') {
+                    alert(state.error)
+                }
+            })
+
+            //teacher feedback form
+            .addCase(teacherFeedbackFormApi.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(teacherFeedbackFormApi.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                state.message = action.payload;
+                if (state.status === 'succeeded') {
+                    alert(state.message)
+                }
+                state.status = 'idle';
+            })
+            .addCase(teacherFeedbackFormApi.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.payload;
+                if (state.status === 'failed') {
+                    alert(state.error)
+                }
+            })
+
+            //parents feedback form
+            .addCase(parentsFeedbackFormApi.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(parentsFeedbackFormApi.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                state.message = action.payload;
+                if (state.status === 'succeeded') {
+                    alert(state.message)
+                }
+                state.status = 'idle';
+            })
+            .addCase(parentsFeedbackFormApi.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.payload;
+                if (state.status === 'failed') {
+                    alert(state.error)
+                }
+            })
     }
 });
 

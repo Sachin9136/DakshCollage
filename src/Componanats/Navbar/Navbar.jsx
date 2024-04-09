@@ -25,6 +25,9 @@ const CustomNavbar = () => {
           <img src={logo} alt="" className="img-fluid rounded"  height={80} width={80}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
+      </Container>
+      <Container>
+        <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/" activeClassName="active" exact>

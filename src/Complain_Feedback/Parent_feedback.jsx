@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { alumniFeedbackFormApi } from "../Redux-toolkit/Slice/FormSlice";
+import { parentsFeedbackFormApi } from "../Redux-toolkit/Slice/FormSlice";
 
 const Alumni_Feedback_Form = () => {
   const dispatch = useDispatch();
   // const [image, setImage] = useState("");
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [year, setYear] = useState("");
+  const [wardName, setWardName] = useState("");
   const [programme, setProgramme] = useState("");
   const [batch, setBatch] = useState("");
   const [suggestion, setSuggestion] = useState("");
@@ -31,8 +30,8 @@ const Alumni_Feedback_Form = () => {
     // data.append("resaon",resaon)
     const data = {
       email: email,
-      name: name,
-      year: year,
+    //   name: name,
+      wardName: wardName,
       programme: programme,
       batch: batch,
       suggestion: suggestion,
@@ -49,10 +48,10 @@ const Alumni_Feedback_Form = () => {
       // image :image
     };
     console.log(data);
-    dispatch(alumniFeedbackFormApi(data))
-    setName("")
+    dispatch(parentsFeedbackFormApi(data))
+    // setName("")
     setEmail("")
-    setYear("")
+    setWardName("")
     setProgramme("")
     setBatch("")
     setSuggestion("")
@@ -98,31 +97,15 @@ const Alumni_Feedback_Form = () => {
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 mb-2">
               <p className="comment-form-subject">
-                <label htmlFor="Name">Name</label>
+                <label htmlFor="WardName">WardName</label>
                 <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Name"
+                  value={wardName}
+                  onChange={(e) => setWardName(e.target.value)}
+                  placeholder="Ward Name"
                   className="form-control"
-                  id="name"
-                  name="name"
+                  id="wardName"
+                  name="wardName"
                   type="text"
-                  defaultValue=""
-                  required=""
-                />
-              </p>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 mb-2">
-              <p className="comment-form-subject">
-                <label htmlFor="Year">Year</label>
-                <input
-                  value={year}
-                  onChange={(e) => setYear(e.target.value)}
-                  placeholder="Year"
-                  className="form-control"
-                  id="year"
-                  name="year"
-                  type="number"
                   defaultValue=""
                   required=""
                 />

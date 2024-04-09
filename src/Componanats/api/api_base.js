@@ -19,5 +19,8 @@ export const getSingleDepartment = `${base_url + '/api/v1/department/getsinglede
 export const createContact = `${base_url}/api/v1/contact/uploadcontact`;
 export const complainForm = `${base_url}/api/v1/complaint/uploadcomplaint`;
 export const studentFeedbackForm = `${base_url}/api/v1/studentFeedback/uploadstudentFeedback/`;
+export const alumniFeedbackForm = `${base_url}/api/v1/aluminFeedback/uploadalumniFeedback/`;
+export const teacherFeedbackForm = `${base_url}/api/v1/teacherFeedback/uploadteacherFeedback/`;
+export const parentsFeedbackForm = `${base_url}/api/v1/parentsFeedback/uploadparentsFeedback/`;
 
 // post

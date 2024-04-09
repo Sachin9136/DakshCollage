@@ -3,6 +3,7 @@ import Complain_form from "../Complain_Feedback/Complain_form";
 import StudentFeedbackForm from "../Complain_Feedback/StudentFeedbackForm";
 import Alumni_Feedback_Form from "../Complain_Feedback/Alumni_Feedback_Form";
 import Teacher_Feedback_Form from "../Complain_Feedback/Teacher_Feedback_Form";
+import Parent_Feedback_Form from "../Complain_Feedback/Parent_feedback";
 
 const Complain_Feedback = () => {
   return (
@@ -22,8 +23,7 @@ const Complain_Feedback = () => {
                       <button class="nav-link border my-1" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Student Feedback</button>
                       <button class="nav-link border my-1" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Alumni Feedback</button>
                       <button class="nav-link border my-1" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Teacher Feedback</button>
-                      <button class="nav-link border my-1" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Health Professional Feedback</button>
-                      <button class="nav-link border my-1" id="v-pills-settings-tab6" data-bs-toggle="pill" data-bs-target="#v-pills-settings6" type="button" role="tab" aria-controls="v-pills-settings6" aria-selected="false">Parents Feedback</button>
+                      <button class="nav-link border my-1" id="v-pills-settings-tab6" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Parents Feedback</button>
                     </div>
                   </div>
                   <div className="col-sm-12 col-md-9 col-lg-9 border rounded-3 p-3 pt-2 mt-1">
@@ -52,8 +52,9 @@ const Complain_Feedback = () => {
                         </div>
                         <Teacher_Feedback_Form />
                       </div>
-                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">5</div>
-                      <div class="tab-pane fade" id="v-pills-settings6" role="tabpanel" aria-labelledby="v-pills-settings-tab6" tabindex="0">6</div>
+                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <Parent_Feedback_Form />
+                      </div>
                     </div>
                   </div>
                 </div>
