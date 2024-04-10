@@ -30,7 +30,7 @@ const BlogApi = () => {
       {blogs.map((blog, index) => (
         <Link to={`/single_blog/${blog._id}`} key={index}>
           <div className="row justify-content-center">
-            <div className="row py-3 d-flex flex-row border rounded-3 my-2">
+            <div className="row py-3 d-flex align-items-center flex-row border rounded-3 my-2">
               <div className="col-sm-12 col-md-12 col-lg-5">
                 <div className="pattern-bg">
                   <figure className="post-img">
@@ -40,6 +40,14 @@ const BlogApi = () => {
               </div>
               <div className="col-sm-12 col-md-12 col-lg-7 px-3">
                 <div className="post-data">
+                  <h2 className="m-0">{blog.title}</h2>
+                  <p className="p-0 mb-2">{blog.content.split(' ').slice(0, 15).join(' ')}...
+                    <span>
+                      <Link to={`/single_blog/${blog._id}`} className="text-primary">
+                        Read More
+                      </Link>
+                  </span>
+                  </p> {/* Show only first 20 words */}
                   <ul className="post-meta">
                     <li className="posted-date">
                       <a href="#">
@@ -47,21 +55,7 @@ const BlogApi = () => {
                         February 26, 2018
                       </a>
                     </li>
-                    <li className="post-cat">
-                      <a href="#">{blog.title}</a>
-                    </li>
                   </ul>
-                  <h2>
-                    <a href="blog-detail.html">{blog.title}</a>
-                  </h2>
-                  <p>{blog.content.split(' ').slice(0, 15).join(' ')}...
-                    <span>
-                      <Link to={`/single_blog/${blog._id}`} className="text-primary">
-                        Read More
-                      </Link>
-                  </span>
-                  </p> {/* Show only first 20 words */}
-                  
                 </div>
               </div>
             </div>

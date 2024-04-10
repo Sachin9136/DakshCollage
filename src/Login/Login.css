@@ -31,7 +31,7 @@
     background: transparent;
 }
 
-input {
+input .feild{
     width: 80% !important;
     height: 50px !important;
     padding: 0px;
@@ -46,11 +46,11 @@ input {
 .form-bg-color{
     background-color: #2F3458;
 }
-
+/* 
 .comment-form-subject{
     display: flex;
     justify-content: center;
-}
+} */
 
 @media (max-width: 426px) {
     .form-bg-color{

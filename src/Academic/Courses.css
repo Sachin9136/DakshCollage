@@ -1,0 +1,10 @@
+.course-thumb{
+    width: 100%;
+    height: auto;
+}
+
+.course-thumb img{
+    width: fit-content;
+    width: 100%;
+    height: 200px;
+}

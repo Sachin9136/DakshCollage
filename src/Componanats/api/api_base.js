@@ -24,6 +24,9 @@ export const teacherFeedbackForm = `${base_url}/api/v1/teacherFeedback/uploadtea
 export const parentsFeedbackForm = `${base_url}/api/v1/parentsFeedback/uploadparentsFeedback/`;
 export const signup = `${base_url}/api/v1/addmission/uploadaddmission`;
 export const login = `${base_url}/api/v1/addmission/studentlogin`;
+export const getAllCourses = `${base_url}/api/v1/course/getallcourses`;
+export const getSingleCourses = `${base_url}/api/v1/course/getsinglecourse`;
+
 
 
 // post

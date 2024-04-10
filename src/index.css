@@ -1460,7 +1460,7 @@ a.butn-light,
 .pop-row {
 	position: relative;
 	background: #fff;
-	padding: 61px 76px 17px;
+	/* padding: 61px 76px 17px; */
 	overflow: hidden;
 	z-index: 1;
 }
@@ -4282,7 +4282,7 @@ a.stu-youtube {
 	margin-bottom: 40px;
 }
 .gallery-meta img {
-	width: 100%;
+	/* width: 100%; */
 }
 .gallery2 .gallery-meta {
 	margin-bottom: 0px;

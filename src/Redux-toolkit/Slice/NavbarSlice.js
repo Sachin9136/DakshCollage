@@ -12,6 +12,8 @@ import {
   getSingleMedicalFacility,
   getDepartments,
   getSingleDepartment,
+  getAllCourses,
+
 } from "../../Componanats/api/api_base";
 
 // const headers = {
@@ -190,6 +192,22 @@ export const getsingleMedicalfacilityapi = createAsyncThunk(
         }
         }
     );
+    
+           // get Courses
+           export const getAllCoursesApi = createAsyncThunk(
+            "getAllCoursesApi/navbar",
+            async (id) => {
+            try {
+                const response = await axios.get(
+                `${getAllCourses}`   
+                // , { headers }
+                );
+                return response.data;
+            } catch (error) {
+                throw new Error(error.message);
+            }
+            } 
+        );
 
 
 const navbarSlice = createSlice({
@@ -206,6 +224,7 @@ const navbarSlice = createSlice({
     SingleMedicalFacility: {},
     Departments: [],
     SingleDepartments: {},
+    Courses: [],
     
     status: "idle",
     error: null,
@@ -355,6 +374,19 @@ const navbarSlice = createSlice({
         state.status = "failed";
         state.error = action.payload;
         })
+
+         // Courses
+      .addCase(getAllCoursesApi.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(getAllCoursesApi.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.Courses = action.payload;
+      })
+      .addCase(getAllCoursesApi.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
+      })
 
   },
 });

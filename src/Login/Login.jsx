@@ -75,7 +75,7 @@ const Login = () => {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         placeholder="Type Your Email or Phone"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="email"
                                         name="email"
                                         type="email"
@@ -92,7 +92,7 @@ const Login = () => {
                                         value={phone}
                                         onChange={(e) => setPhone(e.target.value)}
                                         placeholder="phone"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="phone"
                                         name="phone"
                                         type="text"
@@ -109,7 +109,7 @@ const Login = () => {
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                         placeholder="Type Your Password"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="password"
                                         name="password"
                                         type="text"

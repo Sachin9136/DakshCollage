@@ -13,7 +13,8 @@ import About from "../src/About/About";
 import Academic from "./Academic/Academic";
 // import Admission_Process from "./Academic/Admission_Process";
 // import Calenders from "./Academic/Calenders";
-// import Courses from "./Academic/Courses";
+import Courses from "./Academic/Courses";
+import Single_Courses from "./Single_Courses/Single_Courses";
 import Photo_Gallery from "../src/Gallery/Photo_Gallery";
 import Press_Release from "../src/Gallery/Press_Release";
 import Videos_Gallery from "../src/Gallery/Videos_Gallery";
@@ -78,6 +79,8 @@ function App() {
           <Route path="/academic/:id" element={<Academic />} />
           {/* <Route path="/admission_process" element={<Admission_Process />} />
           <Route path="/calenders" element={<Calenders />} /> */}
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/single_courses/:id" element={<Single_Courses />} />
 
           <Route path="/photo_gallery" element={<Photo_Gallery />} />
           <Route path="/videos_gallery" element={<Videos_Gallery />} />

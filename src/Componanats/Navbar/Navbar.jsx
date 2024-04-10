@@ -34,11 +34,11 @@ const CustomNavbar = () => {
               </div>
             </Link>
           </div>
-          <div className="buttons-nav col-sm-12 col-md-12 col-lg-6">
+          <div className="buttons-nav col-sm-12 col-md-12 col-lg-6 mb-2">
               <Link to="/photo_gallery">
-              <button type="button" class="btn btn-primary mx-2">Gallery</button>
+              <button type="button" class="btn btn-success mx-2">Gallery</button>
               </Link>
-              <button type="button" class="btn btn-primary mx-2">Addmission Portal</button>
+              <button type="button" class="btn btn-success mx-2">Addmission Portal</button>
               <div className="d-flex">
                 <Link to="/login">
                 <Button variant="outline-success btn-sm mx-1">Login</Button>
@@ -50,12 +50,12 @@ const CustomNavbar = () => {
           </div>
         </div>
       </div>
-      <Navbar className="d-block" bg="white" expand="lg">
-        <Container className="container-fluid p-0 m-0 d-flex justify-content-center">
+      <Navbar className="d-block" bg="warning" expand="lg">
+        <Container className="container-fluid p-0 m-0">
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
           <Navbar.Collapse id="navbarSupportedContent">
-            <Nav className="me-auto d-flex justify-content-center">
-              <Nav.Link as={Link} to="/" activeClassName="active" exact>
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/" className="text-dark" activeClassName="active" exact>
                 Home
               </Nav.Link>
               <NavDropdown title="About" id="basic-nav-dropdown">
@@ -67,6 +67,9 @@ const CustomNavbar = () => {
                   ))}
               </NavDropdown>
               <NavDropdown title="Academic" id="basic-nav-dropdown">
+                <Link to="/courses" className="p-3 py-0">
+                    Courses
+                </Link>
                 {academics.data &&
                   academics.data.map((academicdata, index) => (
                     <NavDropdown.Item key={index} as={Link} to={`/academic/${academicdata._id}`}>

@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import Logo from "../../../img/Logo-Daksh-School-1.png";
 
 const Footer = () => {
   return (
@@ -18,84 +20,7 @@ const Footer = () => {
                 </div>
                 {/* link bar */}
                 <div className="quick-link">
-                <div
-                    className="bg-image"
-                    style={{ backgroundImage: "url(assets/images/footer-bg.jpg)" }}
-                />
-                <div className="container">
-                    <div className="quick-link-meta greyish extlow-opacity">
-                    <div
-                        className="bg-image"
-                        style={{ backgroundImage: "url(assets/images/pattern2.jpg)" }}
-                    />
-                    <div className="row">
-                        <div className="col-sm-6 col-md-3">
-                        <ul>
-                            <li>
-                            <a href="#">Graphic design</a>
-                            </li>
-                            <li>
-                            <a href="#">Designer jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Frontend Developer jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Developer jobs</a>
-                            </li>
-                        </ul>
-                        </div>
-                        <div className="col-sm-6 col-md-3">
-                        <ul>
-                            <li>
-                            <a href="#">Resources jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Marketing online jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Mobile Developer jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">App Developer jobs</a>
-                            </li>
-                        </ul>
-                        </div>
-                        <div className="col-sm-6 col-md-3">
-                        <ul>
-                            <li>
-                            <a href="#">Product Manager jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Sales jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Logo Design jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Seo jobs</a>
-                            </li>
-                        </ul>
-                        </div>
-                        <div className="col-sm-6 col-md-3">
-                        <ul>
-                            <li>
-                            <a href="#">Articles jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Android jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Logo Design jobs</a>
-                            </li>
-                            <li>
-                            <a href="#">Seo jobs</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+                
                 </div>
                 {/* quick link */}
                 <div className="block main-footer">
@@ -105,9 +30,15 @@ const Footer = () => {
                         <div className="col-sm-6 col-lg-3 col-xl-3">
                         <div className="widget">
                             <div className="about-logo">
-                            <a href="#">
-                                <img src="assets/images/logo2.png" alt="" />
-                            </a>
+                            <Link to="/" className="logo-div">
+                                <div>
+                                    <img src={Logo} alt="" className="img-fluid rounded"  height={80} width={80}/>
+                                </div>
+                                <div>
+                                    <h5 className="m-0 logo-heading">Daksh B.Sc Nursing College / Hospital </h5>
+                                    <h6 className="text-dark m-0 logo-content">Mahatma Budh Educational And Research Center</h6>
+                                </div>
+                            </Link>
                             <p>
                                 Pellentesque ultrices orci id justo vehicula, non aliquam
                                 erat lacinia. Mauris rhoncus venenatis tempor.
@@ -188,25 +119,46 @@ const Footer = () => {
                         <div className="col-sm-6 col-lg-3 col-xl-3">
                         <div className="widget">
                             <div className="widget-title">
-                            <h4>Gallery Images</h4>
+                            <h4>Quick Links</h4>
                             </div>
-                            <div className="gallery-car2 owl-carousel owl-theme">
-                            <div className="item">
+                            <ul className="recent-posts">
+                            <li>
                                 <a href="#">
-                                <img src="assets/images/gallery1.jpg" alt="" />
+                                    <i className="fa fa-clock" />
+                                    Home
                                 </a>
-                            </div>
-                            <div className="item">
+                            </li>
+                            <li>
                                 <a href="#">
-                                <img src="assets/images/gallery2.jpg" alt="" />
+                                    <i className="fa fa-clock" />
+                                    About
                                 </a>
-                            </div>
-                            <div className="item">
+                            </li>
+                            <li>
                                 <a href="#">
-                                <img src="assets/images/gallery3.jpg" alt="" />
+                                    <i className="fa fa-clock" />
+                                    Facilities
                                 </a>
-                            </div>
-                            </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-clock" />
+                                    Complain / Feedback
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-clock" />
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-clock" />
+                                    Contact
+                                </a>
+                            </li>
+                            </ul>
                         </div>
                         </div>
                         <div className="col-sm-6 col-lg-3 col-xl-3">

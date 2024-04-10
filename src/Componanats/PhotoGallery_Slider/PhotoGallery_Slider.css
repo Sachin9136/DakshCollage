@@ -1,0 +1,8 @@
+.Slider_img img{
+    width: 100%;
+    height:fit-content;
+}
+
+.slick-next{
+    display: none !important;
+}

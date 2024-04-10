@@ -22,9 +22,9 @@ const Photo_GalleryApi = () => {
     <>
         {images.map((image, index) => (
           <div key={index} className="col-sm-12 col-md-4 col-lg-4">
-            <div class="gallery-meta">
-              <img className="rounded-3 p-2" src={image.GelleryImage} alt="" width="100%"/>
-              <h3 className="text-center">{image.title}</h3>
+            <div class="gallery-meta rounded">
+              <img className=" p-2" src={image.GelleryImage} alt="" width="100%"/>
+              <h5 className="text-center">{image.title}</h5>
               <a data-fancybox="gallery" href="assets/images/gallery-image-1.jpg" class="icn"><i class="fa fa-search"></i></a>
             </div>
           </div>

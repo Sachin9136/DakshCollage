@@ -1,0 +1,8 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #198754 !important;
+    color: White !important;
+}
+
+.nav-link-form-button{
+    color: #198754 !important;
+}

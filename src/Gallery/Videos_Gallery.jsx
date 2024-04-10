@@ -11,7 +11,7 @@ const Videos_Gallery = () => {
                 </div>
             </section>
             {/* Banner */}
-            <section>
+            <section> 
                 <div className="block inner-pages">
                 <div className="container">
                     <div className="row">

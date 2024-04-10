@@ -59,14 +59,6 @@ const About = () => {
                                 </div>
                                 <h2 dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.title :"not found" }}></h2>
                                 <p dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.description :"not found" }}></p>
-                                {/* <a href="#">
-                                  <i className="fa fa-download" />
-                                  <span>95</span>
-                                </a>
-                                <a href="#">
-                                  <i className="fa fa-comments" />
-                                  <span>2</span>
-                                </a> */}
                               </div>
                             </div>
                           </li>

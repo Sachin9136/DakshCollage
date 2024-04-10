@@ -83,7 +83,7 @@ const Signup = () => {
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         placeholder="Type Your Name"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="name"
                                         name="name"
                                         type="text"
@@ -100,7 +100,7 @@ const Signup = () => {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         placeholder="Type Your Email"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="email"
                                         name="email"
                                         type="email"
@@ -117,7 +117,7 @@ const Signup = () => {
                                         value={phone}
                                         onChange={(e) => setPhone(e.target.value)}
                                         placeholder="phone"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="phone"
                                         name="phone"
                                         type="text"
@@ -134,7 +134,7 @@ const Signup = () => {
                                         value={dob}
                                         onChange={(e) => setDob(e.target.value)}
                                         placeholder="Date of Birth"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="phone"
                                         name="phone"
                                         type="text"
@@ -151,7 +151,7 @@ const Signup = () => {
                                         value={stander}
                                         onChange={(e) => setStander(e.target.value)}
                                         placeholder="Stander"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="stander"
                                         name="stander"
                                         type="text"
@@ -168,7 +168,7 @@ const Signup = () => {
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                         placeholder="Set Password"
-                                        className="form-control"
+                                        className="form-control feild"
                                         id="password"
                                         name="password"
                                         type="text"
