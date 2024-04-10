@@ -22,5 +22,8 @@ export const studentFeedbackForm = `${base_url}/api/v1/studentFeedback/uploadstu
 export const alumniFeedbackForm = `${base_url}/api/v1/aluminFeedback/uploadalumniFeedback/`;
 export const teacherFeedbackForm = `${base_url}/api/v1/teacherFeedback/uploadteacherFeedback/`;
 export const parentsFeedbackForm = `${base_url}/api/v1/parentsFeedback/uploadparentsFeedback/`;
+export const signup = `${base_url}/api/v1/addmission/uploadaddmission`;
+export const login = `${base_url}/api/v1/addmission/studentlogin`;
+
 
 // post

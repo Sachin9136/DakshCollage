@@ -54,6 +54,9 @@ import Department from "../src/Departments/Department";
 
 import ComplainAndFeedback from "../src/Complain_Feedback/Complain_Feedback";
 
+import Signup from "../src/Signup/Signup";
+import Login from "../src/Login/Login";
+
 
 
 
@@ -119,6 +122,8 @@ function App() {
           <Route path="/community_health_nursing" element={<Community_Health_Nursing />} /> */}
 
           <Route path="/complain_feedback" element={<ComplainAndFeedback />} /> 
+          <Route path="/signup" element={<Signup />} /> 
+          <Route path="/login" element={<Login />} /> 
         </Routes>
       <Footer />
     </div>

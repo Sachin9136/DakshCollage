@@ -1,0 +1,71 @@
+
+    .signup-form-bg {
+        background-image: url("../img/form-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width: 100%; */
+        height: 100%;
+        border-radius: 5px 0 0 10px;
+        /* padding: 100px 0; */
+    }
+
+    .signup-btn {
+        color: rgba(47, 52, 88, 1);
+        font-size: 20px;
+        font-weight: 500;
+        background-color: rgba(213, 226, 232, 1);
+        border: 1px solid rgba(213, 226, 232, 1);
+        border-radius: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
+    .sign-in-btn {
+        color: rgba(47, 52, 88, 1);
+        border: 2px solid rgba(47, 52, 88, 1);
+        border-radius: 30px;
+        padding: 8px 80px;
+        font-size: 25px;
+        font-weight: 700;
+        background: transparent;
+    }
+
+    input {
+        width: 80% !important;
+        height: 50px !important;
+        padding: 0px;
+        margin: 0px;
+        border: 2px solid rgba(137, 137, 137, 1);
+        background: transparent;
+        margin: 10px 5px;
+        border-radius: 15px !important;
+        color: white;
+    }
+
+    .form-bg-color{
+        background-color: #2F3458;
+    }
+
+    .comment-form-subject{
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 426px) {
+        .form-bg-color{
+            background-color: transparent;
+        }
+
+        input {
+            width: 100% !important;
+            height: 50px !important;
+            padding: 0px;
+            margin: 0px;
+            border: 2px solid rgba(137, 137, 137, 1);
+            background: transparent;
+            margin: 10px 5px;
+            border-radius: 15px !important;
+            color: white;
+        }
+    }

@@ -3,7 +3,7 @@ import React from 'react'
 const Index = () => {
   return (
     <div>
-      <main role="main">
+      <main role="main"> 
   <section>
     <div className="main-slider">
       <div
@@ -1071,7 +1071,7 @@ const Index = () => {
     </div>
   </section>
   {/* popular courses */}
-  <section>
+  {/* <section>
     <div className="block no-bottom">
       <div className="container">
         <div className="testimonial-car owl-carousel owl-theme">
@@ -1130,7 +1130,7 @@ const Index = () => {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   {/* testimonial */}
   <section>
     <div className="block no-bottom">

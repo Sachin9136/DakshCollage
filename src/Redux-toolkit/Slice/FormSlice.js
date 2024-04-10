@@ -6,6 +6,8 @@ import {studentFeedbackForm} from "../../Componanats/api/api_base";
 import {alumniFeedbackForm} from "../../Componanats/api/api_base";
 import {teacherFeedbackForm} from "../../Componanats/api/api_base";
 import {parentsFeedbackForm} from "../../Componanats/api/api_base";
+import {signup} from "../../Componanats/api/api_base";
+import {login} from "../../Componanats/api/api_base";
 export const token = sessionStorage.getItem("accessToken");
 
 // const headers = {
@@ -60,6 +62,24 @@ export const teacherFeedbackFormApi = createAsyncThunk('teacherFeedbackFormApi/f
 export const parentsFeedbackFormApi = createAsyncThunk('parentsFeedbackFormApi/form', async (data, { rejectWithValue }) => {
     try {
         const response = await axios.post(parentsFeedbackForm, data)
+        return response.data.message;
+    } catch (error) {
+        return rejectWithValue(error.response.data.message);
+    }
+})
+
+export const signupApi = createAsyncThunk('signupApi/form', async (data, { rejectWithValue }) => {
+    try {
+        const response = await axios.post(signup, data)
+        return response.data.message;
+    } catch (error) {
+        return rejectWithValue(error.response.data.message);
+    }
+})
+
+export const loginApi = createAsyncThunk('loginApi/form', async (data, { rejectWithValue }) => {
+    try {
+        const response = await axios.post(login, data)
         return response.data.message;
     } catch (error) {
         return rejectWithValue(error.response.data.message);
@@ -193,6 +213,47 @@ const formSlice = createSlice({
                 state.status = 'idle';
             })
             .addCase(parentsFeedbackFormApi.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.payload;
+                if (state.status === 'failed') {
+                    alert(state.error)
+                }
+            })
+
+            // Sign up form
+            .addCase(signupApi.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(signupApi.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                state.message = action.payload;
+                if (state.status === 'succeeded') {
+                    alert(state.message)
+                }
+                state.status = 'idle';
+            })
+            .addCase(signupApi.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.payload;
+                if (state.status === 'failed') {
+                    alert(state.error)
+                }
+            })
+
+            
+            // login form
+            .addCase(loginApi.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(loginApi.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                state.message = action.payload;
+                if (state.status === 'succeeded') {
+                    alert(state.message)
+                }
+                state.status = 'idle';
+            })
+            .addCase(loginApi.rejected, (state, action) => {
                 state.status = 'failed';
                 state.error = action.payload;
                 if (state.status === 'failed') {

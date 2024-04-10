@@ -1,7 +1,50 @@
+.nav-link{
+  font-size: 16px;
+}
 
 @media only screen and (max-width: 1025px) {
-
     .main-navbar{
       display: none;
     }
+
+    .nav-link{
+      font-size: 14px;
+    }
+  }
+
+  .buttons-nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .logo-heading, .logo-content{
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .buttons-nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-div{
+      justify-content: center;
+    }
+    
+  }
+
+  @media only screen and (max-width: 426px) {
+  
+    .logo-heading, .logo-content{
+      font-size: 14px;
+    }  
+    
   }
