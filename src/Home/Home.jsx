@@ -7,6 +7,7 @@ import PhotoGallery_Slider from "../Componanats/PhotoGallery_Slider/PhotoGallery
 import Step1 from "../img/step1.png";
 import Step2 from "../img/step2.png";
 import Step3 from "../img/step3.png";
+import {Link} from "react-router-dom"
 
 
 const Home = () => {
@@ -345,7 +346,7 @@ const Home = () => {
                       <div className="step">
                         <i>1</i>
                         <h3>
-                          <a href="#">Sign up For Free</a>
+                          <Link to="/courses">Sign up For Free</Link>
                         </h3>
                         <span>Consulting Service</span>
                         <p>
@@ -418,9 +419,9 @@ const Home = () => {
                         Donec id tincidunt libero, eget dapibus quam. Aenean felis ex,
                         blandit pretium pharetra eu.
                       </p>
-                      <a href="#" className="butn with-bg get-login-register border rounded-5">
+                      <Link to="/courses" className="butn with-bg get-login-register border rounded-5">
                         Sign Up Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-md-12 col-lg-6">

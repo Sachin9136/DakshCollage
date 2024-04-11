@@ -41,7 +41,7 @@ const BlogApi = () => {
               <div className="col-sm-12 col-md-12 col-lg-7 px-3">
                 <div className="post-data">
                   <h2 className="m-0">{blog.title}</h2>
-                  <p className="p-0 mb-2">{blog.content.split(' ').slice(0, 15).join(' ')}...
+                  <p className="p-0 mb-2">{   <div dangerouslySetInnerHTML={{ __html: blog.content.split(' ').slice(0, 15).join(' ') }}></div>}...
                     <span>
                       <Link to={`/single_blog/${blog._id}`} className="text-primary">
                         Read More

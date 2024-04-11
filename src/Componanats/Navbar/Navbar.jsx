@@ -38,7 +38,10 @@ const CustomNavbar = () => {
               <Link to="/photo_gallery">
               <button type="button" class="btn btn-success mx-2">Gallery</button>
               </Link>
+              <Link to="/addmisssion_portal">
               <button type="button" class="btn btn-success mx-2">Addmission Portal</button>
+              </Link>
+              
               <div className="d-flex">
                 <Link to="/login">
                 <Button variant="outline-success btn-sm mx-1">Login</Button>

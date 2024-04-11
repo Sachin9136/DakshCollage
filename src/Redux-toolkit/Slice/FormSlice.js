@@ -80,6 +80,7 @@ export const signupApi = createAsyncThunk('signupApi/form', async (data, { rejec
 export const loginApi = createAsyncThunk('loginApi/form', async (data, { rejectWithValue }) => {
     try {
         const response = await axios.post(login, data)
+        localStorage.setItem("accessToken", response.data.data.accessToken)
         return response.data.message;
     } catch (error) {
         return rejectWithValue(error.response.data.message);

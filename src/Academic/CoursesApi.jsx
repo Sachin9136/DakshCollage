@@ -51,7 +51,7 @@ const CoursesApi = () => {
                                 />
                                 <span>{course.courseName}</span>
                               </div>
-                              <h2>{course.description}</h2>
+                              <h2><div dangerouslySetInnerHTML={{ __html: course.description }}></div></h2>
                             </div>
                           </div>
                         </Link>

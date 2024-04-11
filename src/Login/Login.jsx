@@ -10,7 +10,7 @@ const Login = () => {
     const dispatch = useDispatch();
     // const [image, setImage] = useState("");
     const [password, setPassword] = useState("");
-    const [email, setEmail] = useState("");
+    const [email, setEmail] = useState(""); 
     const [phone, setPhone] = useState("");
     const handlesubmit = (e) => {
         e.preventDefault()
@@ -31,6 +31,8 @@ const Login = () => {
         setEmail("")
         setPhone("")
     }
+
+    console.log(localStorage.getItem("accessToken"))
 
   return (
     <div>
@@ -68,7 +70,7 @@ const Login = () => {
                                     <div className="row">
                                     
                                     <div className="col-sm-12">
-                                    <p className="comment-form-subject">
+                                    <p className="omment-form-subject d-flex justify-content-center d-flex justify-content-center">
                                         <label htmlFor="subject">
                                         </label>
                                         <input 
@@ -85,7 +87,7 @@ const Login = () => {
                                     </p>
                                     </div>
                                     <div className="col-sm-12">
-                                    <p className="comment-form-subject">
+                                    <p className="omment-form-subject d-flex justify-content-center">
                                         <label htmlFor="subject">
                                         </label>
                                         <input
@@ -102,7 +104,7 @@ const Login = () => {
                                     </p>
                                     </div>
                                     <div className="col-sm-12">
-                                    <p className="comment-form-subject">
+                                    <p className="omment-form-subject d-flex justify-content-center">
                                         <label htmlFor="password">
                                         </label>
                                         <input 
