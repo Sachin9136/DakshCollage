@@ -34,26 +34,29 @@ const BlogApi = () => {
               <div className="col-sm-12 col-md-12 col-lg-5">
                 <div className="pattern-bg">
                   <figure className="post-img">
-                    <img src={blog.thumbnail} alt="" className="img-fit rounded-3" />
+                    <img src={blog.thumbnail} alt="" className=" rounded-3"/>
                   </figure>
                 </div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-7 px-3">
                 <div className="post-data">
                   <h2 className="m-0">{blog.title}</h2>
-                  <p className="p-0 mb-2">{   <div dangerouslySetInnerHTML={{ __html: blog.content.split(' ').slice(0, 15).join(' ') }}></div>}...
-                    <span>
-                      <Link to={`/single_blog/${blog._id}`} className="text-primary">
-                        Read More
-                      </Link>
-                  </span>
-                  </p> {/* Show only first 20 words */}
-                  <ul className="post-meta">
+                  {<p dangerouslySetInnerHTML={{ __html: blog.content.split(' ').slice(0, 15).join(' ') }}>
+                    </p>}
+                   {/* Show only first 20 words */}
+                  <ul className="post-meta d-flex justify-content-between">
                     <li className="posted-date">
                       <a href="#">
                         <i className="fa fa-calendar-alt" />
                         February 26, 2018
                       </a>
+                    </li>
+                    <li>
+                      <span>
+                        <Link to={`/single_blog/${blog._id}`} className="text-primary">
+                          Read More
+                        </Link>
+                      </span>
                     </li>
                   </ul>
                 </div>

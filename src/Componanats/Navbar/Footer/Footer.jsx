@@ -29,14 +29,10 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-sm-6 col-lg-3 col-xl-3">
                         <div className="widget">
-                            <div className="about-logo">
-                            <Link to="/" className="logo-div">
-                                <div>
+                            <div>
+                            <Link to="/" className="logo-div ">
+                                <div className='about-logo d-flex justify-content-center'>
                                     <img src={Logo} alt="" className="img-fluid rounded"  height={80} width={80}/>
-                                </div>
-                                <div>
-                                    <h5 className="m-0 logo-heading">Daksh B.Sc Nursing College / Hospital </h5>
-                                    <h6 className="text-dark m-0 logo-content">Mahatma Budh Educational And Research Center</h6>
                                 </div>
                             </Link>
                             <p>

@@ -1,7 +1,9 @@
 .post-img img{
     width: 100%;
+    height: 300px;
     display: flex;
     justify-content: center;
+    object-fit: cover;
 }
 
 .blog-bg{

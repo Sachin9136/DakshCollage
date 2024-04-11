@@ -46,7 +46,7 @@ const About = () => {
                               )}
                             </figure>
                           </div>
-                          <div className="col-sm-12 col-md-5 col-lg-8">
+                          <div className="col-sm-12 col-md-7 col-lg-8">
                             <h1 dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.title :"not found" }}></h1>
                             <p dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.description :"not found" }}></p>
                           </div>

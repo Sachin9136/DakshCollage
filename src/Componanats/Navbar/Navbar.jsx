@@ -28,9 +28,9 @@ const CustomNavbar = () => {
               <div>
                 <img src={logo} alt="" className="img-fluid rounded"  height={80} width={80}/>
               </div>
-              <div>
-                  <h5 className="m-0 logo-heading">Daksh B.Sc Nursing College / Hospital </h5>
-                  <h6 className="text-dark m-0 logo-content">Mahatma Budh Educational And Research Center</h6>
+              <div className="px-1">
+                  <h5 className="m-0 logo-heading pb-1">Daksh B.Sc Nursing College & Hospital </h5>
+                  <h6 className="text-dark m-0 logo-content">Daksh School Of Nursing & Hospital</h6>
               </div>
             </Link>
           </div>
@@ -54,7 +54,7 @@ const CustomNavbar = () => {
         </div>
       </div>
       <Navbar className="d-block" bg="warning" expand="lg">
-        <Container className="container-fluid p-0 m-0">
+        <Container className="p-0 m-0 d-flex justify-content-end px-1">
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
           <Navbar.Collapse id="navbarSupportedContent">
             <Nav className="me-auto">
@@ -80,6 +80,28 @@ const CustomNavbar = () => {
                     </NavDropdown.Item>
                   ))}
               </NavDropdown>
+              <NavDropdown title="Gallery" id="basic-nav-dropdown">
+                <NavDropdown.Item  as={Link} to={`/photo_gallery`}>
+                  {"Photo Gallery"}
+                </NavDropdown.Item>
+                <NavDropdown.Item  as={Link} to={`/videos_gallery`}>
+                  {"Video Gallery"}
+                </NavDropdown.Item>
+                <NavDropdown.Item  as={Link} to={`/press_release`}>
+                  {"press Release"}
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link as={Link} to="/blog" activeClassName="" exact>
+                Blog
+              </Nav.Link>
+              <NavDropdown title="Contact" id="basic-nav-dropdown">
+                <NavDropdown.Item  as={Link} to={`/contact`}>
+                  {"Contact Us"}
+                </NavDropdown.Item>
+                <NavDropdown.Item  as={Link} to={`/contact`}>
+                  {"Quick Payment"}
+                </NavDropdown.Item>
+              </NavDropdown>
               <NavDropdown title="Facilities" id="basic-nav-dropdown">
                 {Facilities.data &&
                   Facilities.data.map((Facilitiesdata, index) => (
@@ -103,29 +125,6 @@ const CustomNavbar = () => {
                       {departments.title}
                     </NavDropdown.Item>
                   ))}
-              </NavDropdown>
-              <NavDropdown title="Gallery" id="basic-nav-dropdown">
-                <NavDropdown.Item  as={Link} to={`/photo_gallery`}>
-                  {"Photo Gallery"}
-                </NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to={`/videos_gallery`}>
-                  {"Video Gallery"}
-                </NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to={`/press_release`}>
-                  {"press Release"}
-                </NavDropdown.Item>
-              </NavDropdown>
-
-              <Nav.Link as={Link} to="/blog" activeClassName="" exact>
-                Blog
-              </Nav.Link>
-              <NavDropdown title="Contact" id="basic-nav-dropdown">
-                <NavDropdown.Item  as={Link} to={`/contact`}>
-                  {"Contact Us"}
-                </NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to={`/contact`}>
-                  {"Quick Payment"}
-                </NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link as={Link} to="/complain_feedback" activeClassName="" exact>

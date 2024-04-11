@@ -7,7 +7,12 @@ import PhotoGallery_Slider from "../Componanats/PhotoGallery_Slider/PhotoGallery
 import Step1 from "../img/step1.png";
 import Step2 from "../img/step2.png";
 import Step3 from "../img/step3.png";
-import {Link} from "react-router-dom"
+import topper1 from "../img/topper1.jpg";
+import topper2 from "../img/topper2.jpg";
+import topper3 from "../img/topper3.jpg";
+import topper4 from "../img/topper4.jpg";
+import {Link} from "react-router-dom";
+
 
 
 const Home = () => {
@@ -493,7 +498,7 @@ const Home = () => {
                     <div className="row align-items-center">
                       <div className="col-sm-12 col-md-6 col-lg-6">
                         <figure className="grow-img d-flex justify-content-center">
-                          <img src={helping_img} alt="" />
+                          <img className='rounded' src={helping_img} alt="" />
                         </figure>
                       </div>
                       <div className="col-sm-12 col-md-6 col-lg-6">
@@ -669,7 +674,7 @@ const Home = () => {
           {/* gallery */}
           <section>
             <div className="block no-bottom">
-              <div className="container">
+              <div className="container pt-5">
                 <div className="heading">
                   <h2>Meet Topers</h2>
                   <p>University is the largest fundraising campaign</p>
@@ -681,7 +686,7 @@ const Home = () => {
                         <div className="col-6 col-md-4 col-lg-3">
                           <div className="students">
                             <figure>
-                              <img src="assets/images/student1.jpg" alt="" />
+                              <img src={topper3} alt="" />
                             </figure>
                             <h2>
                               <a href="#">Peter Spenser</a>
@@ -714,7 +719,7 @@ const Home = () => {
                         <div className="col-6 col-md-4 col-lg-3">
                           <div className="students">
                             <figure>
-                              <img src="assets/images/student2.jpg" alt="" />
+                              <img src={topper2} alt="" />
                             </figure>
                             <h2>
                               <a href="#">Louse James</a>
@@ -747,7 +752,7 @@ const Home = () => {
                         <div className="col-6 col-md-4 col-lg-3">
                           <div className="students">
                             <figure>
-                              <img src="assets/images/student3.jpg" alt="" />
+                              <img src={topper1} alt="" />
                             </figure>
                             <h2>
                               <a href="#">Rackki Kam</a>
@@ -780,7 +785,7 @@ const Home = () => {
                         <div className="col-6 col-md-4 col-lg-3">
                           <div className="students">
                             <figure>
-                              <img src="assets/images/student4.jpg" alt="" />
+                              <img src={topper4} alt="" />
                             </figure>
                             <h2>
                               <a href="#">Willim Smith</a>
@@ -814,11 +819,11 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="read-all no-top">
+                {/* <div className="read-all no-top">
                   <a href="#" className="butn1 butn-bg">
                     View All Students
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>

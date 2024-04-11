@@ -31,39 +31,21 @@ const About = () => {
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
                 <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.title :"not found" }}></div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-12 p-0 m-0 py-5">
+              <div className="col-sm-12 col-md-12 col-lg-10 p-0 m-0 py-5">
                 <section>
-                  <div className="block no-bottom">
-                    <div className="container">
-                      <div className="success-story">
-                        <div className="row align-items-center ">
-                          <li className="col-sm-12 col-lg-4 trending certified border rounded-3">
-                            <div className="pop-course">
-                              <div className="course-thumb">
-                              <figure className="d-flex justify-content-center">
-                                {singleacademics.data && singleacademics.data.Image ? (
-                                  <img src={singleacademics.data.Image} alt="" width="100%" />
-                                ) : (
-                                  <p>No image found</p>
-                                )}
-                              </figure>
-                                <span>$24.99</span>
-                                <a href="course-detail.html" className="butn">
-                                  Start Now
-                                </a>
-                              </div>
-                              <div className="course-meta">
-                                <div className="course-author">
-                                  <img src="assets/images/author.png" alt="" />
-                                  <span>Sarah Johnson</span>
-                                </div>
-                                <h2 dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.title :"not found" }}></h2>
-                                <p dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.description :"not found" }}></p>
-                              </div>
-                            </div>
-                          </li>
-                        </div>
-                      </div>
+                  <div className="pop-course">
+                  <div className="course-meta">
+                      {/* <h2 dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.title :"not found" }}></h2> */}
+                      <p dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.description :"not found" }}></p>
+                    </div>
+                    <div className="">
+                    <figure className="d-flex justify-content-center">
+                      {singleacademics.data && singleacademics.data.Image ? (
+                        <img src={singleacademics.data.Image} alt="" width="100%" />
+                      ) : (
+                        <p>No image found</p>
+                      )}
+                    </figure>
                     </div>
                   </div>
                 </section>
