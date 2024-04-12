@@ -1,13 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import {createContact } from "../../Componanats/api/api_base";
+import { createContact } from "../../Componanats/api/api_base";
 import { complainForm } from "../../Componanats/api/api_base";
-import {studentFeedbackForm} from "../../Componanats/api/api_base";
-import {alumniFeedbackForm} from "../../Componanats/api/api_base";
-import {teacherFeedbackForm} from "../../Componanats/api/api_base";
-import {parentsFeedbackForm} from "../../Componanats/api/api_base";
-import {signup} from "../../Componanats/api/api_base";
-import {login} from "../../Componanats/api/api_base";
+import { studentFeedbackForm } from "../../Componanats/api/api_base";
+import { alumniFeedbackForm } from "../../Componanats/api/api_base";
+import { teacherFeedbackForm } from "../../Componanats/api/api_base";
+import { parentsFeedbackForm } from "../../Componanats/api/api_base";
+import { signup } from "../../Componanats/api/api_base";
+import { login } from "../../Componanats/api/api_base";
 export const token = sessionStorage.getItem("accessToken");
 
 // const headers = {
@@ -77,11 +77,12 @@ export const signupApi = createAsyncThunk('signupApi/form', async (data, { rejec
     }
 })
 
+
 export const loginApi = createAsyncThunk('loginApi/form', async (data, { rejectWithValue }) => {
     try {
         const response = await axios.post(login, data)
-        localStorage.setItem("accessToken", response.data.data.accessToken)
-        return response.data.message;
+        localStorage.setItem("accessToken", response.data.data.accessToken);
+        return response.data.data.accessToken;
     } catch (error) {
         return rejectWithValue(error.response.data.message);
     }
@@ -94,7 +95,8 @@ const formSlice = createSlice({
         forms: [],
         status: 'idle',
         error: null,
-        message: null
+        message: null,
+        accessToken: null,
     },
     reducers: {},
     extraReducers: (builder) => {
@@ -242,7 +244,7 @@ const formSlice = createSlice({
                 }
             })
 
-            
+
             // login form
             .addCase(loginApi.pending, (state) => {
                 state.status = 'loading';
@@ -250,16 +252,15 @@ const formSlice = createSlice({
             .addCase(loginApi.fulfilled, (state, action) => {
                 state.status = 'succeeded';
                 state.message = action.payload;
-                if (state.status === 'succeeded') {
-                    alert(state.message)
-                }
-                state.status = 'idle';
+                state.error = null
             })
             .addCase(loginApi.rejected, (state, action) => {
                 state.status = 'failed';
-                state.error = action.payload;
-                if (state.status === 'failed') {
-                    alert(state.error)
+                state.error = action.payload; // This will be the error message from the server
+                if (state.error) {
+                    alert(state.error); // Alert the error message from the server
+                } else {
+                    alert("Student not found! Please try again later"); // If there's no error message from the server
                 }
             })
     }

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getaboutusapi, getAcademicDataapi, getAddmissionapi, getFacilitiesApi, getMedicalFacilitiesApi, getDepartmentsApi } from "../../Redux-toolkit/Slice/NavbarSlice";
 import logo from "../../img/Logo-Daksh-School-1.png";
 import "./Navbar.css";
-
+const token = localStorage.getItem("accessToken")
 const CustomNavbar = () => {
   const dispatch = useDispatch();
   const { aboutus, academics, Facilities, MedicalFacility, Departments } = useSelector((state) => state.navbar);
@@ -18,7 +18,9 @@ const CustomNavbar = () => {
     dispatch(getMedicalFacilitiesApi());
     dispatch(getDepartmentsApi());
   }, []);
-
+  const logout = ()=>{
+       localStorage.removeItem("accessToken")
+  }
   return (
     <div className="pt-1">
       <div className="container-fluid">
@@ -26,30 +28,30 @@ const CustomNavbar = () => {
           <div className="col-sm-12 col-md-12 col-lg-6 ">
             <Link to="/" className="logo-div">
               <div>
-                <img src={logo} alt="" className="img-fluid rounded"  height={80} width={80}/>
+                <img src={logo} alt="" className="img-fluid rounded" height={80} width={80} />
               </div>
               <div className="px-1">
-                  <h5 className="m-0 logo-heading pb-1">Daksh B.Sc Nursing College & Hospital </h5>
-                  <h6 className="text-dark m-0 logo-content">Daksh School Of Nursing & Hospital</h6>
+                <h5 className="m-0 logo-heading pb-1">Daksh B.Sc Nursing College & Hospital </h5>
+                <h6 className="text-dark m-0 logo-content">Daksh School Of Nursing & Hospital</h6>
               </div>
             </Link>
           </div>
           <div className="buttons-nav col-sm-12 col-md-12 col-lg-6 mb-2">
-              <Link to="/photo_gallery">
+            <Link to="/photo_gallery">
               <button type="button" class="btn btn-success mx-2">Gallery</button>
-              </Link>
-              <Link to="/addmisssion_portal">
+            </Link>
+            <Link to="/addmisssion_portal">
               <button type="button" class="btn btn-success mx-2">Addmission Portal</button>
-              </Link>
-              
-              <div className="d-flex">
-                <Link to="/login">
+            </Link>
+
+            <div className="d-flex">
+{  !token &&   <Link to="/login">
                 <Button variant="outline-success btn-sm mx-1">Login</Button>
-                </Link>
-                {/* <Link to="/signup">
-                  <Button variant="outline-success btn-sm mx-1">Signup</Button>
-                </Link> */}
-              </div>
+              </Link>}
+              {token && <Link to="/login">
+                <Button variant="outline-success btn-sm mx-1" onClick={logout}>Logout</Button>
+              </Link>}
+            </div>
           </div>
         </div>
       </div>
@@ -71,7 +73,7 @@ const CustomNavbar = () => {
               </NavDropdown>
               <NavDropdown title="Academic" id="basic-nav-dropdown">
                 <Link to="/courses" className="p-3 py-0">
-                    Courses
+                  Courses
                 </Link>
                 {academics.data &&
                   academics.data.map((academicdata, index) => (
@@ -81,13 +83,13 @@ const CustomNavbar = () => {
                   ))}
               </NavDropdown>
               <NavDropdown title="Gallery" id="basic-nav-dropdown">
-                <NavDropdown.Item  as={Link} to={`/photo_gallery`}>
+                <NavDropdown.Item as={Link} to={`/photo_gallery`}>
                   {"Photo Gallery"}
                 </NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to={`/videos_gallery`}>
+                <NavDropdown.Item as={Link} to={`/videos_gallery`}>
                   {"Video Gallery"}
                 </NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to={`/press_release`}>
+                <NavDropdown.Item as={Link} to={`/press_release`}>
                   {"press Release"}
                 </NavDropdown.Item>
               </NavDropdown>
@@ -95,10 +97,10 @@ const CustomNavbar = () => {
                 Blog
               </Nav.Link>
               <NavDropdown title="Contact" id="basic-nav-dropdown">
-                <NavDropdown.Item  as={Link} to={`/contact`}>
+                <NavDropdown.Item as={Link} to={`/contact`}>
                   {"Contact Us"}
                 </NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to={`/contact`}>
+                <NavDropdown.Item as={Link} to={`/contact`}>
                   {"Quick Payment"}
                 </NavDropdown.Item>
               </NavDropdown>
@@ -110,6 +112,14 @@ const CustomNavbar = () => {
                     </NavDropdown.Item>
                   ))}
               </NavDropdown>
+              {token && <NavDropdown title="Student" id="basic-nav-dropdown">
+                {Facilities.data &&
+                  Facilities.data.map((Facilitiesdata, index) => (
+                    <NavDropdown.Item key={index} as={Link} to={`/facilities/${Facilitiesdata._id}`}>
+                      {Facilitiesdata.title}
+                    </NavDropdown.Item>
+                  ))}
+              </NavDropdown>}
               <NavDropdown title="Medical Facility" id="basic-nav-dropdown">
                 {MedicalFacility.data &&
                   MedicalFacility.data.map((MedicalFacilitydata, index) => (
