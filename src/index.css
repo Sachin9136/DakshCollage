@@ -176,6 +176,16 @@ section {
 	width: 100%;
 }
 
+.marquee-section{
+	display: flex;
+	align-items: center;
+	height: 40px;
+	position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    color: white;
+}
+
 .block {
 	position: relative;
 	display: block;
@@ -1224,7 +1234,7 @@ a.butn-light,
 }
 .courses-info p {
 	color: #c4c4c4; 
-	padding-right: 87px;
+	/* padding-right: 87px; */
 }
 .butn.white-bg::before {
 	border-color: transparent;

@@ -1,11 +1,19 @@
 import React from 'react';
 import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-kit';
 import banner1 from "../../../img/slide1-1.jpg";
-// import banner2 from "../../../img/slide1-01.jpg";
-// import banner3 from "../../../img/slide1-02.jpg";
 
 export default function App() { 
   return (
+    <>
+    <div className="container-fluid">
+      <div className="row p-0 m-0">
+        <div className="col-12 marquee-section">
+        <marquee behavior="scroll" direction="left" scrollamount="3">
+          This is a movable text using the marquee tag.
+        </marquee>
+        </div>
+      </div>
+    </div>
     <MDBCarousel showIndicators showControls fade>
       <MDBCarouselItem itemId={1}>
         <img src={banner1} className='d-block w-100' alt='...' />
@@ -31,5 +39,6 @@ export default function App() {
         </MDBCarouselCaption>
       </MDBCarouselItem>
     </MDBCarousel>
+    </>
   );
 }

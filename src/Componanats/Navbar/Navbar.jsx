@@ -31,32 +31,32 @@ const CustomNavbar = () => {
                 <img src={logo} alt="" className="img-fluid rounded" height={80} width={80} />
               </div>
               <div className="px-1">
-                <h5 className="m-0 logo-heading pb-1">Daksh B.Sc Nursing College & Hospital </h5>
+                <h5 className="m-0 logo-heading pb-1">Daksh B.Sc Nursing College </h5>
                 <h6 className="text-dark m-0 logo-content">Daksh School Of Nursing & Hospital</h6>
               </div>
             </Link>
           </div>
           <div className="buttons-nav col-sm-12 col-md-12 col-lg-6 mb-2">
             <Link to="/photo_gallery">
-              <button type="button" class="btn btn-success mx-2">Gallery</button>
+              <button type="button" class="btn btn-success mx-2 gallery-btn">Gallery</button>
             </Link>
             <Link to="/addmisssion_portal">
-              <button type="button" class="btn btn-success mx-2">Addmission Portal</button>
+              <button type="button" class="btn btn-success mx-2 admission-btn">Addmission Portal</button>
             </Link>
 
             <div className="d-flex">
 {  !token &&   <Link to="/login">
-                <Button variant="outline-success btn-sm mx-1">Login</Button>
+                <Button variant="outline-success btn-sm mx-1 login-btn">Login</Button>
               </Link>}
               {token && <Link to="/login">
-                <Button variant="outline-success btn-sm mx-1" onClick={logout}>Logout</Button>
+                <Button variant="outline-success btn-sm mx-1 log-out-btn" onClick={logout}>Logout</Button>
               </Link>}
             </div>
           </div>
         </div>
       </div>
       <Navbar className="d-block" bg="warning" expand="lg">
-        <Container className="p-0 m-0 d-flex justify-content-end px-1">
+        <div className="container-fluid p-0 m-0 d-flex justify-content-end px-1">
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
           <Navbar.Collapse id="navbarSupportedContent">
             <Nav className="me-auto">
@@ -144,7 +144,7 @@ const CustomNavbar = () => {
               {/* Add more NavDropdown items for other sections */}
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </div>
   );

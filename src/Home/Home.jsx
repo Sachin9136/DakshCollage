@@ -424,14 +424,14 @@ const Home = () => {
                         Donec id tincidunt libero, eget dapibus quam. Aenean felis ex,
                         blandit pretium pharetra eu.
                       </p>
-                      <Link to="/courses" className="butn with-bg get-login-register border rounded-5">
+                      <Link to="/courses" className="butn with-bg get-login-register border rounded-5 m-2">
                         Sign Up Now
                       </Link>
                     </div>
                   </div>
                   <div className="col-md-12 col-lg-6">
                     <ul className="row courses-box">
-                      <li className="col-sm-6 col-md-6">
+                      <li className="col-sm-6 col-md-6 mb-2 mt-2">
                         <div className="expl-courses blue-clr d-flex">
                           <div className="vertical-text">
                             <span>Explore 263 Courses</span>
@@ -444,7 +444,7 @@ const Home = () => {
                           </div>
                         </div>
                       </li>
-                      <li className="col-sm-6 col-md-6">
+                      <li className="col-sm-6 col-md-6 mb-2 mt-2">
                         <div className="expl-courses green-clr d-flex">
                           <div className="vertical-text">
                             <span>Explore 93 Courses</span>
@@ -457,7 +457,7 @@ const Home = () => {
                           </div>
                         </div>
                       </li>
-                      <li className="col-sm-6 col-md-6">
+                      <li className="col-sm-6 col-md-6 mb-2 mt-2">
                         <div className="expl-courses golden-clr d-flex">
                           <div className="vertical-text">
                             <span>Explore 63 Courses</span>
@@ -470,7 +470,7 @@ const Home = () => {
                           </div>
                         </div>
                       </li>
-                      <li className="col-sm-6 col-md-6">
+                      <li className="col-sm-6 col-md-6 mb-2 mt-2">
                         <div className="expl-courses purple-clr d-flex">
                           <div className="vertical-text">
                             <span>Explore 23 Courses</span>
