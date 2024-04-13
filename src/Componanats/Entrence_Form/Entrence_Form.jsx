@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch} from "react-redux";
-import { complainApi } from '../Redux-toolkit/Slice/FormSlice';
+import { entrenceExamFormApi } from '../Redux-toolkit/Slice/FormSlice';
 
-const Complain_form = () => {
+const Entrence_form = () => {
 
     const dispatch = useDispatch();
     // const [image, setImage] = useState("");
@@ -14,7 +14,7 @@ const Complain_form = () => {
         e.preventDefault()
         // const data = new FormData() 
         // data.append("name",name)
-        // data.append("email",email)
+        // data.append("email",email) 
         // data.append("phone",phone)
         // data.append("resaon",resaon)
         const data = {
@@ -25,7 +25,7 @@ const Complain_form = () => {
             // image :image
         }
         // console.log(data)
-        dispatch(complainApi(data))
+        dispatch(entrenceExamFormApi(data))
         setName("")
         setEmail("")
         setDepartment("")
@@ -132,4 +132,4 @@ const Complain_form = () => {
   )
 }
 
-export default Complain_form
+export default Entrence_form

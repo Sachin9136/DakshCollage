@@ -178,11 +178,13 @@ const Signup = () => {
                                     </p>
                                     </div>
                                 </div>
+                                <div className="col-12 d-flex justify-content-center">
                                 <p className="form-submit text-center">
                                     <button type="submit" className="submit signup-btn">
                                         Send Message
                                     </button>
                                 </p>
+                                </div>
                                 </form>
                             </div>
                         </div>

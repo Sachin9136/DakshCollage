@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 const Facilities = () => {
   const dispatch = useDispatch();
-  const { id } = useParams();
+  const { id } = useParams(); 
   const { singleFacility, status, error } = useSelector((state) => state.navbar);
   useEffect(() => {
     dispatch(getsinglefacilityapi(id));

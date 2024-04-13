@@ -4,6 +4,8 @@ import Courses from "../Academic/Courses";
 import Blog from "../Blog/BlogApi";
 import helping_img from "../img/help-img.webp";
 import PhotoGallery_Slider from "../Componanats/PhotoGallery_Slider/PhotoGallery_Slider";
+import Feedback from "../Componanats/FeedbackApi/FeedbackApi";
+import News from "../Componanats/News/News";
 import Step1 from "../img/step1.png";
 import Step2 from "../img/step2.png";
 import Step3 from "../img/step3.png";
@@ -430,7 +432,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="col-md-12 col-lg-6">
-                    <ul className="row courses-box">
+                    {/* <ul className="row courses-box">
                       <li className="col-sm-6 col-md-6 mb-2 mt-2">
                         <div className="expl-courses blue-clr d-flex">
                           <div className="vertical-text">
@@ -483,7 +485,8 @@ const Home = () => {
                           </div>
                         </div>
                       </li>
-                    </ul>
+                    </ul> */}
+                    <News />
                   </div>
                 </div>
               </div>
@@ -594,80 +597,18 @@ const Home = () => {
                   <p>University is the largest fundraising campaigns</p>
                 </div>
                 <PhotoGallery_Slider />
-                {/* <div className="gallery-car owl-carousel owl-theme d-flex" >
-                  <div className="item">
-                    <div className="gallery-meta">
-                      <img src={helping_img} alt=""/>
-                      <a
-                        data-fancybox="gallery"
-                        href="assets/images/gallery1.jpg"
-                        className="icn"
-                      >
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="gallery-meta">
-                      <img src={helping_img} alt="" />
-                      <a
-                        data-fancybox="gallery"
-                        href="assets/images/gallery2.jpg"
-                        className="icn"
-                      >
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="gallery-meta">
-                      <img src={helping_img} alt="" />
-                      <a
-                        data-fancybox="gallery"
-                        href="assets/images/gallery3.jpg"
-                        className="icn"
-                      >
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="gallery-meta">
-                      <img src={helping_img} alt="" />
-                      <a
-                        data-fancybox="gallery"
-                        href="assets/images/gallery4.jpg"
-                        className="icn"
-                      >
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="gallery-meta">
-                      <img src={helping_img} alt="" />
-                      <a
-                        data-fancybox="gallery"
-                        href="assets/images/gallery5.jpg"
-                        className="icn"
-                      >
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="gallery-meta">
-                      <img src={helping_img} alt="" />
-                      <a
-                        data-fancybox="gallery"
-                        href="assets/images/gallery6.jpg"
-                        className="icn"
-                      >
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="block no-bottom">
+              <div className="container-fluid">
+                <div className="heading">
+                  <h2>Feedbacks</h2>
+                  <p>University is the largest fundraising campaigns</p>
+                </div>
+                <Feedback />
               </div>
             </div>
           </section>

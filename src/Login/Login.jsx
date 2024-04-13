@@ -51,7 +51,7 @@ const Login = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6 dark-bg rounded form-bg-color">
+                        <div class="col-sm-12 col-md-6 col-lg-6 dark-bg rounded form-bg-color d-flex align-items-center">
                             {/* <div class="signup-card"> */}
                                 <div class="py-5">
                                     <form
@@ -66,7 +66,6 @@ const Login = () => {
                                             Your message was sent successfully.
                                         </div>
                                         <div className="row">
-
                                             <div className="col-sm-12">
                                                 <p className="omment-form-subject d-flex justify-content-center d-flex justify-content-center">
                                                     <label htmlFor="subject">
@@ -103,8 +102,9 @@ const Login = () => {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div className="form-submit text-center d-grid">
-                                            <button className="btn btn-light" type="submit">
+                                        <div className="col-12 d-flex justify-content-center">
+                                        <div className="form-submit d-grid d-flex justify-content-center">
+                                            <button className="submit signup-btn" type="submit">
                                                 {status === "loading" ? (
                                                     <div className="spinner-border spinner-border-sm" style={{ color: "#1976D2" }} role="status">
                                                         <span className="visually-hidden">Loading...</span>
@@ -113,7 +113,7 @@ const Login = () => {
                                                     "Login"
                                                 )}
                                             </button>
-
+                                        </div>
                                         </div>
                                     </form>
                                 </div>

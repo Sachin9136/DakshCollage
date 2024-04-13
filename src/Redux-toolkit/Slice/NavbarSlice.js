@@ -13,6 +13,8 @@ import {
   getDepartments,
   getSingleDepartment,
   getAllCourses,
+  getAllStudentPdf,
+  getSingleStudentPdf,
 
 } from "../../Componanats/api/api_base";
 
@@ -209,6 +211,38 @@ export const getsingleMedicalfacilityapi = createAsyncThunk(
             } 
         );
 
+          // Student PDF
+      export const getAllStudentPdfApi = createAsyncThunk(
+        "getAllStudentPdfApi/navbar",
+        async () => {
+          try {
+            const response = await axios.get(
+              `${getAllStudentPdf}`
+              // , { headers }
+            );
+            return response.data;
+          } catch (error) {
+            throw new Error(error.message);
+          }
+        }
+      );
+
+        // get single Student Pdf
+      export const getSingleStudentPdfApi = createAsyncThunk(
+        "getSingleStudentPdfApi/navbar",
+        async (id) => {
+          try {
+            const response = await axios.get(
+              `${getSingleStudentPdf}/${id}`   
+              // , { headers }
+            );
+            return response.data;
+          } catch (error) {
+            throw new Error(error.message);
+          }
+        }
+      );
+
 
 const navbarSlice = createSlice({
   name: "navbar",
@@ -225,6 +259,8 @@ const navbarSlice = createSlice({
     Departments: [],
     SingleDepartments: {},
     Courses: [],
+    StudentPdf: [],
+    SingleStudentPdf: {},
     
     status: "idle",
     error: null,
@@ -384,6 +420,32 @@ const navbarSlice = createSlice({
         state.Courses = action.payload;
       })
       .addCase(getAllCoursesApi.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
+      })
+
+        //   student Pdf
+        .addCase(getAllStudentPdfApi.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(getAllStudentPdfApi.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.StudentPdf = action.payload;
+      })
+      .addCase(getAllStudentPdfApi.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
+      })
+
+      // Single student pdf
+      .addCase(getSingleStudentPdfApi.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(getSingleStudentPdfApi.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.SingleStudentPdf = action.payload;
+      })
+      .addCase(getSingleStudentPdfApi.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.payload;
       })

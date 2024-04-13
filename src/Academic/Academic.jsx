@@ -27,11 +27,11 @@ const About = () => {
           )}
           {status === "succeeded" && (
             <>
-            <div className="row m-0 p-0">
+            <div className="row m-0 p-0 d-flex justify-content-center">
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
                 <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: singleacademics.data ? singleacademics.data.title :"not found" }}></div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-10 p-0 m-0 py-5">
+              <div className="col-sm-12 col-md-8 col-lg-6 p-0 m-0 py-5">
                 <section>
                   <div className="pop-course">
                   <div className="course-meta">

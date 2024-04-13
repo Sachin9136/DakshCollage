@@ -8,6 +8,7 @@ import { teacherFeedbackForm } from "../../Componanats/api/api_base";
 import { parentsFeedbackForm } from "../../Componanats/api/api_base";
 import { signup } from "../../Componanats/api/api_base";
 import { login } from "../../Componanats/api/api_base";
+import { entrenceExamForm } from "../../Componanats/api/api_base";
 export const token = sessionStorage.getItem("accessToken");
 
 // const headers = {
@@ -76,11 +77,21 @@ export const signupApi = createAsyncThunk('signupApi/form', async (data, { rejec
         return rejectWithValue(error.response.data.message);
     }
 })
-
+ 
 
 export const loginApi = createAsyncThunk('loginApi/form', async (data, { rejectWithValue }) => {
     try {
         const response = await axios.post(login, data)
+        localStorage.setItem("accessToken", response.data.data.accessToken);
+        return response.data.data.accessToken;
+    } catch (error) {
+        return rejectWithValue(error.response.data.message);
+    }
+})
+
+export const entrenceExamFormApi = createAsyncThunk('entrenceExamFormApi/form', async (data, { rejectWithValue }) => {
+    try {
+        const response = await axios.post(entrenceExamForm, data)
         localStorage.setItem("accessToken", response.data.data.accessToken);
         return response.data.data.accessToken;
     } catch (error) {
@@ -255,6 +266,25 @@ const formSlice = createSlice({
                 state.error = null
             })
             .addCase(loginApi.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.payload; // This will be the error message from the server
+                if (state.error) {
+                    alert(state.error); // Alert the error message from the server
+                } else {
+                    alert("Student not found! Please try again later"); // If there's no error message from the server
+                }
+            })
+            
+            // Entrence Exam form
+            .addCase(entrenceExamFormApi.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(entrenceExamFormApi.fulfilled, (state, action) => {
+                state.status = 'succeeded';
+                state.message = action.payload;
+                state.error = null
+            })
+            .addCase(entrenceExamFormApi.rejected, (state, action) => {
                 state.status = 'failed';
                 state.error = action.payload; // This will be the error message from the server
                 if (state.error) {

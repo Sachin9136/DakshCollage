@@ -1448,7 +1448,7 @@ const StudentFeedbackForm = () => {
             <button
               onClick={handlesubmit}
               type="submit"
-              className="submit btn btn-primary"
+              className="submit btn btn-success"
             >
               Send Message
             </button>

@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from "react-redux";
-import { getaboutusapi, getAcademicDataapi, getAddmissionapi, getFacilitiesApi, getMedicalFacilitiesApi, getDepartmentsApi } from "../../Redux-toolkit/Slice/NavbarSlice";
+import { getaboutusapi, getAcademicDataapi, getAddmissionapi, getFacilitiesApi, getMedicalFacilitiesApi, getDepartmentsApi, getAllStudentPdfApi } from "../../Redux-toolkit/Slice/NavbarSlice";
 import logo from "../../img/Logo-Daksh-School-1.png";
 import "./Navbar.css";
 const token = localStorage.getItem("accessToken")
 const CustomNavbar = () => {
   const dispatch = useDispatch();
-  const { aboutus, academics, Facilities, MedicalFacility, Departments } = useSelector((state) => state.navbar);
+  const { aboutus, academics, Facilities, MedicalFacility, Departments, StudentPdf  } = useSelector((state) => state.navbar);
 
   useEffect(() => {
     dispatch(getaboutusapi());
@@ -17,10 +17,17 @@ const CustomNavbar = () => {
     dispatch(getFacilitiesApi());
     dispatch(getMedicalFacilitiesApi());
     dispatch(getDepartmentsApi());
+    dispatch(getAllStudentPdfApi());
   }, []);
   const logout = ()=>{
        localStorage.removeItem("accessToken")
   }
+
+  // Function to capitalize the first letter of each word
+  const capitalizeAllWords = (str) => {
+    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <div className="pt-1">
       <div className="container-fluid">
@@ -67,7 +74,7 @@ const CustomNavbar = () => {
                 {aboutus.data &&
                   aboutus.data.map((about, index) => (
                     <NavDropdown.Item key={index} as={Link} to={`/about/${about._id}`}>
-                      {about.title}
+                      {capitalizeAllWords(about.title)}
                     </NavDropdown.Item>
                   ))}
               </NavDropdown>
@@ -78,7 +85,7 @@ const CustomNavbar = () => {
                 {academics.data &&
                   academics.data.map((academicdata, index) => (
                     <NavDropdown.Item key={index} as={Link} to={`/academic/${academicdata._id}`}>
-                      {academicdata.title}
+                      {capitalizeAllWords(academicdata.title)}
                     </NavDropdown.Item>
                   ))}
               </NavDropdown>
@@ -90,12 +97,49 @@ const CustomNavbar = () => {
                   {"Video Gallery"}
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={`/press_release`}>
-                  {"press Release"}
+                  {"Press Release"}
                 </NavDropdown.Item>
+              </NavDropdown>
+              
+              <NavDropdown title="Facilities" id="basic-nav-dropdown">
+                {Facilities.data &&
+                  Facilities.data.map((Facilitiesdata, index) => (
+                    <NavDropdown.Item key={index} as={Link} to={`/facilities/${Facilitiesdata._id}`}>
+                      {capitalizeAllWords(Facilitiesdata.title)}
+                    </NavDropdown.Item>
+                  ))}
+              </NavDropdown>
+                {token && <NavDropdown title="Student" id="basic-nav-dropdown">
+                {StudentPdf.data &&
+                  StudentPdf.data.map((StudentPdfdata, index) => (
+                    <NavDropdown.Item key={index} as={Link} to={`/student_Pdf/${StudentPdfdata._id}`}>
+                      {capitalizeAllWords(StudentPdfdata.title)}
+                    </NavDropdown.Item>
+                  ))}
+              </NavDropdown>}
+              <NavDropdown title="Medical Facility" id="basic-nav-dropdown">
+                {MedicalFacility.data &&
+                  MedicalFacility.data.map((MedicalFacilitydata, index) => (
+                    <NavDropdown.Item key={index} as={Link} to={`/medicalaFacility/${MedicalFacilitydata._id}`}>
+                      {capitalizeAllWords(MedicalFacilitydata.title)}
+                    </NavDropdown.Item>
+                  ))}
+              </NavDropdown>
+              <NavDropdown title="Departments" id="basic-nav-dropdown">
+                {Departments.data &&
+                  Departments.data.map((departments, index) => (
+                    <NavDropdown.Item key={index} as={Link} to={`/department/${departments._id}`}>
+                      {capitalizeAllWords(departments.title)}
+                    </NavDropdown.Item>
+                  ))}
               </NavDropdown>
               <Nav.Link as={Link} to="/blog" activeClassName="" exact>
                 Blog
               </Nav.Link>
+              <Nav.Link as={Link} to="/complain_feedback" activeClassName="" exact>
+                Complain / Feedback
+              </Nav.Link>
+
               <NavDropdown title="Contact" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to={`/contact`}>
                   {"Contact Us"}
@@ -104,42 +148,6 @@ const CustomNavbar = () => {
                   {"Quick Payment"}
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Facilities" id="basic-nav-dropdown">
-                {Facilities.data &&
-                  Facilities.data.map((Facilitiesdata, index) => (
-                    <NavDropdown.Item key={index} as={Link} to={`/facilities/${Facilitiesdata._id}`}>
-                      {Facilitiesdata.title}
-                    </NavDropdown.Item>
-                  ))}
-              </NavDropdown>
-              {token && <NavDropdown title="Student" id="basic-nav-dropdown">
-                {Facilities.data &&
-                  Facilities.data.map((Facilitiesdata, index) => (
-                    <NavDropdown.Item key={index} as={Link} to={`/facilities/${Facilitiesdata._id}`}>
-                      {Facilitiesdata.title}
-                    </NavDropdown.Item>
-                  ))}
-              </NavDropdown>}
-              <NavDropdown title="Medical Facility" id="basic-nav-dropdown">
-                {MedicalFacility.data &&
-                  MedicalFacility.data.map((MedicalFacilitydata, index) => (
-                    <NavDropdown.Item key={index} as={Link} to={`/medicalaFacility/${MedicalFacilitydata._id}`}>
-                      {MedicalFacilitydata.title}
-                    </NavDropdown.Item>
-                  ))}
-              </NavDropdown>
-              <NavDropdown title="Departments" id="basic-nav-dropdown">
-                {Departments.data &&
-                  Departments.data.map((departments, index) => (
-                    <NavDropdown.Item key={index} as={Link} to={`/department/${departments._id}`}>
-                      {departments.title}
-                    </NavDropdown.Item>
-                  ))}
-              </NavDropdown>
-
-              <Nav.Link as={Link} to="/complain_feedback" activeClassName="" exact>
-                Complain / Feedback
-              </Nav.Link>
 
               {/* Add more NavDropdown items for other sections */}
             </Nav>

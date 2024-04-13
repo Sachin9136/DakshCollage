@@ -36,6 +36,8 @@ import Login from "../src/Login/Login";
 
 import Addmisssion_Portal from "../src/Addmission_Portal/Addmission_Portal";
 
+import Student_Pdf from "../src/Student/Student";
+
 
 
 
@@ -85,6 +87,8 @@ function App() {
           <Route path="/login" element={<Login />} /> 
 
           <Route path="/addmisssion_portal" element={<Addmisssion_Portal />} /> 
+
+          <Route path="/student_Pdf/:id" element={<Student_Pdf />} /> 
           
         </Routes>
       <Footer />

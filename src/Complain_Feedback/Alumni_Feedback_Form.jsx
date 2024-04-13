@@ -672,8 +672,8 @@ const Alumni_Feedback_Form = () => {
           <p className="form-submit">
             <button
               onClick={handlesubmit}
-              type="submit"
-              className="submit btn btn-primary"
+              type="submilmkomn9jvt"
+              className="submit btn btn-successmmmmb mnnn"
             >
               Send Message
             </button>
