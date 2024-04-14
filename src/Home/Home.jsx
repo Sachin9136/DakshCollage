@@ -6,13 +6,10 @@ import helping_img from "../img/help-img.webp";
 import PhotoGallery_Slider from "../Componanats/PhotoGallery_Slider/PhotoGallery_Slider";
 import Feedback from "../Componanats/FeedbackApi/FeedbackApi";
 import News from "../Componanats/News/News";
+import Topper from "../Componanats/Toppers/Toppers";
 import Step1 from "../img/step1.png";
 import Step2 from "../img/step2.png";
 import Step3 from "../img/step3.png";
-import topper1 from "../img/topper1.jpg";
-import topper2 from "../img/topper2.jpg";
-import topper3 from "../img/topper3.jpg";
-import topper4 from "../img/topper4.jpg";
 import {Link} from "react-router-dom";
 
 
@@ -581,6 +578,11 @@ const Home = () => {
               </div>
               <div className="container">
                 <div className="row">
+                <div className="col-12">
+                    <Link to="/courses" className='d-flex justify-content-end'>
+                      <p className='btn btn-success border px-3 py-1 rounded'>All Courses</p>
+                    </Link>
+                  </div>
                   <div className="col-12">
                   <Courses />
                   </div>
@@ -601,7 +603,7 @@ const Home = () => {
             </div>
           </section>
 
-          <section>
+          {/* <section>
             <div className="block no-bottom">
               <div className="container-fluid">
                 <div className="heading">
@@ -611,20 +613,20 @@ const Home = () => {
                 <Feedback />
               </div>
             </div>
-          </section>
+          </section> */}
           {/* gallery */}
           <section>
             <div className="block no-bottom">
               <div className="container pt-5">
                 <div className="heading">
-                  <h2>Meet Topers</h2>
+                  <h2>Meet Toppers</h2>
                   <p>University is the largest fundraising campaign</p>
                 </div>
                 <div className="row">
                   <div className="col-sm-12">
                     <div className="student-contain">
                       <div className="row">
-                        <div className="col-6 col-md-4 col-lg-3">
+                        {/* <div className="col-6 col-md-4 col-lg-3">
                           <div className="students">
                             <figure>
                               <img src={topper3} alt="" />
@@ -755,7 +757,8 @@ const Home = () => {
                               </li>
                             </ul>
                           </div>
-                        </div>
+                        </div> */}
+                        <Topper />
                       </div>
                     </div>
                   </div>

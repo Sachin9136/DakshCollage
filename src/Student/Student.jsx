@@ -42,6 +42,9 @@ const Student = () => {
               <div className="col-12 p-0 m-0 p-5 d-flex justify-content-center">
                 <div>
                     <Button variant="outline-success btn-sm mx-1 login-btn">{SingleStudentPdf.data ? capitalizeFirstLetter(SingleStudentPdf.data.title) :"not found"}</Button>
+                 <div>
+                 
+                 </div>
                 </div>
               </div>
             </div>

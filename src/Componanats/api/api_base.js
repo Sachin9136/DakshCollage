@@ -27,10 +27,11 @@ export const login = `${base_url}/api/v1/addmission/studentlogin`;
 export const entrenceExamForm = `${base_url}/api/v1/form/uploadform/`;
 export const getAllCourses = `${base_url}/api/v1/course/getallcourses`;
 export const getSingleCourses = `${base_url}/api/v1/course/getsinglecourse`;
-export const getAllFeedback = `${base_url}/api/v1/studentFeedback/getstudentFeedback/`;
+export const getAllFeedback = `${base_url}/api/v1/studentFeedback/getallstudentFeedbacktrue/`;
 export const getAllNews = `${base_url}/api/v1/news/getallnews/`;
 export const getAllStudentPdf = `${base_url}/api/v1/student/getallpdf/`;
 export const getSingleStudentPdf = `${base_url}/api/v1/student/getSinglepdf`;
+export const getAllToppers = `${base_url}/api/v1/topper/getalltoppers/?limit=5`;
 
 
 

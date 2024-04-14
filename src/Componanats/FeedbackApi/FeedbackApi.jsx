@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getAllFeedback } from "../api/api_base";
 import axios from "axios";
 
-const Videos_GalleryApi = () => {
+const FeedbackApi = () => {
   const [feedback, setFeedback] = useState([]);
 
   const getAllFeedbackApi = async () => {
@@ -18,19 +18,27 @@ const Videos_GalleryApi = () => {
     getAllFeedbackApi();
   }, []);
 
-  console.log(feedback.data);
-
   return (
     <>  
-        {feedback.map((feedback, index) => (
-            <div key={index} className="col-sm-12 col-md-4 col-lg-4">
-                <div className="gallery-meta">
-                <h2>{feedback.name}</h2>
-                </div>
+      <style>{`
+        .news-div {
+          height:80vh;
+        }
+      `}</style>
+      
+      {feedback.map((feedbackItem, index) => (
+        
+          <marquee key={index} className="col-12 news-div" behavior="scroll" direction="up">
+            <div className="mb-2 border-bottom">
+              <div>
+                <h4 className="text-warning">{feedbackItem.name}</h4>
+                <p className="text-white">{feedbackItem.email}</p>
+              </div> 
             </div>
-        ))};
+          </marquee>
+      ))}
     </>
   )
 }
 
-export default Videos_GalleryApi
+export default FeedbackApi;

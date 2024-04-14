@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getAllNews } from "../api/api_base";
 import axios from "axios";
 
-const Videos_GalleryApi = () => {
+const NewsApi = () => {
   const [news, setNews] = useState([]);
 
   const getAllNewsApi = async () => {
@@ -45,4 +45,4 @@ const Videos_GalleryApi = () => {
   )
 }
 
-export default Videos_GalleryApi;
+export default NewsApi;

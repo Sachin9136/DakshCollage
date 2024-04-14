@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getAllImages } from "../../Componanats/api/api_base";
 import "./PhotoGallery_Slider.css";
-
+ 
 const PhotoGallery_Slider = () => {
   const [images, setImages] = useState([]);
 

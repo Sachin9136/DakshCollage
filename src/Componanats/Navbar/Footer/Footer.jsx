@@ -69,46 +69,31 @@ const Footer = () => {
                             </div>
                             <div className="get-in-touch">
                             <ul className="row no-gutters">
-                                <li className="col-6 col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                                <li className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <a href="#" className="social-icn facebook">
                                     <i className="fab fa-facebook-f" />
                                     Facebook
                                 </a>
                                 </li>
-                                <li className="col-6 col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                                <li className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <a href="#" className="social-icn twitter">
                                     <i className="fab fa-twitter" />
                                     Twitter
                                 </a>
                                 </li>
-                                <li className="col-6 col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                                <li className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <a href="#" className="social-icn google-plus">
                                     <i className="fab fa-google-plus-g" />
                                     Google+
                                 </a>
                                 </li>
-                                <li className="col-6 col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                                <li className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <a href="#" className="social-icn linkedin-in">
                                     <i className="fab fa-linkedin-in" />
                                     linkedin
                                 </a>
                                 </li>
                             </ul>
-                            <div className="newsletter">
-                                <form>
-                                <div className="form-group">
-                                    <input
-                                    type="email"
-                                    className="form-control"
-                                    required="required"
-                                    placeholder="Subscribe Email"
-                                    />
-                                </div>
-                                <button type="submit" className="btn append-msg-icon">
-                                    <i className="fa fa-envelope" />
-                                </button>
-                                </form>
-                            </div>
                             </div>
                         </div>
                         </div>
@@ -136,12 +121,7 @@ const Footer = () => {
                                     Facilities
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-clock" />
-                                    Complain / Feedback
-                                </a>
-                            </li>
+                            
                             <li>
                                 <a href="#">
                                     <i className="fa fa-clock" />
@@ -154,35 +134,30 @@ const Footer = () => {
                                     Contact
                                 </a>
                             </li>
+                            <li>
+                                <a href="#">
+                                    <i className="fa fa-clock" />
+                                    Complain / Feedback
+                                </a>
+                            </li>
                             </ul>
                         </div>
                         </div>
                         <div className="col-sm-6 col-lg-3 col-xl-3">
                         <div className="widget">
                             <div className="widget-title">
-                            <h4>Recent News</h4>
+                            <h4>Contact Details</h4>
                             </div>
                             <ul className="recent-posts">
-                            <li>
-                                <h4>
-                                <a href="#">New Your Focus to Prevent Overanalysis</a>
-                                </h4>
-                                <a href="#">
-                                <i className="fa fa-clock" />
-                                March 18,2019
-                                </a>
-                            </li>
-                            <li>
-                                <h4>
-                                <a href="#">
-                                    Three Social Media Hacks for the Busy Entrepreneur
-                                </a>
-                                </h4>
-                                <a href="#">
-                                <i className="fa fa-clock" />
-                                March 18,2019
-                                </a>
-                            </li>
+                                <li>
+                                    <p>abc@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p>123456782</p>
+                                </li>
+                                <li>
+                                    <p>Siwan, Bihar</p>
+                                </li>
                             </ul>
                         </div>
                         </div>
@@ -194,7 +169,7 @@ const Footer = () => {
             </footer>
             <div className="bottom-bar">
                 <p>
-                © 2019 <a href="#">Webinane</a> All Rights Reserved.
+                © 2024 <a href="https://www.srnsdigitechnologies.co.in/"><u>SRNS Digi Technologies</u></a> All Rights Reserved.
                 </p>
             </div>
             {/* bottom bar */}
