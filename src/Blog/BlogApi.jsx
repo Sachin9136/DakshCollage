@@ -25,6 +25,13 @@ const BlogApi = () => {
     return <div>Error fetching blogs. Please try again later.</div>;
   }
 
+  // Function to format the date to display only date, month, and year
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  };
+
   return (
     <div>
       {blogs.map((blog, index) => (
@@ -48,7 +55,7 @@ const BlogApi = () => {
                     <li className="posted-date">
                       <a href="#">
                         <i className="fa fa-calendar-alt" />
-                        February 26, 2018
+                        {formatDate(blog.createdAt)}
                       </a>
                     </li>
                     <li>
