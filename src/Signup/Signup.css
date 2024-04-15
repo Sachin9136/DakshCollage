@@ -37,10 +37,10 @@
         padding: 0px 5px;
         margin: 0px;
         border: 2px solid rgba(137, 137, 137, 1);
-        /* background: transparent; */
+        background: rgba(213, 226, 232, 1);
         margin: 10px 5px;
-        border-radius: 15px !important;
-        color: white;
+        border-radius: 5px !important;
+        /* color: white; */
     }
 
     .form-bg-color{

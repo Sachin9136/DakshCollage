@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { getAllFeedback } from "../api/api_base";
 import axios from "axios";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const FeedbackApi = () => {
   const [feedback, setFeedback] = useState([]);
@@ -10,7 +13,7 @@ const FeedbackApi = () => {
       const response = await axios.get(getAllFeedback);
       setFeedback(response.data.data);
     } catch (error) {
-      console.error("Error fetching blogs:", error);
+      console.error("Error fetching feedback:", error);
     }
   };
  
@@ -18,27 +21,83 @@ const FeedbackApi = () => {
     getAllFeedbackApi();
   }, []);
 
-  return (
-    <>  
-      <style>{`
-        .news-div {
-          height:80vh;
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
         }
-      `}</style>
-      
-      {feedback.map((feedbackItem, index) => (
-        
-          <marquee key={index} className="col-12 news-div" behavior="scroll" direction="up">
-            <div className="mb-2 border-bottom">
-              <div>
-                <h4 className="text-warning">{feedbackItem.name}</h4>
-                <p className="text-white">{feedbackItem.email}</p>
-              </div> 
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  // Function to capitalize the first letter of each word
+  const capitalizeFirstLetter = (str) => {
+    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
+  // Function to format the date to display only month and year
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = { year: 'numeric', month: 'long' };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+  };
+
+  // Array of background colors
+  const backgroundColors = ["#ffcccc", "#ccffcc", "#ccccff", "#ffffcc", "#ccffff", "#ffccff"];
+
+  return (
+    <>
+      <div className="slider-container">
+        <Slider {...settings}>
+          {feedback.map((feedbackItem, index) => (
+            <div key={index} className="col-sm-12 col-md-4 col-lg-3">
+              <div className="mb-2 p-2">
+                <div className="border rounded p-2" style={{ backgroundColor: backgroundColors[index % backgroundColors.length] }}>
+                  <img className="rounded" src="https://i.pinimg.com/736x/93/50/02/9350026ffc376d774e36c4445e6e16cc.jpg" alt="" width="50%"/>
+                  <div className="pt-3">
+                    <h4 className="text-center">{capitalizeFirstLetter(feedbackItem.name)}</h4>
+                    <p className="text-center">{capitalizeFirstLetter(feedbackItem.suggestion)}</p>
+                    <p>{formatDate(feedbackItem.createdAt)}</p>
+                  </div>
+                </div> 
+                
+              </div>
             </div>
-          </marquee>
-      ))}
+          ))}
+        </Slider>
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default FeedbackApi;

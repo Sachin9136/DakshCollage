@@ -603,17 +603,23 @@ const Home = () => {
             </div>
           </section>
 
-          {/* <section>
-            <div className="block no-bottom">
-              <div className="container-fluid">
-                <div className="heading">
-                  <h2>Feedbacks</h2>
-                  <p>University is the largest fundraising campaigns</p>
+          <section>
+            <div className="block no-bottom pt-5">
+              <div className="container-fluid pt-5">
+                <div className="row">
+                  <div className="col-12">
+                    <div className="heading">
+                      <h2>Feedbacks</h2>
+                      <p>University is the largest fundraising campaigns</p>
+                    </div>
+                  </div>
                 </div>
-                <Feedback />
+                <div className="row">
+                  <Feedback />
+                </div>
               </div>
             </div>
-          </section> */}
+          </section>
           {/* gallery */}
           <section>
             <div className="block no-bottom">

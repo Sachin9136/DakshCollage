@@ -7,12 +7,13 @@ import { getAllCoursesApi } from "../Redux-toolkit/Slice/NavbarSlice";
 
 const CoursesApi = () => {
     const dispatch = useDispatch();
-    const { Courses,error, } = useSelector((state) => state.navbar);
+    let { Courses,error, } = useSelector((state) => state.navbar);
   
     useEffect(() => {
       dispatch(getAllCoursesApi());
     }, []);
-    console.log(Courses) 
+    let newCourses = Courses.data
+    console.log(newCourses) 
   if (error) { 
     return <div>Error fetching blogs. Please try again later.</div>;
   }

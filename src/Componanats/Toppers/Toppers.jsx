@@ -77,6 +77,7 @@ const ToppersApi = () => {
                     <a href="#">{toppers.Name}</a>
                 </h2>
                 <h5>{toppers.Batch} <span> ({toppers.marks})</span></h5>
+                <span dangerouslySetInnerHTML={{ __html: toppers.content }}></span>
                 <p>{toppers.year}</p>
             </div>
         </div>
