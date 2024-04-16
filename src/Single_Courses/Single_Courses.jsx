@@ -1,10 +1,10 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { getSingleCourses } from "../Componanats/api/api_base";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+
 const Single_Courses = () => {
   const { id } = useParams();
-  console.log(getSingleCourses)
   const [singleCourses, setSingleCourses] = useState({});
 
   const singleCoursesApi = async () => {
@@ -19,40 +19,47 @@ const Single_Courses = () => {
   useEffect(() => {
     singleCoursesApi();
   }, []);
- console.log(singleCourses)
+
+  const capitalizeFirstLetter = (str) => {
+    // Check if the string is defined and not empty
+    if (str && typeof str === 'string') {
+      return str.replace(/\b\w/g, (char) => char.toUpperCase());
+    }
+    return ''; // Return an empty string if the input is not valid
+  };
+
   return (
     <>
-        <div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12 py-5 mt-5 mb-5 border rounded ">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                <th scope="row">Course Name:</th>
-                                <td>{singleCourses.courseName} </td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Course Description:</th>
-                                <td>{singleCourses.description}</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Course Duration:</th>
-                                <td>{singleCourses.duration}</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Course price:</th>
-                                <td>{singleCourses.price}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                       
-                    </div>
-                </div>
+      <div>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 py-5 mt-5 mb-5 border rounded ">
+              <table className="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Course Name:</th>
+                    <td>{capitalizeFirstLetter(singleCourses.courseName)}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Course Description:</th>
+                    <td dangerouslySetInnerHTML={{ __html: capitalizeFirstLetter(singleCourses.description) }}></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Course Duration:</th>
+                    <td>{capitalizeFirstLetter(singleCourses.duration)}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Course price:</th>
+                    <td>{capitalizeFirstLetter(singleCourses.price)}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Single_Courses
+export default Single_Courses;

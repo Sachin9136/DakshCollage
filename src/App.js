@@ -38,6 +38,8 @@ import Addmisssion_Portal from "../src/Addmission_Portal/Addmission_Portal";
 
 import Student_Pdf from "../src/Student/Student";
 
+import TopToScroll from "./TopToScroll"
+
 
 
 
@@ -45,6 +47,7 @@ function App() {
   return (
     <div>
       <Navbar/> 
+      <TopToScroll/> 
         <Routes>
           <Route path="/" element={<Home />} />
 

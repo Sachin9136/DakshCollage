@@ -46,13 +46,13 @@ const Footer = () => {
                                 </li>
                                 <li>
                                 <i className="fa fa-envelope" />
-                                <a
-                                    href="https://html.webinane.com/cdn-cgi/l/email-protection"
+                                <Link
+                                    to="https://html.webinane.com/cdn-cgi/l/email-protection"
                                     className="__cf_email__"
                                     data-cfemail="f2819b9f829e97979f939b9eb2959f939b9edc919d9f"
                                 >
                                     [email&nbsp;protected]
-                                </a>
+                                </Link> 
                                 </li>
                                 <li>
                                 <i className="fa fa-phone" />
@@ -70,28 +70,28 @@ const Footer = () => {
                             <div className="get-in-touch">
                             <ul className="row no-gutters">
                                 <li className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <a href="#" className="social-icn facebook">
+                                <Link to="#" className="social-icn facebook">
                                     <i className="fab fa-facebook-f" />
                                     Facebook
-                                </a>
+                                </Link> 
                                 </li>
                                 <li className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <a href="#" className="social-icn twitter">
+                                <Link to="#" className="social-icn twitter">
                                     <i className="fab fa-twitter" />
                                     Twitter
-                                </a>
+                                </Link> 
                                 </li>
                                 <li className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <a href="#" className="social-icn google-plus">
+                                <Link to="#" className="social-icn google-plus">
                                     <i className="fab fa-google-plus-g" />
                                     Google+
-                                </a>
+                                </Link> 
                                 </li>
                                 <li className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <a href="#" className="social-icn linkedin-in">
+                                <Link to="#" className="social-icn linkedin-in">
                                     <i className="fab fa-linkedin-in" />
                                     linkedin
-                                </a>
+                                </Link> 
                                 </li>
                             </ul>
                             </div>
@@ -104,41 +104,41 @@ const Footer = () => {
                             </div>
                             <ul className="recent-posts">
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     <i className="fa fa-clock" />
                                     Home
-                                </a>
+                                </Link> 
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/about">
                                     <i className="fa fa-clock" />
                                     About
-                                </a>
+                                </Link> 
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa fa-clock" />
                                     Facilities
-                                </a>
+                                </Link> 
                             </li>
                             
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa fa-clock" />
                                     Blog
-                                </a>
+                                </Link> 
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa fa-clock" />
                                     Contact
-                                </a>
+                                </Link> 
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa fa-clock" />
                                     Complain / Feedback
-                                </a>
+                                </Link> 
                             </li>
                             </ul>
                         </div>
@@ -169,7 +169,7 @@ const Footer = () => {
             </footer>
             <div className="bottom-bar">
                 <p>
-                © 2024 <a href="https://www.srnsdigitechnologies.co.in/"><u>SRNS Digi Technologies</u></a> All Rights Reserved.
+                © 2024 <Link to="https://www.srnsdigitechnologies.co.in/"><u>SRNS Digi Technologies</u></Link>  All Rights Reserved.
                 </p>
             </div>
             {/* bottom bar */}
@@ -216,7 +216,7 @@ const Footer = () => {
                         <button type="submit">Register Now</button>
                     </form>
                     </div>
-                    <a href="#">Have An Account</a>
+                    <Link to="#">Have An Account</Link> 
                 </div>
                 <div className="registr-form show-logn">
                     <div
@@ -244,7 +244,7 @@ const Footer = () => {
                         <button type="submit">Login Now</button>
                     </form>
                     </div>
-                    <a href="#">Don't Have Account</a>
+                    <Link to="#">Don't Have Account</Link> 
                 </div>
                 </div>
             </div>

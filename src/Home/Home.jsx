@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import Banner from "../Componanats/Navbar/Banner/Banner";
 import Courses from "../Academic/Courses";
 import Blog from "../Blog/BlogApi";
@@ -11,10 +11,25 @@ import Step1 from "../img/step1.png";
 import Step2 from "../img/step2.png";
 import Step3 from "../img/step3.png";
 import {Link} from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllCoursesApi } from "../Redux-toolkit/Slice/NavbarSlice";
 
 
 
 const Home = () => {
+
+  const dispatch = useDispatch();
+    let { Courses,error, } = useSelector((state) => state.navbar);
+  
+    useEffect(() => {
+      dispatch(getAllCoursesApi());
+    }, []);
+    let newCourses = Courses.data
+    console.log(newCourses) 
+  if (error) { 
+    return <div>Error fetching blogs. Please try again later.</div>;
+  }
+
   return (
     <div>
       <Banner/>
@@ -569,28 +584,71 @@ const Home = () => {
               <div
                 className="bg-image with-pattern half-height"
                 style={{ backgroundImage: "url(assets/images/pattern.jpg)" }}
-              />
-              <div className="container">
-                <div className="heading pb-0">
-                  <h2>Popular Courses</h2>
-                  <p>Our Online Course Categories</p>
-                </div>
-              </div>
-              <div className="container">
-                <div className="row">
-                <div className="col-12">
-                    <Link to="/courses" className='d-flex justify-content-end'>
-                      <p className='btn btn-success border px-3 py-1 rounded'>All Courses</p>
-                    </Link>
+                />
+                  <div className="container">
+                    <div className="heading pb-0">
+                      <h2>Popular Courses</h2>
+                      <p>Our Online Course Categories</p>
+                    </div>
                   </div>
-                  <div className="col-12">
-                  <Courses />
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-12">
+                        <Link to="/courses" className='d-flex justify-content-end px-3'>
+                          <p className='btn btn-success border px-3 py-1 rounded'>All Courses</p>
+                        </Link>
+                      </div>
+                    <div>
+                    <div className="row">
+                      <div className="col-md-11 col-xl-10 mx-auto">
+                        <div className="course-page">
+                          <ul className="row masonry d-flex">
+                            {/* Use slice to get only the first 3 courses */}
+                            {Courses.data && Courses.data.slice(0, 3).map((course, index) => (
+                              <li
+                                key={index}
+                                className="col-sm-6 col-lg-4 trending certified"
+                              >
+                                <Link to={`/single_courses/${course._id}`}>
+                                  <div className="pop-course border p-2 rounded">
+                                    <div className="course-thumb">
+                                      <div className="">
+                                        <img src={course.Image} alt="" />
+                                        <span className="text-dark">
+                                          {course.price} /INR
+                                        </span>
+                                        <a href="course-detail.html" className="butn">
+                                          {course.duration}
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div className="course-meta">
+                                      <div className="course-author">
+                                        <img
+                                          src="assets/images/author.png"
+                                          alt=""
+                                        />
+                                        <span>{course.courseName}</span>
+                                      </div>
+                                      {/* Show only the first 9 words */}
+                                      <h2><div dangerouslySetInnerHTML={{ __html: course.description.split(' ').slice(0, 12).join(' ') }}></div></h2>
+                                      <div className=" text-end">
+                                      <span className="h6">Read more...</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          
           <section>
             <div className="block no-bottom">
               <div className="container-fluid">
@@ -602,10 +660,9 @@ const Home = () => {
               </div>
             </div>
           </section>
-
           <section>
             <div className="block no-bottom pt-5">
-              <div className="container-fluid pt-5">
+              <div className="container pt-5">
                 <div className="row">
                   <div className="col-12">
                     <div className="heading">

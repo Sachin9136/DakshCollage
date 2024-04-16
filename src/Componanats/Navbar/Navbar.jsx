@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import LoadingBar from 'react-top-loading-bar';
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from "react-redux";
@@ -7,8 +8,28 @@ import logo from "../../img/Logo-Daksh-School-1.png";
 import "./Navbar.css";
 const token = localStorage.getItem("accessToken")
 const CustomNavbar = () => {
+
   const dispatch = useDispatch();
   const { aboutus, academics, Facilities, MedicalFacility, Departments, StudentPdf  } = useSelector((state) => state.navbar);
+
+
+  const [progress, setProgress] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const bodyHeight = document.body.offsetHeight;
+      const scrollPercentage = (scrollPosition / (bodyHeight - windowHeight)) * 100;
+      setProgress(scrollPercentage);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
+
+
 
   useEffect(() => {
     dispatch(getaboutusapi());
@@ -29,6 +50,13 @@ const CustomNavbar = () => {
   };
 
   return (
+    <>
+    <LoadingBar
+        color='#ff914c'
+        height={3}
+        shadow={`0px 0px 10px #BFC2FF`}
+        progress={progress}
+      />
     <div className="pt-1">
       <div className="container-fluid">
         <div className="row p-0 m-0">
@@ -155,6 +183,7 @@ const CustomNavbar = () => {
         </div>
       </Navbar>
     </div>
+    </>
   );
 };
 

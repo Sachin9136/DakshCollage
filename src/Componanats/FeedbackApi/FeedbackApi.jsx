@@ -4,6 +4,7 @@ import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import icon from "../../img/icon.jpg"
 
 const FeedbackApi = () => {
   const [feedback, setFeedback] = useState([]);
@@ -77,17 +78,26 @@ const FeedbackApi = () => {
 
   return (
     <>
+    <style>{`
+        .icon-img{
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+        }
+      `}</style>
       <div className="slider-container">
         <Slider {...settings}>
           {feedback.map((feedbackItem, index) => (
             <div key={index} className="col-sm-12 col-md-4 col-lg-3">
               <div className="mb-2 p-2">
                 <div className="border rounded p-2" style={{ backgroundColor: backgroundColors[index % backgroundColors.length] }}>
-                  <img className="rounded" src="https://i.pinimg.com/736x/93/50/02/9350026ffc376d774e36c4445e6e16cc.jpg" alt="" width="50%"/>
+                  <div className="d-flex justify-content-center">
+                  <img className="icon-img" src={icon} alt=""/>
+                  </div>
                   <div className="pt-3">
                     <h4 className="text-center">{capitalizeFirstLetter(feedbackItem.name)}</h4>
                     <p className="text-center">{capitalizeFirstLetter(feedbackItem.suggestion)}</p>
-                    <p>{formatDate(feedbackItem.createdAt)}</p>
+                    
                   </div>
                 </div> 
                 
