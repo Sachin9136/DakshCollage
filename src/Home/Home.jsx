@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Banner from "../Componanats/Navbar/Banner/Banner";
-import Courses from "../Academic/Courses";
-import Blog from "../Blog/BlogApi";
+import Home_Blog from "../Componanats/Home_Blog/Home_Blog";
 import helping_img from "../img/help-img.webp";
 import PhotoGallery_Slider from "../Componanats/PhotoGallery_Slider/PhotoGallery_Slider";
 import Feedback from "../Componanats/FeedbackApi/FeedbackApi";
@@ -439,7 +438,7 @@ const Home = () => {
                         blandit pretium pharetra eu.
                       </p>
                       <Link to="/courses" className="butn with-bg get-login-register border rounded-5 m-2">
-                        Sign Up Now
+                        All Courses
                       </Link>
                     </div>
                   </div>
@@ -845,8 +844,8 @@ const Home = () => {
               </div>
               <div className="container">
                 <div className="row justify-content-center">
-                  <div className="col-sm-12 col-md-10 col-lg-10">
-                    <Blog />
+                  <div className="col-sm-12 col-md-12 col-lg-12">
+                    <Home_Blog />
                   </div>
                 </div>
               </div>

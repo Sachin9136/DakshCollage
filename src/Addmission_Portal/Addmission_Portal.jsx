@@ -1,6 +1,5 @@
 import React from 'react';
-import Login from "../Login/Login";
-
+import Enterence_Form from "../Componanats/Entrence_Form/Entrence_Form";
 const Addmission_Portal = () => {
   return (
     <div>
@@ -9,18 +8,18 @@ const Addmission_Portal = () => {
                 <div className="col-sm-12 col-md-12 col-lg-12 ">
                 <ul className="nav nav-pills mb-3 d-flex justify-content-evenly " id="pills-tab" role="tablist">
                 <li className="nav-item" role="presentation">
-                <button
-                    className="nav-link active border mb-2"
-                    id="pills-home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-home"
-                    aria-selected="true"
-                >
-                    GNM PROSPECTUS
-                </button>
+                        <button
+                            className="nav-link active border mb-2"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                        >
+                            GNM PROSPECTUS
+                        </button>
                 </li>
                 <li className="nav-item" role="presentation">
                 <button
@@ -72,9 +71,18 @@ const Addmission_Portal = () => {
                 id="pills-home"
                 role="tabpanel"
                 aria-labelledby="pills-home-tab"
-                tabIndex={0}
-                >
-                ...
+                tabIndex={0}>
+                    <div>
+                        <Enterence_Form />
+                        <div className='text-center py-5'>
+                            <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
+                                <button className="btn btn-success border">
+                                    Download GNM PROSPECTUS
+                                </button>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                    </div>
                 </div>
                 <div
                 className="tab-pane fade"
@@ -83,7 +91,16 @@ const Addmission_Portal = () => {
                 aria-labelledby="pills-profile-tab"
                 tabIndex={0}
                 >
-                ...
+                    <div>
+                        <div className='text-center py-5'>
+                            <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
+                                <button className="btn btn-success border">
+                                    Download BSC NURSING (H) PROSPECTUS 
+                                </button>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                    </div>
                 </div>
                 <div
                 className="tab-pane fade"
@@ -92,7 +109,16 @@ const Addmission_Portal = () => {
                 aria-labelledby="pills-contact-tab"
                 tabIndex={0}
                 >
-                ...
+                    <div>
+                        <div className='text-center py-5'>
+                            <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
+                                <button className="btn btn-success border">
+                                    Download MSC / NPCC PROSPECTUS
+                                </button>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                    </div>
                 </div>
                 <div
                 className="tab-pane fade"
@@ -101,7 +127,16 @@ const Addmission_Portal = () => {
                 aria-labelledby="pills-disabled-tab"
                 tabIndex={0}
                 >
-                ...
+                    <div>
+                        <div className='text-center py-5'>
+                            <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
+                                <button className="btn btn-success border">
+                                    Download BSC NURSING (POST BASIC) PROSPECTUS
+                                </button>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                    </div>
                 </div>
             </div>
                 </div>

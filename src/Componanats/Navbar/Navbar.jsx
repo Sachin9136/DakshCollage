@@ -80,7 +80,7 @@ const CustomNavbar = () => {
             </Link>
 
             <div className="d-flex">
-{  !token &&   <Link to="/login">
+            {  !token &&   <Link to="/login">
                 <Button variant="outline-success btn-sm mx-1 login-btn">Login</Button>
               </Link>}
               {token && <Link to="/login">
@@ -140,7 +140,7 @@ const CustomNavbar = () => {
                 {token && <NavDropdown title="Student" id="basic-nav-dropdown">
                 {StudentPdf.data &&
                   StudentPdf.data.map((StudentPdfdata, index) => (
-                    <NavDropdown.Item key={index} as={Link} to={`/student_Pdf/${StudentPdfdata._id}`}>
+                    <NavDropdown.Item key={index} href={StudentPdfdata.Pdf} target="_blank">
                       {capitalizeAllWords(StudentPdfdata.title)}
                     </NavDropdown.Item>
                   ))}

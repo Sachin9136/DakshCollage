@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getAllBlogs } from "../Componanats/api/api_base";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios from "axios"; 
 
 const BlogApi = () => {
   const [blogs, setBlogs] = useState([]);

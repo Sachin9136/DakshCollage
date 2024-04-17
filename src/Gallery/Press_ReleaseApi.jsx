@@ -18,17 +18,26 @@ const Press_ReleaseApi = () => {
     getPress_imgApi();
   }, []);
 
+  const capitalizeFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   return (
     <>
+    <style>{`
+        .press-img-size{
+          height: 200px;
+          object-fit: contain;
+        }
+      `}</style>
         {press_imgs.map((press_img, index) => (
-            <div key={index} className="col-sm-12 col-md-4 col-lg-4">
-              <div class="gallery-meta">
-                <img className="rounded-3 p-2" src={press_img.PressImage} alt="" width="100%"/>
-                <h3 className="text-center">{press_img.title}</h3>
-                <a data-fancybox="gallery" href="assets/images/gallery-image-1.jpg" class="icn"><i class="fa fa-search"></i></a>
-              </div>
+          <div key={index} className="col-sm-12 col-md-6 col-lg-4">
+            <div class="rounded d-flex justify-content-center">
+              <img className="press-img-size rounded" src={press_img.PressImage} alt=""/>
             </div>
-        ))};
+            <h5 className="text-center pt-2">{capitalizeFirstLetter(press_img.title)}</h5>
+          </div>
+        ))}
     </>
   )
 }

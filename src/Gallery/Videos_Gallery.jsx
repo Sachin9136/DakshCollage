@@ -12,7 +12,7 @@ const Videos_Gallery = () => {
             </section>
             {/* Banner */}
             <section> 
-                <div className="block inner-pages">
+                <div className="block inner-pages pt-0">
                 <div className="container">
                     <div className="row">
                     <Videos_GalleryApi />

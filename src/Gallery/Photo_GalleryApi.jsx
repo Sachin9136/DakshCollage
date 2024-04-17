@@ -18,19 +18,30 @@ const Photo_GalleryApi = () => {
     getImageApi();
   }, []);
 
+  
+  const capitalizeFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   return (
     <>
+    <style>{`
+        .gallery-img-size{
+          // width: 100px;
+          height: 300px;
+          object-fit: contain;
+        }
+      `}</style>
         {images.map((image, index) => (
-          <div key={index} className="col-sm-12 col-md-4 col-lg-4">
-            <div class="gallery-meta rounded">
-              <img className=" p-2" src={image.GelleryImage} alt="" width="100%"/>
-              <h5 className="text-center">{image.title}</h5>
-              <a data-fancybox="gallery" href="assets/images/gallery-image-1.jpg" class="icn"><i class="fa fa-search"></i></a>
+          <div key={index} className="col-sm-12 col-md-6 col-lg-4 pb-5">
+            <div class="rounded d-flex justify-content-center">
+              <img className="gallery-img-size" src={image.GelleryImage} alt=""/>
             </div>
+            <h5 className="text-center pt-2">{capitalizeFirstLetter(image.title)}</h5>
           </div>
-        ))};
+        ))}
     </>
-  );
+  )
 }
 
 export default Photo_GalleryApi;
