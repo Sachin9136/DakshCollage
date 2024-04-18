@@ -40,7 +40,6 @@ import Student_Pdf from "../src/Student/Student";
 
 import TopToScroll from "./TopToScroll";
 
-import Enterance_Form from "../src/Componanats/Entrence_Form/Entrence_Form";
 
 
 function App() {
@@ -49,7 +48,6 @@ function App() {
       
       <Navbar/> 
       <TopToScroll/> 
-      <Enterance_Form />
         <Routes>
           <Route path="/" element={<Home />} />
 

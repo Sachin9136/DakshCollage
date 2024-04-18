@@ -13,7 +13,7 @@ const MedicalFacility = () => {
   return (
     <div>
       <div className="container-fluid">
-        <div className="row page-header p-0 m-0">
+        <div className="row page-header p-0 m-0 mb-5">
           {status === "loading" && (
             <div className="col-sm-12 text-center">
               <p>loading</p>{" "}

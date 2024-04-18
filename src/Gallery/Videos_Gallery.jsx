@@ -6,12 +6,12 @@ const Videos_Gallery = () => {
     <div>
         <main role="main"> 
             <section>
-                <div className="page-header">
-                    <h1 className='text-center'>Video Gallery</h1>
-                </div>
+            <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
+                <div className="text-white h1">Video Gallery</div>
+            </div>
             </section>
             {/* Banner */}
-            <section> 
+            <section className='mt-5'> 
                 <div className="block inner-pages pt-0">
                 <div className="container">
                     <div className="row">

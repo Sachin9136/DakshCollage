@@ -12,7 +12,7 @@ import Step3 from "../img/step3.png";
 import {Link} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCoursesApi } from "../Redux-toolkit/Slice/NavbarSlice";
-
+import Enterance_Form from "../../src/Componanats/Entrence_Form/Entrence_Form";
 
 
 const Home = () => {
@@ -33,6 +33,7 @@ const Home = () => {
     <div>
       <Banner/>
       <div>
+        <Enterance_Form />
         <main role="main"> 
           <section>
             <div className="main-slider">
