@@ -94,6 +94,7 @@ function App() {
           <Route path="/addmisssion_portal" element={<Addmisssion_Portal />} /> 
 
           <Route path="/student_Pdf/:id" element={<Student_Pdf />} /> 
+          <Route path="/enterance_form" element={<Enterance_Form />} /> 
           
         </Routes>
       <Footer />

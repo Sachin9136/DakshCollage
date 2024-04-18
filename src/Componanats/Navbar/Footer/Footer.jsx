@@ -100,6 +100,12 @@ const Footer = () => {
                                     Complain / Feedback
                                 </Link> 
                             </li>
+                            <li>
+                                <Link to="/enterance_form">
+                                    <i className="fa fa-clock" />
+                                    Entrance Form
+                                </Link> 
+                            </li>
                             </ul>
                         </div>
                         </div>
