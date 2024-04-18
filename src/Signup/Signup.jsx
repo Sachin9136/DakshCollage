@@ -73,7 +73,7 @@ const Signup = () => {
                                     <div
                                         className="alert alert-success contact__msg"
                                         style={{ display: "none" }}
-                                        role="alert"
+                                        role="alert" 
                                     >
                                         Your message was sent successfully.
                                     </div>
@@ -133,7 +133,7 @@ const Signup = () => {
                                     <p className="omment-form-subject d-flex justify-content-center">
                                         <label htmlFor="subject">
                                         </label>
-                                        <input
+                                        {/* <input
                                         value={dob}
                                         onChange={(e) => setDob(e.target.value)}
                                         placeholder="Date of Birth"
@@ -143,7 +143,15 @@ const Signup = () => {
                                         type="text"
                                         defaultValue=""
                                         required=""
-                                        />
+                                        /> */}
+                                        <input
+                                        onChange={(e) => setDob(e.target.value)}
+                                        className="form-control feild justify-content-start"
+                                        type="date"
+                                        id="dob"
+                                        name="dob"
+                                        value={dob}
+                                        ></input>
                                     </p>
                                     </div>
                                     <div className="col-sm-12">

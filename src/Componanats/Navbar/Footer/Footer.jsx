@@ -35,11 +35,11 @@ const Footer = () => {
                                     <img src={Logo} alt="" className="img-fluid rounded"  height={80} width={80}/>
                                 </div>
                             </Link>
-                            <p>
+                            <p> 
                                 Pellentesque ultrices orci id justo vehicula, non aliquam
                                 erat lacinia. Mauris rhoncus venenatis tempor.
                             </p>
-                            <ul>
+                            {/* <ul>
                                 <li>
                                 <i className="fa fa-map-marker-alt" />
                                 31-33B Tan Thuan St, Tan Thuan EZ,
@@ -58,49 +58,14 @@ const Footer = () => {
                                 <i className="fa fa-phone" />
                                 +98 987 787 123
                                 </li>
-                            </ul>
+                            </ul> */}
                             </div>
                         </div>
                         </div>
                         <div className="col-sm-6 col-lg-3 col-xl-3">
                         <div className="widget">
                             <div className="widget-title">
-                            <h4>Get in Touch</h4>
-                            </div>
-                            <div className="get-in-touch">
-                            <ul className="row no-gutters">
-                                <li className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <Link to="#" className="social-icn facebook">
-                                    <i className="fab fa-facebook-f" />
-                                    Facebook
-                                </Link> 
-                                </li>
-                                <li className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <Link to="#" className="social-icn twitter">
-                                    <i className="fab fa-twitter" />
-                                    Twitter
-                                </Link> 
-                                </li>
-                                <li className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <Link to="#" className="social-icn google-plus">
-                                    <i className="fab fa-google-plus-g" />
-                                    Google+
-                                </Link> 
-                                </li>
-                                <li className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <Link to="#" className="social-icn linkedin-in">
-                                    <i className="fab fa-linkedin-in" />
-                                    linkedin
-                                </Link> 
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3 col-xl-3">
-                        <div className="widget">
-                            <div className="widget-title">
-                            <h4>Quick Links</h4>
+                            <h4>Quick Links 1</h4>
                             </div>
                             <ul className="recent-posts">
                             <li>
@@ -109,35 +74,70 @@ const Footer = () => {
                                     Home
                                 </Link> 
                             </li>
+                            
                             <li>
-                                <Link to="/about">
+                                <Link to="/courses">
                                     <i className="fa fa-clock" />
-                                    About
-                                </Link> 
-                            </li>
-                            <li>
-                                <Link to="#">
-                                    <i className="fa fa-clock" />
-                                    Facilities
+                                    Courses
                                 </Link> 
                             </li>
                             
                             <li>
-                                <Link to="#">
+                                <Link to="/blog">
                                     <i className="fa fa-clock" />
                                     Blog
                                 </Link> 
                             </li>
                             <li>
-                                <Link to="#">
+                                <Link to="/contact">
                                     <i className="fa fa-clock" />
                                     Contact
                                 </Link> 
                             </li>
                             <li>
-                                <Link to="#">
+                                <Link to="/complain_feedback">
                                     <i className="fa fa-clock" />
                                     Complain / Feedback
+                                </Link> 
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div className="col-sm-6 col-lg-3 col-xl-3">
+                        <div className="widget">
+                            <div className="widget-title">
+                            <h4>Quick Links 2</h4>
+                            </div>
+                            <ul className="recent-posts">
+                            <li>
+                                <Link to="/academic/6617ea02d2f13fec2791c74f">
+                                    <i className="fa fa-clock" />
+                                    Addmission Process
+                                </Link> 
+                            </li>
+                            <li>
+                                <Link to="/photo_gallery">
+                                    <i className="fa fa-clock" />
+                                    Photo Gallery
+                                </Link> 
+                            </li>
+                            <li>
+                                <Link to="/facilities/65fcfe86f66ce89f0bd3cc82">
+                                    <i className="fa fa-clock" />
+                                    Smart Classes
+                                </Link> 
+                            </li>
+                            
+                            <li>
+                                <Link to="/medicalaFacility/65fd3db63604f547c6771576">
+                                    <i className="fa fa-clock" />
+                                    Medical facility
+                                </Link> 
+                            </li>
+                            <li>
+                                <Link to="/department/65fcfcf547311569fd623890">
+                                    <i className="fa fa-clock" />
+                                    Medical Surgery
                                 </Link> 
                             </li>
                             </ul>
@@ -172,85 +172,7 @@ const Footer = () => {
                 © 2024 <Link to="https://www.srnsdigitechnologies.co.in/"><u>SRNS Digi Technologies</u></Link>  All Rights Reserved.
                 </p>
             </div>
-            {/* bottom bar */}
-            <div className="scroll-top">
-                <i className="fa fa-angle-up" />
-            </div>
-            {/* scroll top */}
-            {/* login / register popup */}
-            <div className="cust-modal">
-                <span className="model-close">
-                <i className="fa fa-times" />
-                </span>
-                <div className="model-content">
-                <div className="registr-form">
-                    <div
-                    className="bg-image with-pattern"
-                    style={{ backgroundImage: "url(assets/images/pattern.jpg)" }}
-                    />
-                    <div className="registr-content">
-                    <h3>Register Now</h3>
-                    <p>Get 100s of online Courses For Free</p>
-                    <form>
-                        <div className="form-group">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Complete Name"
-                        />
-                        </div>
-                        <div className="form-group">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Email Address"
-                        />
-                        </div>
-                        <div className="form-group">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Password"
-                        />
-                        </div>
-                        <button type="submit">Register Now</button>
-                    </form>
-                    </div>
-                    <Link to="#">Have An Account</Link> 
-                </div>
-                <div className="registr-form show-logn">
-                    <div
-                    className="bg-image with-pattern"
-                    style={{ backgroundImage: "url(assets/images/pattern.jpg)" }}
-                    />
-                    <div className="registr-content">
-                    <h3>Login Now</h3>
-                    <p>Get 100s of online Courses For Free</p>
-                    <form>
-                        <div className="form-group">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Email Address"
-                        />
-                        </div>
-                        <div className="form-group">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Password"
-                        />
-                        </div>
-                        <button type="submit">Login Now</button>
-                    </form>
-                    </div>
-                    <Link to="#">Don't Have Account</Link> 
-                </div>
-                </div>
-            </div>
-            <div className="modal-overlay" />
         </>
-
     </div>
   )
 }

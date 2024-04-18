@@ -150,19 +150,18 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
 
     const [selectedDate, setSelectedDate] = useState('');
 
-  // Function to handle changes in the date input
-  const handleDateChange = (event) => {
-    setSelectedDate(event.target.value);
-  };
+    // Function to handle changes in the date input
+    const handleDateChange = (event) => {
+        setSelectedDate(event.target.value);
+    };
 
-  // Function to handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // You can handle form submission logic here
-    console.log("Selected date:", selectedDate);
-  };
+    // Function to handle form submission
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // You can handle form submission logic here
+        console.log("Selected date:", selectedDate);
+    };
 
-console.log(Profile);
 
   return (
     <div>
