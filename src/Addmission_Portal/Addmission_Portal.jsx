@@ -1,5 +1,4 @@
 import React from 'react';
-import Enterence_Form from "../Componanats/Entrence_Form/Entrence_Form";
 const Addmission_Portal = () => {
   return (
     <div>
@@ -73,7 +72,6 @@ const Addmission_Portal = () => {
                 aria-labelledby="pills-home-tab"
                 tabIndex={0}>
                     <div>
-                        <Enterence_Form />
                         <div className='text-center py-5'>
                             <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
                                 <button className="btn btn-success border">
