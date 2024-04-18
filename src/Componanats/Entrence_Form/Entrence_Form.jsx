@@ -75,10 +75,9 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
         Profile:Profile,
         signatureofgaurdian:signatureofgaurdian,
         signatureofapplicent:signatureofapplicent,
-            
-            // image :image
         }
-        // console.log(data)
+        console.log(Profile);
+
         dispatch(entrenceExamFormApi(data))
         setName("")
         setFatherName("")
@@ -111,7 +110,6 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
         setSignatureofGaurdian("")
         setSignatureofApplicent("")
     }
-
 
     useEffect(() => {
         // Function to automatically trigger the modal after 3 seconds of window loading
@@ -147,6 +145,22 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
         };
     }, []);
 
+    const [selectedDate, setSelectedDate] = useState('');
+
+  // Function to handle changes in the date input
+  const handleDateChange = (event) => {
+    setSelectedDate(event.target.value);
+  };
+
+  // Function to handle form submission
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // You can handle form submission logic here
+    console.log("Selected date:", selectedDate);
+  };
+
+console.log(Profile);
+
   return (
     <div>
       <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ display: 'none' }}>
@@ -155,8 +169,8 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
-            <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">Entrance Form</h1>
+            <div className="modal-header bg-success">
+              <h1 className="modal-title fs-5 text-light" id="exampleModalLabel">Entrance Form</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -198,12 +212,12 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 Profile Image
                                 </label>
                                 <input 
-                                onChange={(e) => setProfile(e.target.files[0])}
-                                placeholder="Select your Profile Image"
+                                onChange={(e) => setProfile(e.target.value)}
                                 className="form-control"
                                 id="profile"
                                 name="profile"
                                 type="file"
+                                accept="image/*"
                                 required
                             />
                             </p>
@@ -247,9 +261,9 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                             <div className="col-sm-12 col-md-12 col-lg-6">
                             <p className="comment-form-subject">
                                 <label htmlFor="subject" className="mb-1">
-                                Qualification
+                                Date Of Birth
                                 </label>
-                                <input 
+                                {/* <input 
                                 value={Dob}
                                 onChange={(e) => setDob(e.target.value)}
                                 placeholder="Type Your DOB"
@@ -259,7 +273,16 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 type="text"
                                 defaultValue=""
                                 required=""
-                                />
+                                /> */}
+                                <input
+                                onChange={(e) => setDob(e.target.value)}
+                                className="form-control"
+                                type="date"
+                                id="Dob"
+                                name="Dob"
+                                value={Dob}
+                                // onChange={handleDateChange}
+                            />
                             </p>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -463,9 +486,9 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                             <div className="col-sm-12 col-md-12 col-lg-6">
                             <p className="comment-form-subject">
                                 <label htmlFor="subject" className="mb-1">
-                                Curse Applied
+                                Course Applied
                                 </label>
-                                <input 
+                                {/* <input 
                                 value={curseApplied}
                                 onChange={(e) => setCurseApplied(e.target.value)}
                                 placeholder="Type Your Curse Applied"
@@ -475,7 +498,20 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 type="text"
                                 defaultValue=""
                                 required=""
-                                />
+                                /> */}
+                                <select onChange={(e) => setCurseApplied(e.target.value)} class="form-select" aria-label="Large select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Anm">ANM</option>
+                                <option value="Gnm">GNM</option>
+                                <option value="BSCNursing">BSC Nursing</option>
+                                <option value="PBBNursing">PBB SC Nursing</option>
+                                <option value="MSCNursing">MSC Nursing (Speciality)</option>
+                                <option value="Msn">MSN</option>
+                                <option value="Obg">OBG</option>
+                                <option value="Pediatric">Pediatric</option>
+                                <option value="Chn">CHN</option>
+                                <option value="Mhn">MHN</option>
+                                </select>
                             </p>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -519,7 +555,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 <label htmlFor="subject" className="mb-1">
                                 Marital Status
                                 </label>
-                                <input
+                                {/* <input
                                 value={maritalStatus}
                                 onChange={(e) => setMaritalStatus(e.target.value)}
                                 placeholder="Type Your Marital Status"
@@ -529,16 +565,22 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 type="text"
                                 defaultValue=""
                                 required=""
-                                />
+                                /> */}
+                                <select onChange={(e) => setMaritalStatus(e.target.value)} class="form-select" aria-label="Large select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Married">Married</option>
+                                <option value="UnMarried">UnMarried</option>
+                                <option value="Widow">Widow</option>
+                                <option value="Divorce">Divorce</option>
+                                </select>
                             </p>
                             </div>
-                            
                             <div className="col-sm-12 col-md-12 col-lg-6">
                             <p className="comment-form-subject">
                                 <label htmlFor="subject" className="mb-1">
                                 Caste
                                 </label>
-                                <input 
+                                {/* <input 
                                 value={caste}
                                 onChange={(e) => setCaste(e.target.value)}
                                 placeholder="Type Your Caste"
@@ -548,7 +590,15 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 type="text"
                                 defaultValue=""
                                 required=""
-                                />
+                                /> */}
+                                <select onChange={(e) => setCaste(e.target.value)} class="form-select" aria-label="Large select example">
+                                <option selected>Open this select menu</option>
+                                <option value="General">General</option>
+                                <option value="Obc">OBC</option>
+                                <option value="Sc">SC</option>
+                                <option value="St">ST</option>
+                                <option value="Bc2">BC2</option>
+                                </select>
                             </p>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-6">
