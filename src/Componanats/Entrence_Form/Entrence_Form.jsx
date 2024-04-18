@@ -76,9 +76,12 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
         signatureofgaurdian:signatureofgaurdian,
         signatureofapplicent:signatureofapplicent,
         }
-        console.log(Profile);
-
-        dispatch(entrenceExamFormApi(data))
+        console.log(data);
+        const formData = new FormData();
+        for (const key in data) {
+            formData.append(key, data[key]);
+        }
+        dispatch(entrenceExamFormApi(formData))
         setName("")
         setFatherName("")
         setMotherName("")
@@ -106,9 +109,9 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
         setEmailID("")
         setMobile("")
         setGaurdianmobile("")
-        setProfile("")
-        setSignatureofGaurdian("")
-        setSignatureofApplicent("")
+        setProfile(null)
+        setSignatureofGaurdian(null)
+        setSignatureofApplicent(null)
     }
 
     useEffect(() => {
@@ -212,7 +215,7 @@ console.log(Profile);
                                 Profile Image
                                 </label>
                                 <input 
-                                onChange={(e) => setProfile(e.target.value)}
+                                onChange={(e) => setProfile(e.target.files[0])}
                                 className="form-control"
                                 id="profile"
                                 name="profile"

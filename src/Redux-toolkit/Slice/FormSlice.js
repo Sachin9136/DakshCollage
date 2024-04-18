@@ -92,8 +92,7 @@ export const loginApi = createAsyncThunk('loginApi/form', async (data, { rejectW
 export const entrenceExamFormApi = createAsyncThunk('entrenceExamFormApi/form', async (data, { rejectWithValue }) => {
     try {
         const response = await axios.post(entrenceExamForm, data)
-        localStorage.setItem("accessToken", response.data.data.accessToken);
-        return response.data.data.accessToken;
+        return response.data.message;
     } catch (error) {
         return rejectWithValue(error.response.data.message);
     }
@@ -282,7 +281,9 @@ const formSlice = createSlice({
             .addCase(entrenceExamFormApi.fulfilled, (state, action) => {
                 state.status = 'succeeded';
                 state.message = action.payload;
-                state.error = null
+                if (state.message) {
+                    alert(state.message);
+                }
             })
             .addCase(entrenceExamFormApi.rejected, (state, action) => {
                 state.status = 'failed';
