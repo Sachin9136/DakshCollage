@@ -533,7 +533,7 @@ const Home = () => {
             </div>
           </section>
           {/* helping people */}
-          <section>
+          {/* <section>
             <div className="block">
               <div className="container">
                 <div className="row align-items-center">
@@ -576,7 +576,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           {/* funfact2 */}
           <section>
             <div className="block no-bottom">
