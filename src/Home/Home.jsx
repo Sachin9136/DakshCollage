@@ -356,7 +356,7 @@ const Home = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-12 text-center pb-5">
-                    <h1>Afiliation and Recognition</h1>
+                    <h1>Affiliation and Recognition</h1>
                   </div>
                 </div>
                 <div className="row">
