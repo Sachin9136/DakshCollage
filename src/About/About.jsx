@@ -31,7 +31,7 @@ const About = () => {
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
                 <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.title :"not found" }}></div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-12 p-0 m-0">
+              <div className="col-sm-12 col-md-12 col-lg-12 p-0 m-0 mb-5">
                 <section>
                   <div className="block no-bottom">
                     <div className="container">

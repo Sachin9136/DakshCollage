@@ -67,8 +67,8 @@ const PhotoGallery_Slider = () => {
     <div className="slider-container">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="col-sm-12 col-md-4 col-lg-3 Slider_img">
-            <img src={image.GelleryImage} alt={image.title} />
+          <div key={index} className="col-sm-12 col-md-4 col-lg-3 Slider_img p-1">
+            <img className="" src={image.GelleryImage} alt={image.title} />
           </div>
         ))}
       </Slider>

@@ -102,6 +102,7 @@ const BlogApi = () => {
               <img src={blog.thumbnail} className="blog-images img-fluid rounded" alt="" />
               <div className="p-3">
                 <h5 className="mb-3">
+                  <div dangerouslySetInnerHTML={{ __html: truncateContent(blog.title) }}></div>
                   <div dangerouslySetInnerHTML={{ __html: truncateContent(blog.content) }}></div>
                 </h5>
                 <p>
