@@ -32,6 +32,11 @@ const BlogApi = () => {
     return date.toLocaleDateString('en-US', options);
   };
 
+  // Function to capitalize the first letter of each word in a string
+  const capitalizeFirstLetter = (string) => {
+    return string.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <div>
       {blogs.map((blog, index) => (
@@ -47,7 +52,7 @@ const BlogApi = () => {
               </div>
               <div className="col-sm-12 col-md-12 col-lg-7 px-3">
                 <div className="post-data">
-                  <h2 className="m-0">{blog.title}</h2>
+                  <h2 className="m-0">{capitalizeFirstLetter(blog.title)}</h2>
                   {<p dangerouslySetInnerHTML={{ __html: blog.content.split(' ').slice(0, 15).join(' ') }}>
                     </p>}
                    {/* Show only first 20 words */}

@@ -172,7 +172,7 @@ const CustomNavbar = () => {
                 <NavDropdown.Item as={Link} to={`/contact`}>
                   {"Contact Us"}
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={`/contact`}>
+                <NavDropdown.Item as={Link} to={`/quick_payment`}>
                   {"Quick Payment"}
                 </NavDropdown.Item>
               </NavDropdown>
