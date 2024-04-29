@@ -9,6 +9,7 @@ import Topper from "../Componanats/Toppers/Toppers";
 import Step1 from "../img/step1.png";
 import Step2 from "../img/step2.png";
 import Step3 from "../img/step3.png";
+import Step4 from "../img/step4.png";
 import {Link} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCoursesApi } from "../Redux-toolkit/Slice/NavbarSlice";
@@ -123,7 +124,7 @@ const Home = () => {
                           fontFamily: '"Roboto"'
                         }}
                       >
-                        Best Education Theme In 2019
+                        {/* Best Education Theme In 2019 */}
                       </div>
                       {/* LAYER NR. 2 */}
                       <div
@@ -268,7 +269,7 @@ const Home = () => {
                           fontFamily: '"Roboto"'
                         }}
                       >
-                        Best Education Theme In 2019
+                        {/* Best Education Theme In 2019 */}
                       </div>
                       {/* LAYER NR. 2 */}
                       <div
@@ -350,67 +351,80 @@ const Home = () => {
             </div>
           </section>
           {/* slider */}
-          <section>
+          <section className="">
             <div className="block no-bottom">
               <div className="container">
                 <div className="row">
-                  <div className="col-md-6 col-lg-4">
-                    <div className="step-wrap">
-                      <div className="step-img">
+                  <div className="col-12 text-center pb-5">
+                    <h1>Afiliation and Recognition</h1>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6 col-lg-3">
+                    <div className="step-wrap border rounded p-3 mb-5">
+                      <div className="text-center">
                         <figure>
-                          <img src={Step1} alt="" />
+                          <img src={Step1} alt="" width="150px" height="150px"/>
                         </figure>
                       </div>
                       <div className="step">
                         <i>1</i>
                         <h3>
-                          <Link to="/courses">Sign up For Free</Link>
+                          <Link to="/courses">Health Department</Link>
                         </h3>
-                        <span>Consulting Service</span>
+                        <span>Government Of Bihar</span>
                         <p>
-                          Remember though that life coaching is about delivering great
-                          results{" "}
+                          Patna, Bihar
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-4">
-                    <div className="step-wrap">
-                      <div className="step-img">
+                  <div className="col-md-6 col-lg-3">
+                    <div className="step-wrap border rounded p-3 mb-5">
+                      <div className="text-center">
                         <figure>
-                          <img src={Step2} alt="" />
+                          <img src={Step2} alt="" width="150px" height="150px"/>
                         </figure>
                       </div>
                       <div className="step">
                         <i>2</i>
                         <h3>
-                          <a href="#">Buy A Course Online</a>
+                          <a href="#">Bihar Nursing Registration Council</a>
                         </h3>
-                        <span>Bachelor Degree, Honours</span>
-                        <p>
-                          Remember though that life coaching is about delivering great
-                          results
-                        </p>
+                        <span>Patna, Bihar</span>
+                        
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-4">
-                    <div className="step-wrap">
-                      <div className="step-img">
+                  <div className="col-md-6 col-lg-3">
+                    <div className="step-wrap border rounded p-3 mb-5">
+                      <div className="text-center">
                         <figure>
-                          <img src={Step3} alt="" />
+                          <img src={Step3} alt="" width="150px" height="150px" />
                         </figure>
                       </div>
                       <div className="step">
                         <i>3</i>
                         <h3>
-                          <a href="#">Start Online Learning</a>
+                          <a href="#">Bihar University of Health Science</a>
                         </h3>
-                        <span>Course Socialism</span>
-                        <p>
-                          Remember though that life coaching is about delivering great
-                          results{" "}
-                        </p>
+                        <span>Patna, Bihar</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-lg-3">
+                    <div className="step-wrap border rounded p-3 mb-5">
+                      <div className="text-center">
+                        <figure>
+                          <img src={Step4} alt="" width="150px" height="150px" />
+                        </figure>
+                      </div>
+                      <div className="step">
+                        <i>3</i>
+                        <h3>
+                          <a href="#">Bihar University of Health Science</a>
+                        </h3>
+                        <span>Patna, Bihar</span>
                       </div>
                     </div>
                   </div>
