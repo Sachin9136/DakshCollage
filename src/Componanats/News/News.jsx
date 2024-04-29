@@ -21,27 +21,28 @@ const NewsApi = () => {
   return (
     <>  
       <style>{`
-        .news-div {
+        .news-div{
           height:80vh;
         }
       `}</style>
-      
+      <marquee  className="col-12 news-div" behavior="scroll" direction="up">
       {news.map((newsItem, index) => (
-        
-          <marquee key={index} className="col-12 news-div" behavior="scroll" direction="up">
+        <div key={index}>
             <div className="mb-2 border-bottom">
               <div>
-                <h4 className="text-warning">{newsItem.title}</h4>
-                <p className="text-white">{newsItem.content}</p>
+                <h4 className="text-warning" dangerouslySetInnerHTML={{ __html: newsItem.title }}></h4>
+                <p className="text-white" dangerouslySetInnerHTML={{ __html: newsItem.content }}></p>
               </div>
               <div className="d-flex justify-content-between">
                 <p className="text-light">{newsItem.startdate}</p>
                 <p className="text-light">{newsItem.enddate}</p> 
               </div>  
             </div>
-          </marquee>
+          </div>
       ))}
+      </marquee>
     </>
+    
   )
 }
 

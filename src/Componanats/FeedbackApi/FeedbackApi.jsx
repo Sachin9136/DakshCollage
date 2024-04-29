@@ -97,7 +97,6 @@ const FeedbackApi = () => {
                   <div className="pt-3">
                     <h4 className="text-center">{capitalizeFirstLetter(feedbackItem.name)}</h4>
                     <p className="text-center">{capitalizeFirstLetter(feedbackItem.suggestion)}</p>
-                    
                   </div>
                 </div> 
                 
