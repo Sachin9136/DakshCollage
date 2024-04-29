@@ -422,9 +422,9 @@ const Home = () => {
                       <div className="step">
                         <i>3</i>
                         <h3>
-                          <a href="#">Bihar University of Health Science</a>
+                          <a href="#">Indian Nursing Council Delhi</a>
                         </h3>
-                        <span>Patna, Bihar</span>
+                        <span>New Delhi, Delhi</span>
                       </div>
                     </div>
                   </div>
