@@ -29,7 +29,7 @@ export default function App() {
         <img src={banner2} className='d-block w-100' alt='...' />
         <MDBCarouselCaption>
           {/* <h5>Second slide label</h5> */}
-          <h1 className=' text-light fw-bold bg-dark-rgba'>College Faculty and Students</h1>
+          {/* <h1 className=' text-light fw-bold bg-dark-rgba'>College Faculty and Students</h1> */}
         </MDBCarouselCaption>
       </MDBCarouselItem>
 
@@ -37,7 +37,7 @@ export default function App() {
         <img src={banner3} className='d-block w-100' alt='...' />
         <MDBCarouselCaption>
           {/* <h5>Third slide label</h5> */}
-          <h1 className=' text-light fw-bold bg-dark-rgba'>Smart Classes With Computer Labs</h1>
+          <h1 className=' text-light fw-bold bg-dark-rgba'>Learn With Practicals</h1>
         </MDBCarouselCaption>
       </MDBCarouselItem>
     </MDBCarousel>
