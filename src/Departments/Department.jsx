@@ -7,9 +7,16 @@ const About = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const { SingleDepartments, status, error } = useSelector((state) => state.navbar);
+  
   useEffect(() => {
     dispatch(getSingleDepartmentApi(id));
   }, [id]);
+
+  // Function to capitalize all words with the first letter capitalized
+  const capitalizeAllWords = (string) => {
+    return string.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <div>
       <div className="container-fluid">
@@ -26,9 +33,9 @@ const About = () => {
           )}
           {status === "succeeded" && (
             <>
-              <div className="row m-0 p-0">
+            <div className="row m-0 p-0 pb-5">
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
-                <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.title :"not found" }}></div>
+                <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? capitalizeAllWords(SingleDepartments.data.title) :"not found" }}></div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-12 p-0 m-0">
                 <section>
@@ -36,10 +43,10 @@ const About = () => {
                     <div className="container">
                       <div className="success-story">
                         <div className="row align-items-center ">
-                        <div className="col-sm-12 col-md-6 col-lg-6">
+                          <div className="col-sm-12 col-md-6 col-lg-6">
                             <div className="">
-                            <h1 dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.title :"not found" }}></h1>
-                            <p dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.description :"not found" }}></p>
+                              <h1 dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? capitalizeAllWords(SingleDepartments.data.title) :"not found" }}></h1>
+                              <p dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.description :"not found" }}></p>
                             </div>
                           </div>
                           <div className="col-sm-12 col-md-12 col-lg-12">

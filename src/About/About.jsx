@@ -11,6 +11,12 @@ const About = () => {
   useEffect(() => {
     dispatch(getaboutussingleapi(id));
   }, [id]);
+
+  // Function to capitalize the first letter of each word in a string
+  const capitalizeFirstLetter = (string) => {
+    return string.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <div>
       <div className="container-fluid">
@@ -29,7 +35,7 @@ const About = () => {
             <>
             <div className="row m-0 p-0">
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
-                <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.title :"not found" }}></div>
+                <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: aboutussingle.data ? capitalizeFirstLetter(aboutussingle.data.title) :"not found" }}></div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-12 p-0 m-0 mb-5">
                 <section>
@@ -47,7 +53,7 @@ const About = () => {
                             </figure>
                           </div>
                           <div className="col-sm-12 col-md-7 col-lg-8">
-                            <h1 dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.title :"not found" }}></h1>
+                            <h1 dangerouslySetInnerHTML={{ __html: aboutussingle.data ? capitalizeFirstLetter(aboutussingle.data.title) :"not found" }}></h1>
                             <p dangerouslySetInnerHTML={{ __html: aboutussingle.data ? aboutussingle.data.description :"not found" }}></p>
                           </div>
                         </div>

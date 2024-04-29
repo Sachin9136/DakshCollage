@@ -7,9 +7,16 @@ const MedicalFacility = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const { SingleMedicalFacility, status, error } = useSelector((state) => state.navbar);
+  
   useEffect(() => {
     dispatch(getsingleMedicalfacilityapi(id));
   }, [id]);
+
+  // Function to capitalize all words with the first letter capitalized
+  const capitalizeAllWords = (string) => {
+    return string.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <div>
       <div className="container-fluid">
@@ -28,7 +35,7 @@ const MedicalFacility = () => {
             <>
             <div className="row m-0 p-0">
               <div className="col-sm-12 d-flex align-items-center justify-content-center banner-img w-100">
-                <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: SingleMedicalFacility.data ? SingleMedicalFacility.data.title :"not found" }}></div>
+                <div className="text-white h1 " dangerouslySetInnerHTML={{ __html: SingleMedicalFacility.data ? capitalizeAllWords(SingleMedicalFacility.data.title) :"not found" }}></div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-12 p-0 m-0">
                 <section>
@@ -38,8 +45,8 @@ const MedicalFacility = () => {
                         <div className="row align-items-center ">
                           <div className="col-sm-12 col-md-12 col-lg-12">
                             <div className="">
-                            <h1 dangerouslySetInnerHTML={{ __html: SingleMedicalFacility.data ? SingleMedicalFacility.data.title :"not found" }}></h1>
-                            <p dangerouslySetInnerHTML={{ __html: SingleMedicalFacility.data ? SingleMedicalFacility.data.description :"not found" }}></p>
+                              <h1 dangerouslySetInnerHTML={{ __html: SingleMedicalFacility.data ? capitalizeAllWords(SingleMedicalFacility.data.title) :"not found" }}></h1>
+                              <p dangerouslySetInnerHTML={{ __html: SingleMedicalFacility.data ? SingleMedicalFacility.data.description :"not found" }}></p>
                             </div>
                           </div>
                           <div className="col-sm-12 col-md-12 col-lg-12">
@@ -67,4 +74,3 @@ const MedicalFacility = () => {
 };
 
 export default MedicalFacility;
-
