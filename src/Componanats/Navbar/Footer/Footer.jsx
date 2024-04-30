@@ -5,6 +5,7 @@ import Logo from "../../../img/Logo-Daksh-School-1.png";
 const Footer = () => {
   return (
     <div>
+        
         <>
             <footer role="contentinfo">
                 <div className="quick-link-bar">
@@ -39,26 +40,6 @@ const Footer = () => {
                                 Pellentesque ultrices orci id justo vehicula, non aliquam
                                 erat lacinia. Mauris rhoncus venenatis tempor.
                             </p>
-                            {/* <ul>
-                                <li>
-                                <i className="fa fa-map-marker-alt" />
-                                31-33B Tan Thuan St, Tan Thuan EZ,
-                                </li>
-                                <li>
-                                <i className="fa fa-envelope" />
-                                <Link
-                                    to="https://html.webinane.com/cdn-cgi/l/email-protection"
-                                    className="__cf_email__"
-                                    data-cfemail="f2819b9f829e97979f939b9eb2959f939b9edc919d9f"
-                                >
-                                    [email&nbsp;protected]
-                                </Link> 
-                                </li>
-                                <li>
-                                <i className="fa fa-phone" />
-                                +98 987 787 123
-                                </li>
-                            </ul> */}
                             </div>
                         </div>
                         </div>
@@ -68,39 +49,45 @@ const Footer = () => {
                             <h4>Quick Links 1</h4>
                             </div>
                             <ul className="recent-posts">
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/">
                                     <i className="fa fa-clock" />
                                     Home
                                 </Link> 
                             </li>
                             
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/courses">
                                     <i className="fa fa-clock" />
                                     Courses
                                 </Link> 
                             </li>
                             
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/blog">
                                     <i className="fa fa-clock" />
                                     Blog
                                 </Link> 
                             </li>
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/contact">
                                     <i className="fa fa-clock" />
                                     Contact
                                 </Link> 
                             </li>
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/complain_feedback">
                                     <i className="fa fa-clock" />
                                     Complain / Feedback
                                 </Link> 
                             </li>
-                            <li>
+                            <li className="mb-2" >
+                                <Link to="/photo_gallery">
+                                    <i className="fa fa-clock" />
+                                    Photo Gallery
+                                </Link> 
+                            </li>
+                            <li className="mb-2" >
                                 <Link to="/enterance_form">
                                     <i className="fa fa-clock" />
                                     Entrance Form
@@ -115,36 +102,53 @@ const Footer = () => {
                             <h4>Quick Links 2</h4>
                             </div>
                             <ul className="recent-posts">
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/academic/6617ea02d2f13fec2791c74f">
                                     <i className="fa fa-clock" />
                                     Addmission Process
                                 </Link> 
                             </li>
-                            <li>
-                                <Link to="/photo_gallery">
-                                    <i className="fa fa-clock" />
-                                    Photo Gallery
-                                </Link> 
-                            </li>
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/facilities/65fcfe86f66ce89f0bd3cc82">
                                     <i className="fa fa-clock" />
                                     Smart Classes
                                 </Link> 
                             </li>
-                            
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/medicalaFacility/65fd3db63604f547c6771576">
                                     <i className="fa fa-clock" />
                                     Medical facility
                                 </Link> 
                             </li>
-                            <li>
+                            <li className="mb-2" >
                                 <Link to="/department/65fcfcf547311569fd623890">
                                     <i className="fa fa-clock" />
                                     Medical Surgery
                                 </Link> 
+                            </li>
+                            <li className="mb-2" >
+                                <a href="https://state.bihar.gov.in/health/CitizenHome.html" target='Blank'>
+                                    <i className="fa fa-clock" />
+                                    Health Department
+                                </a>
+                            </li>
+                            <li className="mb-2" >
+                                <a href="https://bnrcpatna.com/" target='Blank'>
+                                    <i className="fa fa-clock" />
+                                    BNRC
+                                </a>
+                            </li>
+                            <li className="mb-2" >
+                                <a href="https://buhs.ac.in/WP/BHUEDU/Default.aspx" target='Blank'>
+                                    <i className="fa fa-clock" />
+                                    B.U.H.S
+                                </a>
+                            </li>
+                            <li className="mb-2" >
+                                <a href="https://www.indiannursingcouncil.org/" target='Blank'>
+                                    <i className="fa fa-clock" />
+                                    INCD
+                                </a>
                             </li>
                             </ul>
                         </div>
@@ -155,13 +159,13 @@ const Footer = () => {
                             <h4>Contact Details</h4>
                             </div>
                             <ul className="recent-posts">
-                                <li>
+                                <li className="mb-2" >
                                     <p>abc@gmail.com</p>
                                 </li>
-                                <li>
+                                <li className="mb-2" >
                                     <p>123456782</p>
                                 </li>
-                                <li>
+                                <li className="mb-2" >
                                     <p>Siwan, Bihar</p>
                                 </li>
                             </ul>

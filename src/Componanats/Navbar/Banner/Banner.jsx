@@ -3,6 +3,7 @@ import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-k
 import banner1 from "../../../img/1.png";
 import banner2 from "../../../img/2.png";
 import banner3 from "../../../img/4.png";
+import {Link} from "react-router-dom";
 
 export default function App() { 
   return (
@@ -11,7 +12,7 @@ export default function App() {
       <div className="row p-0 m-0">
         <div className="col-12 marquee-section">
         <marquee behavior="scroll" direction="left" scrollamount="3">
-          This is a movable text using the marquee tag.
+        <b className='text-warning'><u><Link to="/addmisssion_portal">Admission Portal</Link></u></b> is open for the registration for B.Sc.(H) Nursing, Post Basic B.Sc. Nursing, M.Sc. Nursing, Nurse Practitioner in Critical Care(NPCC) & General Nursing Midwifery(GNM) for the academic session 2024 - 2025.
         </marquee>
         </div>
       </div>

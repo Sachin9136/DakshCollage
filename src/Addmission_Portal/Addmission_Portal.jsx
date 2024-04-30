@@ -1,8 +1,10 @@
 import React from 'react';
+import "./addmission-portal.css";
+
 const Addmission_Portal = () => {
   return (
-    <div>
-        <div className="container py-5 mb-5">
+    <div className='bg-image-addmission-portal py-5'>
+        <div className="container py-5 bg-white border rounded">
             <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-12 ">
                 <ul className="nav nav-pills mb-3 d-flex justify-content-evenly " id="pills-tab" role="tablist">

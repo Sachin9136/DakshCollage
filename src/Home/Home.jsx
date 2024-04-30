@@ -370,7 +370,7 @@ const Home = () => {
                       <div className="step">
                         <i>1</i>
                         <h3>
-                          <Link to="/courses">Health Department</Link>
+                          <a href="https://state.bihar.gov.in/health/CitizenHome.html" target="blank" >Health Department</a>
                         </h3>
                         <span>Government Of Bihar</span>
                         <p>
@@ -389,7 +389,7 @@ const Home = () => {
                       <div className="step">
                         <i>2</i>
                         <h3>
-                          <a href="#">Bihar Nursing Registration Council</a>
+                          <a href="https://bnrcpatna.com/" target="blank" >Bihar Nursing Registration Council</a>
                         </h3>
                         <span>Patna, Bihar</span>
                         
@@ -406,7 +406,7 @@ const Home = () => {
                       <div className="step">
                         <i>3</i>
                         <h3>
-                          <a href="#">Bihar University of Health Science</a>
+                          <a href="https://buhs.ac.in/WP/BHUEDU/Default.aspx" target="blank" >Bihar University of Health Science</a>
                         </h3>
                         <span>Patna, Bihar</span>
                       </div>
@@ -422,7 +422,7 @@ const Home = () => {
                       <div className="step">
                         <i>3</i>
                         <h3>
-                          <a href="#">Indian Nursing Council Delhi</a>
+                          <a href="https://www.indiannursingcouncil.org/" target="blank" >Indian Nursing Council Delhi</a>
                         </h3>
                         <span>New Delhi, Delhi</span>
                       </div>
