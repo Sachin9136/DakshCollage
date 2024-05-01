@@ -593,71 +593,55 @@ const Home = () => {
           </section> */}
           {/* funfact2 */}
           <section>
-            <div className="block no-bottom">
-              <div
-                className="bg-image with-pattern half-height"
-                style={{ backgroundImage: "url(assets/images/pattern.jpg)" }}
-                />
-                  <div className="container">
-                    <div className="heading pb-0">
-                      <h2>Popular Courses</h2>
-                      <p>Our Online Course Categories</p>
-                    </div>
-                  </div>
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-12">
-                        <Link to="/courses" className='d-flex justify-content-end px-3'>
-                          <p className='btn btn-success border px-3 py-1 rounded'>All Courses</p>
-                        </Link>
-                      </div>
-                    <div>
-                    <div className="row">
-                      <div className="col-md-11 col-xl-10 mx-auto">
-                        <div className="course-page">
-                          <ul className="row masonry d-flex">
-                            {/* Use slice to get only the first 3 courses */}
-                            {Courses.data && Courses.data.slice(0, 3).map((course, index) => (
-                              <li
-                                key={index}
-                                className="col-sm-6 col-lg-4 trending certified"
-                              >
-                                <Link to={`/single_courses/${course._id}`}>
-                                  <div className="pop-course border p-2 rounded">
-                                    <div className="course-thumb">
-                                      <div className="">
-                                        <img src={course.Image} alt="" />
-                                        <span className="text-dark">
-                                          {course.price} /INR
-                                        </span>
-                                        <a href="course-detail.html" className="butn">
-                                          {course.duration}
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div className="course-meta">
-                                      <div className="course-author">
-                                        <img
-                                          src="assets/images/author.png"
-                                          alt=""
-                                        />
-                                        <span>{course.courseName}</span>
-                                      </div>
-                                      {/* Show only the first 9 words */}
-                                      <h2><div dangerouslySetInnerHTML={{ __html: course.description.split(' ').slice(0, 12).join(' ') }}></div></h2>
-                                      <div className=" text-end">
-                                      <span className="h6">Read more...</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div className="container">
+              <div className="row pt-5">
+                <div className="heading pb-0">
+                  <h2>Popular Courses</h2>
+                  <p>Our Online Course Categories</p>
+                </div>
+              </div>
+              <div className="row d-flex justify-content-center">
+                <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                    <button class="button-29" role="button">MSC Nursing</button>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">NPCC</button>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">PBBSC. Nursing</button>
+                  </Link>
+                </div>
+                <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">B.SC.(H) Nursing</button>
+                  </Link>
+                </div>
+              </div>
+              <div className="row d-flex justify-content-center">
+              <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">GNM</button>
+                  </Link>
+                </div>
+                <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">MSC Nursing</button>
+                  </Link>
+                </div>
+                <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">MSC Nursing</button>
+                  </Link>
+                </div>
+                <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
+                  <Link className="w-100" to="/courses">
+                  <button class="button-29" role="button">MSC Nursing</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -665,7 +649,7 @@ const Home = () => {
           <section>
             <div className="block no-bottom">
               <div className="container-fluid">
-                <div className="heading">
+                <div className="heading pt-5 p-0">
                   <h2>Education Photos</h2>
                   <p>University is the largest fundraising campaigns</p>
                 </div>
@@ -674,11 +658,11 @@ const Home = () => {
             </div>
           </section>
           <section>
-            <div className="block no-bottom pt-5">
-              <div className="container pt-5">
+            <div className="block no-bottom p-0">
+              <div className="container">
                 <div className="row">
                   <div className="col-12">
-                    <div className="heading">
+                    <div className="heading pb-5">
                       <h2>Feedbacks</h2>
                       <p>University is the largest fundraising campaigns</p>
                     </div>
@@ -693,8 +677,8 @@ const Home = () => {
           {/* gallery */}
           <section>
             <div className="block no-bottom">
-              <div className="container pt-5">
-                <div className="heading">
+              <div className="container">
+                <div className="heading pb-5">
                   <h2>Meet Toppers</h2>
                   <p>University is the largest fundraising campaign</p>
                 </div>
@@ -851,7 +835,7 @@ const Home = () => {
           <section>
             <div className="block">
               <div className="container">
-                <div className="heading">
+                <div className="heading pb-5">
                   <h2>Recent Articles</h2>
                   <p>University is the largest fundraising campaign</p>
                 </div>
@@ -872,4 +856,5 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
+

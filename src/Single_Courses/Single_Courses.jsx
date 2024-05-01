@@ -25,7 +25,7 @@ const Single_Courses = () => {
     if (str && typeof str === 'string') {
       return str.replace(/\b\w/g, (char) => char.toUpperCase());
     }
-    return ''; // Return an empty string if the input is not valid
+    return ''; 
   };
 
   return (
@@ -47,10 +47,6 @@ const Single_Courses = () => {
                   <tr>
                     <th scope="row">Course Duration:</th>
                     <td>{capitalizeFirstLetter(singleCourses.duration)}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Course price:</th>
-                    <td>{capitalizeFirstLetter(singleCourses.price)}</td>
                   </tr>
                 </tbody>
               </table>

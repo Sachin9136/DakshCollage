@@ -45,7 +45,7 @@ const Facilities = () => {
                           <div className="col-sm-12 col-md-6 col-lg-6">
                             <figure className="d-flex justify-content-center">
                               {singleFacility.data && singleFacility.data.Image ? (
-                                <img src={singleFacility.data.Image} alt="" width="70%" />
+                                <img className="rounded" src={singleFacility.data.Image} alt="" width="70%" />
                               ) : (
                                 <p>No image found</p>
                               )}

@@ -1,9 +1,23 @@
 import React from 'react';
 import "./addmission-portal.css";
+import logo_img from "../img/Logo-Daksh-School-1.png";
+const token = localStorage.getItem("accessToken")
 
 const Addmission_Portal = () => {
+
+    const logout = ()=>{
+        localStorage.removeItem("accessToken")
+   }
+
   return (
     <div className='bg-image-addmission-portal py-5'>
+        <div className="container">
+        <div className="row pb-4">
+                <div className="col-12 d-flex justify-content-center">
+                    <img className='rounded-4' src={logo_img} alt="" width={150}/>
+                </div>
+            </div>
+        </div>
         <div className="container py-5 bg-white border rounded">
             <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-12 ">
@@ -11,6 +25,20 @@ const Addmission_Portal = () => {
                 <li className="nav-item" role="presentation">
                         <button
                             className="nav-link active border mb-2"
+                            id="pills-home1-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home1"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home1"
+                            aria-selected="true"
+                        >
+                            ANM PROSPECTUS
+                        </button>
+                </li>
+                <li className="nav-item" role="presentation">
+                        <button
+                            className="nav-link border mb-2"
                             id="pills-home-tab"
                             data-bs-toggle="pill"
                             data-bs-target="#pills-home"
@@ -69,6 +97,23 @@ const Addmission_Portal = () => {
             <div className="tab-content" id="pills-tabContent">
                 <div
                 className="tab-pane fade show active"
+                id="pills-home1"
+                role="tabpanel"
+                aria-labelledby="pills-home1-tab"
+                tabIndex={0}>
+                    <div>
+                        <div className='text-center py-5'>
+                            <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
+                                <button className="btn btn-success border">
+                                    Download ANM PROSPECTUS
+                                </button>
+                            </a>
+                        </div>
+                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                    </div>
+                </div>
+                <div
+                className="tab-pane fade"
                 id="pills-home"
                 role="tabpanel"
                 aria-labelledby="pills-home-tab"
@@ -81,7 +126,7 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
                     </div>
                 </div>
                 <div
@@ -99,7 +144,7 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
                     </div>
                 </div>
                 <div
@@ -117,7 +162,7 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
                     </div>
                 </div>
                 <div
@@ -135,7 +180,7 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
                     </div>
                 </div>
             </div>

@@ -42,22 +42,23 @@ const About = () => {
                   <div className="block no-bottom">
                     <div className="container">
                       <div className="success-story">
-                        <div className="row align-items-center ">
-                          <div className="col-sm-12 col-md-6 col-lg-6">
-                            <div className="">
-                              <h1 dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? capitalizeAllWords(SingleDepartments.data.title) :"not found" }}></h1>
-                              <p dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.description :"not found" }}></p>
-                            </div>
-                          </div>
-                          <div className="col-sm-12 col-md-12 col-lg-12">
+                        <div className="row align-items-center justify-content-center">
+                        <div className="col-sm-12 col-md-12 col-lg-12 pb-5">
                             <figure className="d-flex justify-content-center">
                               {SingleDepartments.data && SingleDepartments.data.Image ? (
-                                <img src={SingleDepartments.data.Image} alt="" width="70%" />
+                                <img className="rounded" src={SingleDepartments.data.Image} alt="" width="70%" />
                               ) : (
                                 <p>No image found</p>
                               )}
                             </figure>
                           </div>
+                          <div className="col-sm-12 col-md-10 col-lg-10">
+                            <div className="">
+                              <h1 dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? capitalizeAllWords(SingleDepartments.data.title) :"not found" }}></h1>
+                              <p dangerouslySetInnerHTML={{ __html: SingleDepartments.data ? SingleDepartments.data.description :"not found" }}></p>
+                            </div>
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
