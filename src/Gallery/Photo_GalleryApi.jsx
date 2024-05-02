@@ -38,7 +38,7 @@ const Photo_GalleryApi = () => {
         }
       `}</style>
         {images.map((image, index) => (
-          <div key={index} className="col-sm-12 col-md-6 col-lg-4 pb-5">
+          <div key={index} className="col-sm-12 col-md-6 col-lg-4">
             <div className="rounded d-flex justify-content-center image-container">
               <img className="gallery-img-size rounded" src={image.GelleryImage} alt="Avatar" />
               <div className="middle">
