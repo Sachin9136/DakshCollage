@@ -1,7 +1,7 @@
 export const base_url = "https://colleage.vercel.app";
 export const getAllBlogs = `${base_url + '/api/v1/blogs/getallblogs/?'}`;
 export const getSingleBlog = `${base_url + '/api/v1/blogs/getSingleBlogs/'}`;
-export const getAllImages = `${base_url + '/api/v1/gellery/getallimages'}`;
+export const getAllImages = `${base_url + '/api/v1/gellery/getallimages?limit='}`;
 export const getAllVideos = `${base_url + '/api/v1/video/getallVideo?limit=20'}`;
 export const getAllPressImg = `${base_url + '/api/v1/pressrealse/getallpressrelase/'}`;
 export const getAboutUs = `${base_url + '/api/v1/aboutus/getaboutus/'}`;
