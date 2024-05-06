@@ -145,7 +145,7 @@ const CustomNavbar = () => {
                     </NavDropdown.Item>
                   ))}
               </NavDropdown>}
-              <NavDropdown title="Medical Facility" id="basic-nav-dropdown">
+              <NavDropdown title="Nursing Lab" id="basic-nav-dropdown">
                 {MedicalFacility.data &&
                   MedicalFacility.data.map((MedicalFacilitydata, index) => (
                     <NavDropdown.Item key={index} as={Link} to={`/medicalaFacility/${MedicalFacilitydata._id}`}>

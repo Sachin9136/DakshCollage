@@ -23,7 +23,9 @@ const Single_Courses = () => {
   const capitalizeFirstLetter = (str) => {
     // Check if the string is defined and not empty
     if (str && typeof str === 'string') {
-      return str.replace(/\b\w/g, (char) => char.toUpperCase());
+      // Replace &nbsp; with a space
+      const stringWithoutNbsp = str.replace(/&nbsp;/g, ' ');
+      return stringWithoutNbsp.replace(/\b\w/g, (char) => char.toUpperCase());
     }
     return ''; 
   };

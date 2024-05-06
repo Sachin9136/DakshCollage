@@ -603,44 +603,29 @@ const Home = () => {
               <div className="row d-flex justify-content-center">
                 <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                   <Link className="w-100" to="/courses">
-                    <button class="button-29" role="button">MSC Nursing</button>
+                    <button class="button-29" role="button">ANM</button>
                   </Link>
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                   <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">NPCC</button>
+                  <button class="button-29" role="button">GNM</button>
                   </Link>
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                   <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">PBBSC. Nursing</button>
+                  <button class="button-29" role="button">POST BASIS NURSING</button>
                   </Link>
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                   <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">B.SC.(H) Nursing</button>
+                  <button class="button-29" role="button">B.Sc.(H) NURSING</button>
                   </Link>
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
               <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
                   <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">GNM</button>
-                  </Link>
-                </div>
-                <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
-                  <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">MSC Nursing</button>
-                  </Link>
-                </div>
-                <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
-                  <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">MSC Nursing</button>
-                  </Link>
-                </div>
-                <div className="col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center">
-                  <Link className="w-100" to="/courses">
-                  <button class="button-29" role="button">MSC Nursing</button>
+                  <button class="button-29" role="button">MSC NURSING</button>
                   </Link>
                 </div>
               </div>

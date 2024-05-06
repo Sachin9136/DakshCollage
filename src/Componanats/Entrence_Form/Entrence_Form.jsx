@@ -173,7 +173,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className="modal-header bg-success">
-              <h1 className="modal-title fs-5 text-light" id="exampleModalLabel">Entrance Form</h1>
+              <h1 className="modal-title fs-5 text-light" id="exampleModalLabel">DAKSH JET EXAM</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
