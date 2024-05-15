@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Logo from "../../../img/Logo-Daksh-School-1.png";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -10,12 +11,12 @@ const Footer = () => {
             <footer role="contentinfo">
                 <div className="quick-link-bar">
                 <div className="container">
-                    <p>
+                    <p className='text-center'>
                     <strong>
                         <i className="fa fa-plus" />
-                        Qucik Links
+                        Working Time
                     </strong>{" "}
-                    - Explore popular categories
+                    - Mon To Sat - 8 AM To 4 PM
                     </p>
                 </div>
                 </div>
@@ -160,13 +161,20 @@ const Footer = () => {
                             </div>
                             <ul className="recent-posts">
                                 <li className="mb-2" >
-                                    <p>abc@gmail.com</p>
+                                    <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  enquiry@dakshsiwan.co.in</p>
+                                    <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  principal@dakshsiwan.co.in</p>
                                 </li>
                                 <li className="mb-2" >
-                                    <p>123456782</p>
+                                    <p className='m-0'><i class="fa-solid fa-phone text-light"></i>  7970800450, 7970845003, 7970845005</p>
                                 </li>
                                 <li className="mb-2" >
-                                    <p>Siwan, Bihar</p>
+                                    <p className='m-0'><i class="fa-solid fa-location-dot text-light"></i>  Siwan, Bihar</p>
+                                </li>
+                                <li className='d-flex justify-content-between mt-3 footer-icons px-3'>
+                                    <a href="https://www.facebook.com/profile.php?id=61559751117895" target='blank'><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://twitter.com/dakshbscsiwan" target='blank'><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/dakshcollegeswn/" target='blank'><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/daksh-bsc-nursing-college-652681309/" target='blank'><i class="fa-brands fa-linkedin-in"></i></a>
                                 </li>
                             </ul>
                         </div>
