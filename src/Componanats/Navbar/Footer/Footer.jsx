@@ -22,7 +22,6 @@ const Footer = () => {
                 </div>
                 {/* link bar */}
                 <div className="quick-link">
-                
                 </div>
                 {/* quick link */}
                 <div className="block main-footer">
