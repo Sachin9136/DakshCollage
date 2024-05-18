@@ -41,6 +41,7 @@ import Student_Pdf from "../src/Student/Student";
 import TopToScroll from "./TopToScroll";
 import Enterance_Form from "../src/Componanats/Entrence_Form/Entrence_Form";
 import PrivacyPolicy from './Componanats/Navbar/Footer/Privacy_Policy';
+import Image from './Gallery/images';
 
 
 
@@ -85,6 +86,7 @@ function App() {
           <Route path="/medicalaFacility/:id" element={<MedicalFacility />} />
 
           <Route path="/department/:id" element={<Department />} />
+          <Route path="/images/:id" element={<Image/>} />
 
           <Route path="/complain_feedback" element={<ComplainAndFeedback />} /> 
 

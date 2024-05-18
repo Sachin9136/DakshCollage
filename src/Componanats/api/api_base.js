@@ -32,6 +32,8 @@ export const getAllNews = `${base_url}/api/v1/news/getallnews/`;
 export const getAllStudentPdf = `${base_url}/api/v1/student/getallpdf/`;
 export const getSingleStudentPdf = `${base_url}/api/v1/student/getSinglepdf`;
 export const getAllToppers = `${base_url}/api/v1/topper/getalltoppers/?limit=5`;
+export const getallImageCategory = `${base_url}/api/v1/category/getcategory`;
+export const getImageCategory = `${base_url}/api/v1/gellery/getImagebycategory`;
 
 
 

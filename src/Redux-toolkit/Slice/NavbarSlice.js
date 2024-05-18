@@ -15,6 +15,7 @@ import {
   getAllCourses,
   getAllStudentPdf,
   getSingleStudentPdf,
+  getallImageCategory
 
 } from "../../Componanats/api/api_base";
 
@@ -22,6 +23,21 @@ import {
 //     Authorization: Bearer ${token},
 // };
 // about us
+export const getallImageCategoryApi = createAsyncThunk(
+  "getallImageCategoryApi/navbar",
+  async () => {
+    try {
+      const response = await axios.get(
+        `${getallImageCategory}`
+        // , { headers }
+      );
+      return response.data;
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
+);
+
 export const getaboutusapi = createAsyncThunk(
   "getaboutusapi/navbar",
   async () => {
@@ -260,6 +276,7 @@ const navbarSlice = createSlice({
     SingleDepartments: {},
     Courses: [],
     StudentPdf: [],
+    getallcategory: [],
     SingleStudentPdf: {},
     
     status: "idle",
@@ -269,6 +286,18 @@ const navbarSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+     // get category
+     .addCase(getallImageCategoryApi.pending, (state) => {
+      state.status = "loading";
+    })
+    .addCase(getallImageCategoryApi.fulfilled, (state, action) => {
+      state.status = "succeeded";
+      state.getallcategory = action.payload;
+    })
+    .addCase(getallImageCategoryApi.rejected, (state, action) => {
+      state.status = "failed";
+      state.error = action.payload;
+    })
       // get about us
       .addCase(getaboutusapi.pending, (state) => {
         state.status = "loading";
