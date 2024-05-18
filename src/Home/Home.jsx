@@ -446,10 +446,7 @@ const Home = () => {
                         Courses from the <span>world’s leading experts</span>
                       </h2>
                       <p>
-                        Nullam suscipit id ante bibendum bibendum. Vivamus interdum
-                        gravida justo id venenatis. tempus velit sed, lobortis metus.
-                        Donec id tincidunt libero, eget dapibus quam. Aenean felis ex,
-                        blandit pretium pharetra eu.
+                      At Daksh B.Sc Nursing College and the Daksh School of Nursing & Hospital, we are dedicated to providing a premier education in nursing backed by practical experience in a real hospital setting. Our programs are crafted by esteemed experts in the medical field, ensuring that students not only learn from the best but also gain hands-on skills through direct patient care.
                       </p>
                       <Link to="/courses" className="butn with-bg get-login-register border rounded-5 m-2">
                         All Courses
