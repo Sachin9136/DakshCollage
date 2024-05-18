@@ -40,6 +40,7 @@ import Student_Pdf from "../src/Student/Student";
 
 import TopToScroll from "./TopToScroll";
 import Enterance_Form from "../src/Componanats/Entrence_Form/Entrence_Form";
+import PrivacyPolicy from './Componanats/Navbar/Footer/Privacy_Policy';
 
 
 
@@ -95,6 +96,7 @@ function App() {
 
           <Route path="/student_Pdf/:id" element={<Student_Pdf />} /> 
           <Route path="/enterance_form" element={<Enterance_Form />} /> 
+          <Route path="/Privacy_policy" element={<PrivacyPolicy />} /> 
           
         </Routes>
       <Footer />
