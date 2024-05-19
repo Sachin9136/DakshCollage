@@ -446,7 +446,7 @@ const Home = () => {
                         Courses from the <span>world’s leading experts</span>
                       </h2>
                       <p>
-                      At Daksh B.Sc Nursing College and the Daksh School of Nursing & Hospital, we are dedicated to providing a premier education in nursing backed by practical experience in a real hospital setting. Our programs are crafted by esteemed experts in the medical field, ensuring that students not only learn from the best but also gain hands-on skills through direct patient care.
+                      At Daksh bsc. Nursing College, we pride ourselves on our holistic approach to nursing education. Our curriculum integrates cutting-edge theoretical knowledge with hands-on clinical experience, empowering our students to become proficient caregivers and critical thinkers.
                       </p>
                       <Link to="/courses" className="butn with-bg get-login-register border rounded-5 m-2">
                         All Courses
@@ -594,7 +594,7 @@ const Home = () => {
               <div className="row pt-5">
                 <div className="heading pb-0">
                   <h2>Popular Courses</h2>
-                  <p>Our Online Course Categories</p>
+                  {/* <p>Our Online Course Categories</p> */}
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -633,7 +633,7 @@ const Home = () => {
               <div className="container-fluid">
                 <div className="heading pt-5 p-0">
                   <h2>Education Photos</h2>
-                  <p>University is the largest fundraising campaigns</p>
+                  {/* <p>University is the largest fundraising campaigns</p> */}
                 </div>
                 <PhotoGallery_Slider />
               </div>
@@ -646,7 +646,7 @@ const Home = () => {
                   <div className="col-12">
                     <div className="heading pb-5">
                       <h2>Feedbacks</h2>
-                      <p>University is the largest fundraising campaigns</p>
+                      {/* <p>University is the largest fundraising campaigns</p> */}
                     </div>
                   </div>
                 </div>
@@ -662,7 +662,7 @@ const Home = () => {
               <div className="container">
                 <div className="heading pb-5">
                   <h2>Meet Toppers</h2>
-                  <p>University is the largest fundraising campaign</p>
+                  {/* <p>University is the largest fundraising campaign</p> */}
                 </div>
                 <div className="row">
                   <div className="col-sm-12">
@@ -819,7 +819,7 @@ const Home = () => {
               <div className="container">
                 <div className="heading pb-5">
                   <h2>Recent Articles</h2>
-                  <p>University is the largest fundraising campaign</p>
+                  {/* <p>University is the largest fundraising campaign</p> */}
                 </div>
               </div>
               <div className="container">

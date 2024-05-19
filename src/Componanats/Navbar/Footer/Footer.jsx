@@ -37,8 +37,11 @@ const Footer = () => {
                                 </div>
                             </Link>
                             <p> 
-                                Pellentesque ultrices orci id justo vehicula, non aliquam
-                                erat lacinia. Mauris rhoncus venenatis tempor.
+                                DAKSH B.Sc. NURSING COLLEGE
+
+                                DAKSH SCHOOL  OF NURSING AND HOSPITAL.
+
+                                Mahatma Buðh Educational & Research Center Establisheð the Daksh School Nursing And Hospital In the year 2012, Daksh B.sc. Nursing College & Hospital At Siwan Bihar.
                             </p>
                             </div>
                         </div>
@@ -170,12 +173,15 @@ const Footer = () => {
                                     <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  principal@dakshsiwan.co.in</p>
                                 </li>
                                 <li className="mb-2" >
-                                    <p className='m-0'><i class="fa-solid fa-phone text-light"></i>  7970800450, 7970845003, 7970845005</p>
+                                    <p className='m-0'><i class="fa-solid fa-phone text-light"></i>  7970804500, 7970845003, 7970845005</p>
                                 </li>
                                 <li className="mb-2" >
                                     <p className='m-0'><i class="fa-solid fa-location-dot text-light"></i>  Siwan, Bihar</p>
                                 </li>
-                                <li className='d-flex justify-content-between mt-3 footer-icons px-3'>
+                                <li>
+                                    <h5 className='text-white mt-3'>Social Icons</h5>
+                                </li>
+                                <li className='d-flex footer-icons'>
                                     <a href="https://www.facebook.com/profile.php?id=61559751117895" target='blank'><i class="fa-brands fa-facebook"></i></a>
                                     <a href="https://x.com/PankajS58475813" target='blank'><i class="fa-brands fa-x-twitter"></i></a>
                                     <a href="https://www.instagram.com/dakshcollegeswn/" target='blank'><i class="fa-brands fa-instagram"></i></a>
