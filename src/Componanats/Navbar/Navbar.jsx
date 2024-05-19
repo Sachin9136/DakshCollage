@@ -167,7 +167,9 @@ const CustomNavbar = () => {
               <Nav.Link as={Link} to="/complain_feedback" activeClassName="" exact>
                 Complain / Feedback
               </Nav.Link>
-
+              <Nav.Link as={Link} to="/approval" activeClassName="" exact>
+                Approval
+              </Nav.Link>
               <NavDropdown title="Contact" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to={`/contact`}>
                   {"Contact Us"}
@@ -176,7 +178,6 @@ const CustomNavbar = () => {
                   {"Quick Payment"}
                 </NavDropdown.Item>
               </NavDropdown>
-
               {/* Add more NavDropdown items for other sections */}
             </Nav>
           </Navbar.Collapse>

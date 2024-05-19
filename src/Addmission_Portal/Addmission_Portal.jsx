@@ -109,7 +109,8 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <h5 className='text-center'>Auxiliary Nurse Midwife (ANM) Overview</h5>
+                        <p className='px-2'>An Auxiliary Nurse Midwife (ANM) plays a vital role in the healthcare system, particularly in rural and underserved areas. They are trained to provide a wide range of maternal and child health services, acting as a bridge between the community and the healthcare system. ANMs are essential in promoting health awareness, delivering basic healthcare services, and assisting in childbirth.</p>
                     </div>
                 </div>
                 <div
@@ -126,7 +127,8 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <h5 className='text-center'>General Nursing and Midwifery (GNM) Overview</h5>
+                        <p className='px-2'>General Nursing and Midwifery (GNM) is a three-and-a-half-year diploma program focused on equipping students with knowledge and skills in nursing and midwifery. The program prepares students to work in various healthcare settings, including hospitals, clinics, and community health centers. This content provides an overview of the GNM curriculum, its importance, core subjects, career opportunities, and the ethical considerations in nursing practice.</p>
                     </div>
                 </div>
                 <div
@@ -144,7 +146,8 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <h5 className='text-center'>B.Sc. Nursing Overview</h5>
+                        <p className='px-2'>The Bachelor of Science in Nursing (B.Sc. Nursing) is a four-year undergraduate program that prepares students to become professional nurses equipped with the knowledge and skills required to provide comprehensive care in various healthcare settings. The program blends theoretical knowledge with practical training, focusing on holistic patient care, community health, and advanced nursing practices. This content provides an overview of the B.Sc. Nursing curriculum, its importance, core subjects, career opportunities, and the ethical considerations in nursing practice.</p>
                     </div>
                 </div>
                 <div
@@ -162,7 +165,8 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <h5 className='text-center'>M.Sc. Nursing  Overview</h5>
+                        <p className='px-2'>The Master of Science in Nursing (M.Sc. Nursing) is a postgraduate program designed to prepare registered nurses for advanced practice roles in healthcare. This two-year program offers specialized training in various nursing fields, emphasizing advanced clinical skills, research, leadership, and education. This content provides an overview of the M.Sc. Nursing curriculum, its importance, core subjects, career opportunities, and the ethical considerations in advanced nursing practice.</p>
                     </div>
                 </div>
                 <div
@@ -180,7 +184,8 @@ const Addmission_Portal = () => {
                                 </button>
                             </a>
                         </div>
-                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit sint laudantium dolorem a fugiat, ipsum delectus dolores repellendus, voluptates consequatur laboriosam excepturi. Laborum recusandae repellendus totam repellat sapiente consequatur illum ab sit, odit, quia esse cumque? Quasi magnam necessitatibus quos eum vero? Excepturi autem voluptas dolor nobis, odio magnam officiis quam. Natus beatae est quod facere sequi alias rem, in dolorum laborum asperiores, error optio nesciunt! Exercitationem praesentium nesciunt voluptas molestias adipisci quos, nemo quod qui aliquam. Enim dignissimos, dolor deserunt dolore suscipit quibusdam vero? Quod vel obcaecati numquam ullam voluptate odit, suscipit nesciunt laborum ex perspiciatis, dolores minima.</p>
+                        <h5 className='text-center'>Post Basic B.Sc. Nursing Overview</h5>
+                        <p className='px-2'>The Post Basic Bachelor of Science in Nursing (Post Basic B.Sc. Nursing) is a two-year undergraduate program designed for registered nurses who have completed a General Nursing and Midwifery (GNM) diploma. This program aims to enhance the professional knowledge and skills of nurses, preparing them for advanced roles in healthcare settings. This content provides an overview of the Post Basic B.Sc. Nursing curriculum, its importance, core subjects, career opportunities, and the ethical considerations in advanced nursing practice.</p>
                     </div>
                 </div>
             </div>

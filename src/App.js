@@ -13,6 +13,7 @@ import Press_Release from "../src/Gallery/Press_Release";
 import Videos_Gallery from "../src/Gallery/Videos_Gallery";
 import Admission_Form from "./Admission_Form/Admission_Form";
 import Blog from "../src/Blog/Blog";
+import Approval from "../src/Approval/Approval";
 import Single_Blog from "../src/Single_Blog/Single_blog";
 import Download from "../src/Student/Download";
 import Broshure from "../src/Student/Broshure";
@@ -69,6 +70,7 @@ function App() {
           <Route path="/addmission_form/:id" element={<Admission_Form />} />
 
           <Route path="/blog" element={<Blog />} />
+          <Route path="/approval" element={<Approval />} />
           <Route path="/single_blog/:id" element={<Single_Blog />} />
 
           <Route path="/download" element={<Download />} />
