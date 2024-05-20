@@ -75,7 +75,7 @@ const Addmission_Portal = () => {
                     aria-controls="pills-contact"
                     aria-selected="false"
                 >
-                    MSC / NPCC PROSPECTUS
+                    MSC PROSPECTUS
                 </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -161,7 +161,7 @@ const Addmission_Portal = () => {
                         <div className='text-center py-5'>
                             <a href="https://res.cloudinary.com/dazqqmrku/image/upload/v1713037950/Pdf/ufwwdqe07qzgw8aldvbs.pdf" target='_blank'>
                                 <button className="btn btn-success border">
-                                    Download MSC / NPCC PROSPECTUS
+                                    Download MSC PROSPECTUS
                                 </button>
                             </a>
                         </div>

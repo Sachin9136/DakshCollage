@@ -441,7 +441,7 @@ const Home = () => {
                         <h3>
                           <a href="https://www.indiannursingcouncil.org/" target="blank" >Aryabhatta Knowledge University</a>
                         </h3>
-                        <span>New Delhi, Delhi</span>
+                        <span>Patna, Bihar</span>
                       </div>
                     </div>
                   </div>
@@ -547,10 +547,7 @@ const Home = () => {
                         <div className="help-people genrl-block">
                           <h2>Helping People Grow Their Careers.</h2>
                           <p>
-                            Pellentesque ultrices orci id justo vehicula, non aliquam
-                            erat lacinia. Mauris rhoncus venenatis tempor. Proin egestas
-                            euismod felis a ullamcorper. Nullam lacus nisi, blandit eget
-                            lacus ac, lobortis finibus augue.
+                          Our college is dedicated to helping people grow their careers through comprehensive programs, expert faculty, and hands-on experiences. We provide the tools and support needed to achieve professional success and personal growth in a dynamic and evolving job market.
                           </p>
                         </div>
                       </div>

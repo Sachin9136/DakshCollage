@@ -186,6 +186,7 @@ const Footer = () => {
                                     <a href="https://x.com/PankajS58475813" target='blank'><i class="fa-brands fa-x-twitter"></i></a>
                                     <a href="https://www.instagram.com/dakshcollegeswn/" target='blank'><i class="fa-brands fa-instagram"></i></a>
                                     <a href="https://www.linkedin.com/in/daksh-bsc-nursing-college-652681309/" target='blank'><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="" target='blank'><i class="fa-brands fa-youtube"></i></a>
                                 </li>
                             </ul>
                         </div>
