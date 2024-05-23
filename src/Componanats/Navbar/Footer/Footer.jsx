@@ -173,7 +173,7 @@ const Footer = () => {
                                     <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  principal@dakshsiwan.co.in</p>
                                 </li>
                                 <li className="mb-2" >
-                                    <p className='m-0'><i class="fa-solid fa-phone text-light"></i>  7970804500, 7970845003, 7970845005</p>
+                                    <p className='m-0'><i class="fa-solid fa-phone text-light"></i><span>+917970804500, +919934923283, +91 7491-045000, +917643023078</span> </p>
                                 </li>
                                 <li className="mb-2" >
                                     <p className='m-0'><i class="fa-solid fa-location-dot text-light"></i>  Siwan, Bihar</p>

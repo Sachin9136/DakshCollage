@@ -1,5 +1,5 @@
 import React from 'react';
-import Qr from "../img/QR_code.svg";
+import Qr from "../img/dakshschoolofnursing@sbi-1.png";
 
 const Quick_Payment = () => {
   return (
@@ -17,11 +17,11 @@ const Quick_Payment = () => {
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center ">
           <div>
-            <p>Name : <b>Sachin Gupta</b></p>
-            <p>Bank Name : <b>HDFC</b></p>
-            <p>Account No. : <b>123456789369852</b></p>
-            <p>Ifsc Code : <b>HDFC123654789965</b></p>
-            <p>Branch : <b>Najafgarh</b></p>
+            <p>Name : <b>Daksh School of Nursing</b></p>
+            <p>Bank Name : <b>SBI</b></p>
+            <p>Account No. : <b>38318320000</b></p>
+            <p>Ifsc Code : <b>SBIN0018597</b></p>
+            <p>UPI Id : <b>dakshschoolofnursing@sbi</b></p>
           </div>
         </div>
       </div>
