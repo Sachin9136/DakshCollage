@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch} from "react-redux";
 import { entrenceExamFormApi } from '../../Redux-toolkit/Slice/FormSlice';
 
+
 const Entrence_form = () => {
 
 const dispatch = useDispatch();
@@ -768,9 +769,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                             </div>
                         </div>
                         <p className="form-submit">
-                            <button type="submit" className="submit btn btn-success">
-                                Send Message
-                            </button>
+                            <button type="submit" className="submit btn btn-success">Submit</button>
                         </p>
                         </form>
                     </div>
@@ -788,3 +787,5 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
 };
 
 export default Entrence_form
+
+
