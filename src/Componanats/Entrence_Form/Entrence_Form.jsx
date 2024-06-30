@@ -183,7 +183,8 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                         <form
                         method="post"
                         onSubmit={handlesubmit}
-                        className="comment-form contact__form ">
+                        className="comment-form contact__form"
+                        action="/aboutus">
                         <div
                             className="alert alert-success contact__msg"
                             style={{ display: "none" }}
@@ -355,7 +356,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="year"
                                 name="year"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -373,7 +374,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="roll"
                                 name="roll"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -386,12 +387,12 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 </label>
                                 <input 
                                 value={marks}
-                                onChange={(e) => setMarks(e.target.value)}
+                                onChange={(e) => setMarks(e.target.value + '%')}
                                 placeholder="Type Your Marks"
                                 className="form-control"
                                 id="marks"
                                 name="marks"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -427,7 +428,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="twelfthBoard"
                                 name="twelfthBoard"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -445,7 +446,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="twelfthYear"
                                 name="twelfthYear"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -463,7 +464,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="twelfthRoll"
                                 name="twelfthRoll"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -481,7 +482,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="twelfthMarks"
                                 name="twelfthMarks"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -689,7 +690,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="EmailID"
                                 name="EmailID"
-                                type="text"
+                                type="email"
                                 defaultValue=""
                                 required=""
                                 />
@@ -707,7 +708,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="mobile"
                                 name="mobile"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -725,7 +726,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                                 className="form-control"
                                 id="gaurdianmobile"
                                 name="gaurdianmobile"
-                                type="text"
+                                type="number"
                                 defaultValue=""
                                 required=""
                                 />
@@ -769,7 +770,7 @@ const [signatureofapplicent, setSignatureofApplicent] = useState(null);
                             </div>
                         </div>
                         <p className="form-submit">
-                            <button type="submit" className="submit btn btn-success">Submit</button>
+                            <button type="submit" className="submit btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
                         </p>
                         </form>
                     </div>
