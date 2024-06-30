@@ -40,7 +40,7 @@ import Addmisssion_Portal from "../src/Addmission_Portal/Addmission_Portal";
 import Student_Pdf from "../src/Student/Student";
 
 import TopToScroll from "./TopToScroll";
-import Enterance_Form from "../src/Componanats/Entrence_Form/Entrence_Form";
+// import Enterance_Form from "../src/Componanats/Entrence_Form/Entrence_Form";
 import PrivacyPolicy from './Componanats/Navbar/Footer/Privacy_Policy';
 import Image from './Gallery/images';
 
@@ -51,7 +51,7 @@ function App() {
     <div>
       
       <Navbar/> 
-      <Enterance_Form />
+      {/* <Enterance_Form /> */}
       <TopToScroll/> 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -99,7 +99,7 @@ function App() {
           <Route path="/addmisssion_portal" element={<Addmisssion_Portal />} /> 
 
           <Route path="/student_Pdf/:id" element={<Student_Pdf />} /> 
-          <Route path="/enterance_form" element={<Enterance_Form />} /> 
+          {/* <Route path="/enterance_form" element={<Enterance_Form />} />  */}
           <Route path="/Privacy_policy" element={<PrivacyPolicy />} /> 
           
         </Routes>
