@@ -169,8 +169,8 @@ const Footer = () => {
                             </div>
                             <ul className="recent-posts">
                                 <li className="mb-2" >
-                                    <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  enquiry@dakshsiwan.co.in</p>
-                                    <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  principal@dakshsiwan.co.in</p>
+                                    <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  dakshcollegesiwan@gmail.com</p>
+                                    {/* <p className='m-0'><i class="fa-regular fa-envelope text-light"></i>  principal@dakshsiwan.co.in</p> */}
                                 </li>
                                 <li className="mb-2" >
                                     <p className='m-0'><i class="fa-solid fa-phone text-light"></i><span>+917970804500, +919934923283, +91 7491-045000, +917643023078</span> </p>
