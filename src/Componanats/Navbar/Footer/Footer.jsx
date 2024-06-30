@@ -90,12 +90,12 @@ const Footer = () => {
                                     Photo Gallery
                                 </Link> 
                             </li>
-                            <li className="mb-2" >
+                            {/* <li className="mb-2" >
                                 <Link to="/enterance_form">
                                     <i className="fa fa-clock" />
                                     Entrance Form
                                 </Link> 
-                            </li>
+                            </li> */}
                             <li className="mb-2" >
                                 <Link to="/Privacy_Policy">
                                     <i className="fa fa-clock" />
