@@ -199,7 +199,7 @@ const Footer = () => {
             </footer>
             <div className="bottom-bar">
                 <p>
-                © 2024 <Link to="https://www.srnsdigitechnologies.co.in/"><u>SRNS Digi Technologies</u></Link>  All Rights Reserved.
+                © 2024 <Link to="https://www.srns.co.in/"><u>SRNS.co.in</u></Link>  All Rights Reserved.
                 </p>
             </div>
         </>
